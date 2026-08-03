@@ -108,6 +108,10 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Échelle | **Le dispositif est reproductible à tout échelon** — 7 membres minimum, procédure allégée en dessous de 500 | Imposer treize délégués à un village de quarante tue le dispositif par la procédure. `7-30` : l'assemblée *est* la Table Ronde · `30-500` : cinq sièges · `500+` : les Treize |
 | Fédération | **Les communautés cosignent les registres les unes des autres** | Falsifier un registre local exigerait de falsifier tous ceux qui l'attestent. La protection vient du voisinage — aucune autorité de contrôle nécessaire |
 | Messagerie | **Matrix**, ne rien réinventer — et **jamais de fil algorithmique** | Protocole fédéré déjà retenu par l'État français. Un fil optimisé pour l'engagement produit l'inverse de l'élévation : ligne rouge de conception |
+| Surfaces de l'OS | **~35 surfaces. On n'écrit que ce qui porte la thèse (9), on adapte (10), on adopte le reste (16)** | Réécrire une galerie photo ne rapproche d'aucun objectif et consomme les années qu'il faut à la Régence |
+| Adoption d'apps tierces | **Construire depuis les sources, épingler, relire les diffs, surveiller les rachats** | Simple Mobile Tools racheté en 2023 par un publicitaire → fork Fossify. Une app adoptée qui change de mains devient une porte dérobée — voie de compromission la plus probable du projet |
+| Messagerie | **Le protocole de Signal, sans Signal** — Olm/Megolm sur Matrix | Signal exige un numéro de téléphone, donc l'état civil : ça annulerait le jeton aveugle. Réserve à dire : Matrix protège moins bien les métadonnées — recommander Signal/Briar en complément pour les usages à haut risque |
+| Les deux paroles | **Publique (opposable, au Registre) et privée (sans trace) — visuellement irréconciliables** | Le risque de conception le plus grave du système. Croire chuchoter alors qu'on dépose au Registre : défaut bloquant au même titre qu'une faille crypto |
 | Périmètres | **La Régence est universelle, l'OS est ciblé** (art. 7 ter) | L'app Table Ronde tourne sur tout — iPhone compris. Le système reste sur la liste où le démarrage vérifié est possible. *La Régence recrute, l'OS convertit* : personne n'a à changer de téléphone pour commencer à gouverner |
 | Accessibilité | **WCAG 2.2 AAA sur le chemin de vote**, AA ailleurs · **version FALC obligatoire** (art. 14 bis) | Une proposition sans version intelligible ne peut être mise aux voix. Si voter est un devoir, le commun doit rendre le vote votable — un texte incompréhensible est un texte auquel on ne peut pas consentir |
 | Matériel opaque | **Zéro confiance matérielle** : isoler le modem, interrupteurs physiques, tout rendre visible | On ne désactive pas un modem par logiciel, et un mouchard soudé ne se retire pas par du code. Le levier manquant est réglementaire — le prétendre résolu par du code serait se raconter une histoire |
@@ -216,7 +220,8 @@ SERF/
 │   ├── 06-REGISTRE.md         ← transparence non falsifiable, témoignage citoyen
 │   ├── 07-SUBSIDIARITE.md     ← les communautés fédérées — l'échelle d'un pays
 │   ├── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
-│   └── 09-BRIEF-DESIGN.md     ← brief autoportant : écrans, accessibilité, 10 règles
+│   ├── 09-BRIEF-DESIGN.md     ← brief autoportant : écrans, accessibilité, règles
+│   └── 10-SURFACES.md         ← les ~35 surfaces d'un OS : écrire / adapter / adopter
 └── .claude/skills/heure/      ← relever l'heure, sans l'annoncer
 ```
 

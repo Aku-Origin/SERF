@@ -117,7 +117,8 @@ la pile entière.
 | 2 | Mes échelons | Régence |
 | 3 | L'ordre du jour | Régence |
 | 4 | La proposition *(porte le geste des quatre expressions)* | Régence |
-| 5 | La parole | Régence |
+| 5 | La parole *(publique, opposable)* | Régence |
+| 5 bis | **La messagerie** *(privée, sans trace)* | Régence |
 | 6 | Ce que j'ai dit | Régence |
 | 7 | Ce qu'ils ont fait | Régence |
 | 8 | Le Registre | Régence — **consultable sans compte** |
@@ -217,6 +218,23 @@ Trois contraintes qui le distinguent de tout ce qui existe :
   ni badges. **On ne construit pas un réseau social** : un flux optimisé pour
   l'engagement produit l'exact inverse de l'élévation. Ligne rouge, pas
   préférence.
+
+### 5.4 bis — La messagerie *(privée)*
+
+Se parler. Chiffré de bout en bout, sans numéro de téléphone, sans trace.
+
+**Contrainte majeure de conception — la plus grave du système :** cet écran et
+celui de la Parole (5.4) doivent être **visuellement irréconciliables**. Fond,
+typographie, densité, iconographie : rien de commun. Aucun passage de l'un à
+l'autre sans rupture explicite et nommée. Aucune fonction de partage ne fait
+glisser un message privé vers le public sans un acte délibéré.
+
+> **Quelqu'un qui croit chuchoter alors qu'il dépose au Registre, c'est une vie
+> abîmée.** Toute ambiguïté visuelle entre les deux paroles est un défaut
+> bloquant, au même titre qu'une faille cryptographique.
+
+L'écran affiche en permanence, sans emphase, ce qu'il est : *privé, chiffré, aucune
+trace au Registre*. Détail technique en [`10-SURFACES.md §4`](10-SURFACES.md).
 
 ### 5.5 — Ce que j'ai dit
 
