@@ -35,32 +35,51 @@ l'exerce au moment où il signe.
 
 ---
 
-## Les trois renversements
+## Les cinq renversements
 
-SERF existe pour renverser trois rapports. Chacun a déjà, dans ce projet, un
-mécanisme qui le porte — car une valeur sans mécanisme n'est qu'une déclaration.
+SERF existe pour renverser cinq rapports. Chacun a, dans ce projet, un mécanisme
+qui le porte — car **une valeur sans mécanisme n'est qu'une déclaration**, et on
+n'en écrit pas.
 
-**Payer la santé plutôt que la maladie.**
-Un système qui ne rémunère que la réparation produit mécaniquement ce qu'il faut
-réparer. Dans le commun SERF, cela devient une règle d'affectation : la
-maintenance, le durcissement, l'accessibilité et la documentation passent avant
-le spectaculaire ([Charte, art. 18 quater](../CHARTE.md)). Le mécanisme est le
-**vote par conviction** — le financement s'accumule avec la *durée* du soutien,
-non avec l'intensité d'un moment. On ne peut pas gagner par coup d'éclat ce qui
-se mérite par constance.
+**La santé plutôt que la maladie. L'élévation plutôt que l'éducation.**
+Ce sont deux faces du même principe : **financer l'amont, non l'aval.** Un système
+qui ne rémunère que la réparation produit mécaniquement ce qu'il faut réparer ; un
+système qui ne finance que le comblement des manques produit mécaniquement des
+gens à qui il manque quelque chose. L'éducation comble, l'élévation augmente. La
+question posée à toute dépense devient : *élève-t-elle une capacité, ou
+répare-t-elle une conséquence ?* ([Charte, art. 23](../CHARTE.md)). Le mécanisme
+d'appoint est le **vote par conviction** — le financement s'accumule avec la
+*durée* du soutien, non avec l'intensité d'un moment. On ne gagne pas par coup
+d'éclat ce qui se mérite par constance.
 
 **La souveraineté du peuple plutôt qu'une gouvernance de peu.**
-Le mécanisme est la **pondération quadratique** : dans toute répartition de
-ressources, c'est le nombre de personnes qui pèse, pas les montants. Mille
-électeurs apportant une part l'emportent sur un seul en apportant mille. C'est le
-principe politique écrit en arithmétique — et il n'est possible que parce que le
-corps électoral résiste à la multiplication d'identités fictives.
+Le mécanisme est la **pondération quadratique** : dans toute répartition, c'est le
+nombre de personnes qui pèse, pas les montants. Mille Régents apportant une part
+l'emportent sur un seul en apportant mille. C'est le principe politique écrit en
+arithmétique — et il n'est possible que parce que le corps électoral résiste à la
+multiplication d'identités fictives.
 
 **La liberté plutôt que la soumission.**
 Le mécanisme est l'**Enceinte** : on n'interdit rien, on encercle. L'utilisateur
 garde toutes ses applications — et reprend le contrôle de ce qu'elles voient. La
 liberté ne se conquiert pas par la privation ; c'est même l'erreur qui a fait
 échouer toutes les alternatives précédentes.
+
+**L'échelon proche plutôt que le sommet.**
+Une décision se prend au plus petit échelon capable de la porter. Le mécanisme est
+la **fédération à attestation mutuelle** : chaque communauté tient son registre,
+et les communautés cosignent celui des autres. Falsifier un registre local exige
+alors de falsifier tous ceux qui l'attestent — **la protection vient du voisinage,
+pas d'une autorité.** On ne conquiert pas un sommet : on rend inutile qu'il y en
+ait un. Voir [`07-SUBSIDIARITE.md`](07-SUBSIDIARITE.md).
+
+**La mémoire plutôt que l'amnésie.**
+Les institutions conservent le *quoi* — la décision, le score — et perdent le
+*pourquoi*. C'est pour cela que chaque génération refait les mêmes débats et
+retombe dans les mêmes erreurs. Le mécanisme est l'obligation d'inscrire **le
+motif, les objections, et ce qui a fait changer d'avis** ([art. 26 sexies](../CHARTE.md)),
+en langue claire et en formats ouverts. Le Registre est écrit pour ceux qui ne
+sont pas encore nés et devront reprendre le commun sans avoir connu personne.
 
 ---
 

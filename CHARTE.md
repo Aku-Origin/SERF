@@ -87,6 +87,24 @@ vote qui exige l'assistance d'un tiers est nulle.
 Une personne, une voix. La qualité de Régent ne s'achète pas, ne se cumule pas,
 ne se délègue pas de façon permanente.
 
+**Article 7 bis — Le vote, droit et devoir.**
+Voter est un **droit** : il ne peut être ni retiré, ni conditionné, ni rendu
+coûteux, ni subordonné à quelque contrepartie que ce soit.
+
+Voter est aussi un **devoir** : un commun ne se gouverne que si ceux qui
+l'habitent s'expriment. Ce devoir n'est assorti d'aucune sanction — un vote
+arraché ne vaut rien.
+
+Il est tenable parce que l'article 17 ouvre quatre expressions : nul n'est jamais
+contraint d'approuver ni de condamner. Qui juge la question illégitime le dit, et
+cela compte. **Le silence n'est donc jamais nécessaire** — il n'y a aucune
+situation où se taire soit la seule chose honnête à faire.
+
+Réciproquement, ce devoir en crée un pour le commun : **rendre le vote votable.**
+Texte en langue claire, longueur tenable, délai suffisant, accessibilité pleine
+(art. 6). Un devoir de se prononcer sur des textes incompréhensibles ne serait pas
+un devoir : ce serait un piège.
+
 **Article 8 — Admission par parrainage.**
 L'entrée s'opère par parrainage. Le candidat est présenté par **trois** Régents
 déjà inscrits, qui attestent de son existence distincte et répondent de cette
@@ -229,18 +247,29 @@ facilement pillable de toutes. **Toute atteinte constatée au dispositif anti-Sy
 suspend de plein droit les scrutins quadratiques** jusqu'au rapport du collège de
 vérification.
 
-**Article 23 — Priorité au soin sur la réparation.**
-Les ressources du commun financent en priorité ce qui **prévient** la défaillance
-— correctifs de sécurité, reproductibilité des constructions, accessibilité,
-maintenance, documentation — avant ce qui la **répare** ou ce qui l'orne.
+**Article 23 — Priorité à l'amont.**
+Les ressources financent en priorité **ce qui augmente une capacité**, avant ce
+qui comble un manque, répare une défaillance ou l'orne.
+
+Le principe s'énonce en deux formules, qui sont la même :
+
+> **On finance la santé, non la maladie.**
+> **On finance l'élévation, non le rattrapage.**
+
+Un système qui ne rémunère que la réparation produit mécaniquement ce qu'il faut
+réparer. Un système qui ne finance que le comblement des manques produit
+mécaniquement des gens à qui il manque quelque chose. Dans les deux cas, l'aval
+est un puits sans fond que l'amont aurait tari.
+
+À l'échelle du commun SERF, cela désigne les correctifs de sécurité, la
+reproductibilité des constructions, l'accessibilité, la maintenance et la
+documentation. À l'échelle d'une communauté, cela désigne ce qu'elle décide — mais
+la question posée reste la même : *cette dépense élève-t-elle une capacité, ou
+répare-t-elle une conséquence ?*
 
 Il peut être dérogé à cette priorité par une décision motivée. Elle ne peut être
 ni supprimée, ni rendue implicite : toute affectation qui s'en écarte est publiée
 avec son motif.
-
-Cet article énonce, à l'échelle du commun, le principe qui fonde SERF : **on
-finance la santé, non la maladie.** Un système qui ne rémunère que la réparation
-produit mécaniquement ce qu'il faut réparer.
 
 ## Chapitre 4 — Le scrutin
 
@@ -271,6 +300,125 @@ Chaque bulletin chiffré est publié au registre. Chaque Régent peut vérifier 
 son bulletin y figure et qu'il a été pris en compte. Chacun, Régent ou non, peut
 recalculer le résultat à partir des bulletins publiés. Un résultat non vérifiable
 est nul.
+
+## Chapitre 5 — Le Registre
+
+**Article 26 bis — Inscription universelle des actes de pouvoir.**
+Tout acte de pouvoir est inscrit au Registre : propositions, amendements et
+objections ; bulletins chiffrés, décomptes et preuves de dépouillement ; ordres du
+jour, procès-verbaux et **votes nominatifs** des membres de la Table Ronde ;
+réponses motivées de l'article 35 ; points de défiance et leurs motifs ; élections
+et tirages au sort ; mouvements de ressources et dérogations motivées à l'article
+23 ; images publiées et empreintes de construction ; attributions, révocations et
+transmissions de mandats et de charges.
+
+**Le silence est un événement inscrit.** L'expiration d'un délai sans réponse est
+enregistrée comme telle. Ne rien faire laisse une trace — sans quoi l'inaction
+serait la stratégie d'évitement la plus rentable.
+
+**Les tirages au sort sont vérifiables.** La graine est engagée publiquement avant
+le tirage et révélée après, afin que chacun recalcule le résultat. Un tirage
+invérifiable est une nomination déguisée.
+
+**Article 26 ter — Non-falsifiabilité et témoignage citoyen.**
+Le Registre est **ajout seul** et sa permanence est prouvée, non promise : toute
+publication s'accompagne d'une preuve démontrant que l'état nouveau contient
+l'ancien inchangé. Chacun peut en outre prouver, seul et hors ligne, qu'une entrée
+donnée s'y trouve.
+
+**Chaque appareil portant SERF est témoin du Registre.** Il conserve le dernier
+état signé qu'il a vu, exige la preuve de permanence avant d'accepter le suivant,
+et confronte cet état à celui des appareils qu'il croise. Aucune configuration
+n'est requise, et le porteur n'a pas à le savoir pour en être protégé.
+
+Un état du Registre n'est accepté que contresigné par un nombre déterminé de
+**cosignataires** indépendants, relevant de juridictions distinctes (art. 49).
+
+Il découle de ce dispositif que **la falsification produit elle-même sa preuve** :
+deux états incohérents, tous deux signés, démontrent la fraude de manière
+irréfutable et transférable, sans qu'aucune autorité n'ait à en juger.
+
+**Article 26 quater — Ce qui ne s'inscrit jamais.**
+Le lien entre un Régent et son bulletin n'est jamais inscrit, sous aucune forme,
+pour aucun motif, à la demande de personne.
+
+L'asymétrie est fondatrice : **transparence totale des actes de pouvoir, secret
+total du vote individuel.** Un registre qui enregistrerait tout sans cette réserve
+ne serait pas une avancée démocratique — ce serait le plus parfait instrument de
+rétorsion jamais construit, offert clés en main à qui s'en emparerait.
+
+**Article 26 quinquies — Effacement et permanence.**
+Le Registre inscrit des **actes**, jamais des personnes. Aucune donnée personnelle
+n'y figure ; ce qui y entre est un engagement cryptographique, qui ne révèle rien
+mais que l'intéressé peut prouver.
+
+La correspondance entre une personne et ses engagements est tenue hors du
+Registre et **détruite** lorsqu'elle exerce son droit de sortie (art. 4). Le
+Registre demeure alors intact et vérifiable, et ses entrées deviennent
+définitivement non rattachables : la personne a disparu, l'histoire du commun est
+préservée.
+
+Cet article règle la contradiction entre un journal permanent et le droit à
+l'effacement. Elle se règle à la conception : après la première inscription, il
+est trop tard.
+
+**Article 26 sexies — Le pourquoi est inscrit avec le quoi.**
+Toute décision est inscrite au Registre accompagnée de **son motif, des objections
+qui lui ont été opposées, et de ce qui a fait changer d'avis**. Une décision
+inscrite sans son pourquoi est incomplète, et l'organe qui l'a prise est tenu de
+la compléter.
+
+Presque toutes les institutions conservent le *quoi* — la décision, le score, la
+date — et perdent le *pourquoi*. C'est la raison pour laquelle chaque génération
+refait les mêmes débats à partir de rien, et retombe dans les mêmes erreurs faute
+de savoir pourquoi les précédentes en étaient sorties.
+
+**Le Registre est un instrument de transmission avant d'être un instrument de
+contrôle.** Il est écrit pour ceux qui ne sont pas encore nés et qui devront
+reprendre le commun sans avoir connu personne.
+
+Il en découle trois obligations de durée :
+
+1. **Langue claire.** Un motif rédigé pour n'être compris que de ses auteurs n'est
+   pas un motif inscrit.
+2. **Formats ouverts et documentés.** Aucune donnée du Registre ne peut dépendre
+   d'un logiciel propriétaire, d'un format fermé ou d'un service qui pourrait
+   cesser d'exister.
+3. **Lisibilité sans outil.** Le Registre doit rester déchiffrable par un être
+   humain disposant de la seule spécification, sans le logiciel qui l'a produit.
+   Ce qui exige un outil pour être lu disparaît avec l'outil.
+
+**Article 26 septies — Indépendance du réseau et de l'horloge.**
+**Aucune fonction essentielle ne suppose le réseau.** Délibérer, voter et vérifier
+doivent rester possibles hors ligne, de proche en proche, ou par transport
+matériel. Une fonctionnalité qui exige d'être connectée pour délibérer ou voter
+est refusée, quelle que soit son élégance.
+
+Les preuves du Registre sont valides **quel que soit le transport** — réseau,
+maillage, radio, support amovible, code visuel ou papier. Aucun canal n'est
+privilégié, et le canal hors-onde est un mode ordinaire, documenté et
+régulièrement exercé : un chemin de secours qui ne sert qu'en catastrophe ne
+fonctionne pas en catastrophe.
+
+**L'ordre du Registre est intrinsèque.** Il découle de sa structure et non d'une
+horloge extérieure. Aucun élément de preuve ne dépend d'un signal de temps ou de
+position reçu de l'extérieur, lesquels sont les plus aisés à brouiller et à
+falsifier. Un horodatage est une indication de confort, jamais une preuve.
+
+**Article 26 octies — Ancrage matériel.**
+Chaque trimestre, l'état du Registre — soixante-quatre caractères — est **imprimé
+et déposé** : aux archives des communautés fédérées, au dépôt légal de la
+Bibliothèque nationale, chez un officier public, et rendu public par voie de
+presse.
+
+Le coût est de quelques feuilles. Le bénéfice est qu'une seule copie survivante du
+Registre puisse, en tout temps et par n'importe qui, être recalculée et confrontée
+à une empreinte imprimée — sans serveur, sans réseau, sans autorité, et sans
+qu'aucun témoin d'origine soit encore en vie.
+
+Aucun dispositif logiciel ne protège d'une destruction électromagnétique. Ce que
+le commun peut garantir n'est pas la survie des appareils, mais **la survie de son
+histoire et sa capacité à reprendre**.
 
 ---
 
@@ -456,6 +604,72 @@ responsabilité de son auteur et peut fonder une révocation.
 Une personne morale extérieure peut, par convention, se lier aux résultats d'un
 scrutin organisé sur l'infrastructure de SERF. La force obligatoire d'un tel vote
 procède alors de cette convention seule, et non de la présente Charte.
+
+---
+
+# TITRE VI bis — Les communautés fédérées
+
+**Article 44 bis — Reproductibilité du dispositif.**
+Toute communauté — immeuble, quartier, village, école, coopérative, syndicat,
+association, entreprise — peut constituer sa propre assemblée, son propre
+registre et sa propre Table Ronde, selon les règles de la présente Charte.
+
+Cette faculté ne s'autorise de personne et ne se demande à personne. Aucun
+agrément, aucune adhésion, aucune redevance ne peut y être opposé.
+
+**Article 44 ter — Subsidiarité.**
+Une décision se prend au **plus petit échelon capable de la porter**. Un échelon
+n'est saisi que de ce que l'échelon inférieur ne peut trancher seul, parce que la
+question déborde son périmètre — jamais parce qu'elle serait jugée importante.
+
+**Aucun échelon n'a autorité sur un autre.** L'échelon supérieur coordonne ce qui
+concerne tous ceux qui le composent, et rien de plus. Ce qui remonte, ce sont des
+questions ; ce qui redescend n'est jamais un ordre.
+
+**Article 44 quater — Existence d'une communauté.**
+Une communauté existe dès lors qu'elle réunit **sept membres au moins**, tient un
+registre, et a défini par écrit son objet — ce sur quoi elle décide, et ce sur quoi
+elle ne décide pas — avant son premier scrutin.
+
+**Le Titre I s'applique à tout échelon**, sans exception ni adaptation. Aucune
+communauté ne peut voter la surveillance de ses membres, leur retirer le droit de
+partir, ni soustraire ses décisions à la vérification.
+
+**Article 44 quinquies — Procédure proportionnée.**
+La procédure s'allège avec la taille. Une procédure plus lourde que la décision
+qu'elle encadre tue le dispositif qu'elle prétend protéger.
+
+| Membres | Organisation | Délibération |
+|---|---|---|
+| 7 à 30 | L'assemblée **est** la Table Ronde | 3 jours |
+| 30 à 500 | Table Ronde de **cinq** sièges — trois tirés au sort, deux élus | 5 jours |
+| Plus de 500 | Structure des Treize (Titre IV) | 7 jours |
+
+Les quatre expressions de l'article 17 valent à tous les échelons. C'est la
+grammaire commune : qui a voté dans son immeuble sait voter dans sa région.
+
+**Article 44 sexies — Fédération et attestation mutuelle.**
+Les communautés fédérées **cosignent mutuellement leurs registres**. Falsifier un
+registre local exige dès lors de falsifier simultanément tous ceux qui
+l'attestent.
+
+Il en résulte que la protection d'une communauté vient de son voisinage, et non
+d'une autorité de contrôle. **Se fédérer, c'est se protéger.**
+
+**Article 44 septies — Adhésion et retrait.**
+On se fédère par décision de chaque communauté, jamais par appartenance
+automatique ni par découpage administratif. On s'en retire de même, sans
+condition, en emportant son registre, son histoire et ses membres.
+
+Ce droit n'est pas seulement une garantie de liberté : c'est ce qui discipline la
+fédération. **Un ensemble qu'on ne peut pas quitter n'a aucune raison de bien
+traiter ceux qui le composent.**
+
+**Article 44 octies — Limites.**
+Les délibérations d'une communauté ne se substituent à aucune procédure légale.
+Elles engagent les personnes morales de droit privé qui s'y lient par leurs
+statuts (art. 44), et préparent — sans jamais la remplacer — la décision des
+autorités publiques.
 
 ---
 

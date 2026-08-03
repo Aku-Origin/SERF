@@ -12,13 +12,15 @@ elles-mêmes.
 
 ---
 
-## Les trois renversements
+## Les cinq renversements
 
 | | Le renversement | Le mécanisme qui le porte |
 |---|---|---|
-| **Santé** | Payer la santé plutôt que la maladie | Vote par conviction ; priorité d'affectation à la prévention, à la maintenance et à l'accessibilité |
+| **Amont** | La santé plutôt que la maladie · l'élévation plutôt que l'éducation | Priorité d'affectation à ce qui augmente une capacité ; vote par conviction |
 | **Souveraineté** | La souveraineté du peuple plutôt qu'une gouvernance de peu | Pondération quadratique : le nombre de personnes décide, pas les montants |
 | **Liberté** | La liberté plutôt que la soumission | L'Enceinte : aucune application n'est interdite, toutes sont encerclées |
+| **Proximité** | L'échelon proche plutôt que le sommet | Fédération à attestation mutuelle : les communautés cosignent leurs registres |
+| **Mémoire** | La mémoire plutôt que l'amnésie | Le *pourquoi* inscrit avec le *quoi* — motifs, objections, et ce qui a fait changer d'avis |
 
 *Une valeur sans mécanisme n'est qu'une déclaration.* Chacune de ces trois lignes
 est adossée à un dispositif écrit dans la [Charte](CHARTE.md) ou dans
@@ -108,6 +110,71 @@ Détail complet : [`CHARTE.md`](CHARTE.md) et
 
 ---
 
+## Le Registre — vérifier, plutôt que croire
+
+**Tout acte de pouvoir est inscrit. Rien de ce qui est inscrit ne peut être
+réécrit. Chaque citoyen le vérifie lui-même.**
+
+Ce n'est pas une blockchain, et c'est mieux pour ce qu'on en attend. Une
+blockchain sert à ordonner des transactions entre inconnus sans identité, au prix
+d'un coût de participation — calcul ou capital. Or pondérer par le capital, c'est
+littéralement une gouvernance de peu : l'inverse de ce qu'on écrit.
+
+Le Registre est un **journal de transparence à arbre de Merkle** — la technologie
+qui surveille les certificats de tout l'Internet depuis 2013. Elle est ennuyeuse,
+éprouvée, et elle tourne sur un téléphone.
+
+**Ce que ça change concrètement :**
+
+- « Mon bulletin est dans l'urne » n'est plus une affirmation du serveur. C'est un
+  calcul que **votre appareil** effectue, hors ligne, en vingt empreintes.
+- Le Registre ne *promet* pas qu'il n'a rien réécrit : il le **prouve**, à chaque
+  publication.
+- **Chaque appareil SERF est un témoin.** Il garde le dernier état signé, exige la
+  preuve, et le confronte à celui des appareils qu'il croise. Sans réglage, sans
+  que vous ayez à le savoir.
+- **La falsification produit sa propre preuve.** Deux états incohérents signés par
+  l'opérateur le condamnent de façon irréfutable — aucune autorité n'a besoin
+  d'arbitrer.
+
+**Et ce qui ne s'inscrit jamais :** le lien entre une personne et son bulletin.
+Transparence totale des actes de pouvoir, secret total du vote individuel. Sans
+cette réserve, un registre universel ne serait pas une avancée démocratique — ce
+serait le plus parfait instrument de rétorsion jamais construit.
+
+Voir [`docs/06-REGISTRE.md`](docs/06-REGISTRE.md).
+
+---
+
+## Les communautés — gouverner à l'échelon proche
+
+Tout ce qui précède décrit **un** commun. Le renversement d'échelle tient à ceci :
+**le dispositif est reproductible.** Un immeuble, un village, une école, une
+coopérative, un syndicat, un quartier — chacun peut tenir son assemblée, son
+registre et sa Table Ronde. Sans autorisation, sans adhésion, sans redevance.
+
+**Sept personnes suffisent.** Et la procédure s'allège avec la taille : jusqu'à
+trente membres, l'assemblée *est* la Table Ronde. Imposer treize délégués à un
+village de quarante serait absurde — c'est ainsi que meurent les dispositifs
+démocratiques, par une procédure plus lourde que la décision qu'elle encadre.
+
+**Une décision se prend au plus petit échelon capable de la porter.** Aucun
+échelon n'a autorité sur un autre : le supérieur coordonne ce qui les concerne
+tous, et rien de plus. Ce qui remonte, ce sont des questions ; ce qui redescend
+n'est jamais un ordre.
+
+**Et les communautés se protègent entre elles.** Chacune cosigne le registre de
+ses voisines. Falsifier les délibérations d'une commune exigerait de falsifier
+simultanément toutes celles qui en détiennent l'empreinte signée. La protection
+vient du voisinage, pas d'une autorité de contrôle — et elle est d'autant plus
+forte que le maillage est dense. **Se fédérer, c'est se protéger.**
+
+On ne conquiert pas un sommet : **on rend inutile qu'il y en ait un.**
+
+Voir [`docs/07-SUBSIDIARITE.md`](docs/07-SUBSIDIARITE.md).
+
+---
+
 ## Documentation
 
 | Document | Contenu |
@@ -118,6 +185,9 @@ Détail complet : [`CHARTE.md`](CHARTE.md) et
 | [`docs/03-REGENCE.md`](docs/03-REGENCE.md) | La Table Ronde : gouvernance, scrutin, modèle de menace |
 | [`docs/04-DESIGN.md`](docs/04-DESIGN.md) | Système de design : couleurs, typographie, principes |
 | [`docs/05-PUBLICATION.md`](docs/05-PUBLICATION.md) | Miroirs, clés, continuité du projet |
+| [`docs/06-REGISTRE.md`](docs/06-REGISTRE.md) | Le Registre : transparence non falsifiable, témoignage citoyen |
+| [`docs/07-SUBSIDIARITE.md`](docs/07-SUBSIDIARITE.md) | Les communautés fédérées : gouverner à l'échelon proche |
+| [`docs/08-RESILIENCE.md`](docs/08-RESILIENCE.md) | Gouverner sans réseau : maillage, radio, papier, IEM |
 | [`ROADMAP.md`](ROADMAP.md) | Jalons, du prototype à la première image flashable |
 | [`JOURNAL.md`](JOURNAL.md) | Journal de bord — les décisions datées, avec leur pourquoi |
 

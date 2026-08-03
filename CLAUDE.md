@@ -46,21 +46,25 @@ proclamation ne confère. **On reprend par le dessous, doucement.**
 
 > **La cryptographie garantit. La procédure protège l'assemblée d'elle-même. La Charte borne les deux.**
 
-**Les trois renversements (Diego, 3 août 2026)** — la boussole du projet, à quoi toute décision se
+**Les cinq renversements (Diego, 3 août 2026)** — la boussole du projet, à quoi toute décision se
 rapporte :
 
-1. **Payer la santé plutôt que la maladie.** Un système qui ne rémunère que la réparation produit
-   mécaniquement ce qu'il faut réparer. Traduit dans le commun : maintenance, durcissement,
-   accessibilité et documentation passent avant le spectaculaire (Charte, art. 18 quater), et le
-   **vote par conviction** fait prévaloir le soutien durable sur l'élan passager.
-2. **La souveraineté du peuple plutôt qu'une gouvernance de peu.** Traduit en arithmétique : la
-   **pondération quadratique** fait peser le nombre de personnes et non les montants. Mille électeurs
-   à une part l'emportent sur un seul à mille parts.
-3. **La liberté plutôt que la soumission.** Traduit en architecture : l'**Enceinte** — on n'interdit
-   rien, on encercle. L'utilisateur garde ses applications *et* reprend ce qu'elles voient.
+1. **La santé plutôt que la maladie · l'élévation plutôt que l'éducation.** Deux faces d'un seul
+   principe : **financer l'amont, pas l'aval** (art. 23). L'éducation comble un manque, l'élévation
+   augmente une capacité. Mécanisme d'appoint : le **vote par conviction**, où le financement
+   s'accumule avec la durée du soutien et non son intensité.
+2. **La souveraineté du peuple plutôt qu'une gouvernance de peu.** **Pondération quadratique**
+   (art. 22) : le nombre de personnes pèse, pas les montants.
+3. **La liberté plutôt que la soumission.** L'**Enceinte** — on n'interdit rien, on encercle.
+4. **L'échelon proche plutôt que le sommet.** **Fédération à attestation mutuelle** (Titre VI bis) :
+   les communautés cosignent les registres les unes des autres. La protection vient du voisinage,
+   pas d'une autorité.
+5. **La mémoire plutôt que l'amnésie.** Le **pourquoi inscrit avec le quoi** (art. 26 sexies) —
+   motifs, objections, et ce qui a fait changer d'avis. Le Registre est écrit pour ceux qui devront
+   reprendre le commun sans avoir connu personne.
 
-Ces trois lignes ne sont pas de l'ornement : chacune a déjà un mécanisme qui la porte. **Une valeur
-sans mécanisme est une déclaration ; on n'en écrit pas.**
+**Une valeur sans mécanisme est une déclaration ; on n'en écrit pas.** Quand Diego formule un
+renversement, lui trouver son mécanisme dans la même séance.
 
 - **Le secret et la vérifiabilité sont cryptographiques, jamais déclaratifs.** Une garantie qui
   repose sur la bonne foi d'un opérateur n'est pas une garantie. Signature aveugle pour séparer
@@ -98,6 +102,15 @@ sans mécanisme est une déclaration ; on n'en écrit pas.**
 | Expressions de vote | **Oui · Non · À nuancer · Ignorer** | « À nuancer » renvoie en délibération. « Ignorer » récuse la question — ce n'est pas l'abstention, qui est le silence |
 | Le reset | Un « Ignorer » majoritaire = 1 point de défiance · **5 points sur 12 mois glissants ouvrent de plein droit le scrutin de dissolution** | C'est le câblage qui empêche « Ignorer » d'être un vote perdu : l'expression répétée arme le seul pouvoir réel de l'Assemblée |
 | Composition des Treize | 12 Corps + **le Siège Ouvert** (tiré au sort parmi tous les Régents) · 6 élus / 6 tirés, mode alternant à chaque renouvellement | Aucun Corps ne s'installe ni ne se professionnalise. *Lecture de l'art. 29 à confirmer — deux autres restent ouvertes* |
+| Le Registre | **Journal de transparence à arbre de Merkle — PAS une blockchain** | Une blockchain résout l'ordre entre inconnus sans identité ; on a déjà une identité. Notre problème est de détecter la *réécriture* — c'est de l'inviolabilité par la preuve, pas du consensus. Et la preuve d'enjeu pondère par la fortune : ce serait écrire l'inverse de l'art. 22 dans l'infrastructure |
+| Sécurisé par chaque citoyen | **Chaque appareil est témoin** : conserve la dernière tête signée, exige la preuve de cohérence, échange avec les appareils croisés | C'est la seule défense contre la vue scindée. Et la triche produit sa propre preuve : deux têtes incohérentes signées par l'opérateur le condamnent sans qu'aucune autorité n'arbitre |
+| Vote | **Droit et devoir**, sans sanction | Tenable seulement grâce aux quatre expressions : le silence n'est jamais nécessaire. Réciproquement le commun doit *rendre le vote votable* — sinon le devoir est un piège |
+| Échelle | **Le dispositif est reproductible à tout échelon** — 7 membres minimum, procédure allégée en dessous de 500 | Imposer treize délégués à un village de quarante tue le dispositif par la procédure. `7-30` : l'assemblée *est* la Table Ronde · `30-500` : cinq sièges · `500+` : les Treize |
+| Fédération | **Les communautés cosignent les registres les unes des autres** | Falsifier un registre local exigerait de falsifier tous ceux qui l'attestent. La protection vient du voisinage — aucune autorité de contrôle nécessaire |
+| Messagerie | **Matrix**, ne rien réinventer — et **jamais de fil algorithmique** | Protocole fédéré déjà retenu par l'État français. Un fil optimisé pour l'engagement produit l'inverse de l'élévation : ligne rouge de conception |
+| Résilience | **Aucune fonction essentielle ne suppose le réseau.** Quatre modes : plein, maillé, différé, papier | Les preuves de Merkle sont valides quel que soit le transport — clé USB, QR, LoRa. Un scrutin municipal entier pèse moins qu'une seconde de vidéo |
+| Horloge et position | **Ne jamais dépendre du GPS.** L'ordre du Registre est intrinsèque | Le signal le plus facile à brouiller et à falsifier. Un horodatage est du confort, jamais une preuve |
+| IEM | **Aucun logiciel n'en protège** — c'est de la physique. On protège les *données* : sauvegarde froide, dispersion, **ancrage papier trimestriel** (BnF, notaire, archives, presse) | 64 caractères imprimés suffisent à revérifier tout le Registre depuis une seule copie survivante, sans réseau ni autorité |
 | Publication | **La visibilité est la protection** — 4 cercles : GitHub, Codeberg, Software Heritage, Radicle | Un dépôt confidentiel disparaît sans que personne s'en aperçoive. Software Heritage archive définitivement et n'est pas un hébergeur : on ne lui demande pas de retirer |
 | Signature | **Père Sans-Ciel / Le Sans-Ciel** — une **charge transmissible**, non un masque (Charte art. 52) | Un masque disparaît avec son porteur ; une charge se transmet. Règle par le haut la continuité |
 | Cloisonnement | **Une seule identité par dépôt** — règle d'hygiène, révisable avant le premier push | Un dépôt public, miroité et archivé ne se corrige pas : une mention lie deux identités pour toujours, dans tous les clones. Après le push, ça ne se défait plus |
@@ -196,7 +209,10 @@ SERF/
 │   ├── 02-ARCHITECTURE.md     ← socle AOSP, l'Enceinte, risques structurants
 │   ├── 03-REGENCE.md          ← gouvernance, scrutin, modèle de menace, résilience
 │   ├── 04-DESIGN.md           ← couleurs, typographie, accessibilité
-│   └── 05-PUBLICATION.md      ← miroirs, clés, continuité, cloisonnement — PRIORITÉ
+│   ├── 05-PUBLICATION.md      ← miroirs, clés, continuité, cloisonnement — PRIORITÉ
+│   ├── 06-REGISTRE.md         ← transparence non falsifiable, témoignage citoyen
+│   ├── 07-SUBSIDIARITE.md     ← les communautés fédérées — l'échelle d'un pays
+│   └── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
 └── .claude/skills/heure/      ← relever l'heure, sans l'annoncer
 ```
 

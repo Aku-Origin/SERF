@@ -61,11 +61,32 @@ C'est délibérément l'inverse de l'ordre intuitif. Raisons :
 
 Contenu :
 
-- [ ] `serf-registre` — journal signé, vérifiable, répliqué
+- [ ] **`serf-preuve`** — bibliothèque de vérification hors ligne. **À écrire en
+      premier**, avant le journal : écrire le vérificateur d'abord oblige à
+      définir ce qui doit être prouvé, et évite un journal dont les preuves
+      seraient commodes à produire mais pénibles à contrôler
+- [ ] **`serf-transport`** — abstraction des canaux (réseau, maillage, LoRa, QR,
+      fichier). **Dès la première ligne du Registre** : ajoutée après coup, elle
+      ne fonctionne jamais, mille suppositions de connectivité s'étant glissées
+      partout entre-temps
+- [ ] `serf-maille` — synchronisation de proche en proche, sans infrastructure
+- [ ] `serf-ancre` — feuilles d'ancrage trimestrielles et suivi des dépôts
+      (archives, BnF, notaire, presse)
+- [ ] `serf-registre` — journal à arbre de Merkle, têtes signées, preuves
+      d'inclusion et de cohérence (partir de **Trillian**, ne pas réimplémenter)
+- [ ] `serf-temoin` — le témoin embarqué : conservation des têtes, vérification,
+      échange entre appareils
+- [ ] `serf-cosignataires` — contresignature k-sur-n, recrutement des entités
 - [ ] `serf-scrutin` — chiffrement homomorphe, dépouillement à seuil
       (partir de **Belenios**, éprouvé et audité, plutôt que de réimplémenter)
 - [ ] `serf-identite` — jeton d'éligibilité par signature aveugle
-- [ ] `serf-forum` — propositions, parrainages, amendements, objections tracées
+- [ ] `serf-forum` — propositions, parrainages, amendements, objections tracées,
+      **motifs et changements d'avis** (Charte, art. 26 sexies)
+- [ ] `serf-communaute` — créer un échelon, définir son objet, calibrer la
+      procédure aux trois paliers (7-30 / 30-500 / 500+)
+- [ ] `serf-federation` — cosignature mutuelle des registres, adhésion, retrait
+- [ ] `serf-parole` — messagerie fédérée sur **Matrix**, liée au registre des
+      objections. **Jamais de fil algorithmique**
 - [ ] Interface Table Ronde, aux couleurs du système de design
 - [ ] **Audit cryptographique externe** — non négociable avant tout usage réel
 - [ ] Premier scrutin réel avec une association pilote
