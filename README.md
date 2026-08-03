@@ -203,7 +203,8 @@ fondateurs le sont : vision, architecture, gouvernance, design, et une
 [Charte v0](CHARTE.md) soumise à délibération. C'est le préalable indispensable —
 les décisions prises ici engagent des années de travail en aval.
 
-Décidé à ce jour : fork AOSP sur base LineageOS · iOS hors périmètre · corps
+Décidé à ce jour : fork AOSP, socle de **lignée GrapheneOS** *(révisé le 3 août —
+LineageOS échoue à l'attestation matérielle)* · iOS hors périmètre · corps
 électoral par parrainage et jeton signé en aveugle · l'Enceinte comme stratégie
 d'adoption · le scrutin prouvé **avant** la ROM.
 

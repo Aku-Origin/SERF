@@ -100,7 +100,7 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Services Google | **Déprivilégiés** (application ordinaire, zéro privilège) — **et non microG** | microG usurpe la signature Google et exige des privilèges système : le composant le moins fiable obtient les droits les plus élevés, pour une compatibilité approximative. Le vrai code sans privilège fait mieux, sur les deux plans |
 | Permissions | **Répondre par un vide ou un sous-ensemble, pas par un refus** | Un refus fait planter l'app ; l'utilisateur accuse SERF et part. Un carnet de contacts vide la laisse fonctionner et ne lui apprend rien |
 | Allocation des ressources | Scrutins de **répartition** et de **conviction**, pondération **quadratique** | Le binaire ne sait pas exprimer une priorité. Le quadratique fait peser le nombre de personnes, non les montants — la souveraineté du peuple écrite en arithmétique |
-| Couleur | `regence-600` en **remplissage uniquement**, jamais en texte sur fond nuit | 3.2:1 — échoue WCAG AA. Texte accentué : `regence-400` ou plus clair |
+| Couleur | `regence-600` = `#C62828`, **remplissage uniquement**. Texte accentué : `regence-400` (AA) ou `regence-300` (chemin de vote) | **Tout contraste s'écrit calculé, jamais estimé.** Les quatre valeurs publiées jusqu'au 3 août étaient fausses, et l'ancien `#A62121` (2.51:1 réel) échouait même au seuil de 3:1 des composants. Contrôle automatisé en CI, non négociable |
 | Les deux corps | **Les Régents** (tous les porteurs) délibèrent · **la Table Ronde** (les Treize) décide | « Table Ronde » = les Treize, jamais l'assemblée. Vocabulaire tranché le 3 août, ne pas régresser |
 | Portée des votes | **Consultatif partout**, sauf deux scrutins contraignants : dissolution de la Table Ronde, et révision de la Charte | Une assemblée qui tranche tout se paralyse ; une assemblée qui ne peut rien est un décor. Le peuple détient le pouvoir de renvoyer, pas celui de cogérer |
 | Expressions de vote | **Oui · Non · À nuancer · Ignorer** | « À nuancer » renvoie en délibération. « Ignorer » récuse la question — ce n'est pas l'abstention, qui est le silence |
@@ -165,8 +165,12 @@ renversement, lui trouver son mécanisme dans la même séance.
 - **Cite la source avant d'affirmer**, ou dis « je ne sais pas — à vérifier dans X ». Vaut
   particulièrement pour le juridique (Constitution, RGPD, DMA) et pour l'état de l'art du vote
   électronique.
-- **Emprunter avant d'écrire.** Belenios pour le scrutin, LineageOS pour le matériel, F-Droid pour
-  le dépôt, UnifiedPush pour les notifications. Le temps d'ingénierie va à la Régence.
+- **Emprunter avant d'écrire.** Belenios pour le scrutin, Trillian pour le journal, la lignée
+  GrapheneOS pour le socle, F-Droid pour le dépôt, UnifiedPush pour les notifications, Matrix pour
+  la parole. Le temps d'ingénierie va à la Régence.
+- **Faire contrôler.** Un agent de contrôle adversarial sur le dépôt, régulièrement. Celui du
+  3 août a trouvé quatre contrastes faux, une contradiction entre l'art. 24 et l'art. 32 aux petits
+  échelons, et un tirage au sort non vérifiable. Aucun de ces défauts n'aurait été vu de l'intérieur.
 - **Audit externe avant tout usage réel du scrutin.** Non négociable. Un vote cassé découvert en
   production tue le projet définitivement — la confiance ne se reconstruit pas.
 - **Todo :** une tâche = un objectif de jalon.
@@ -217,7 +221,7 @@ SERF/
 ├── README.md                  ← porte d'entrée publique
 ├── ROADMAP.md                 ← jalons + arbitrages ouverts
 ├── docs/
-│   ├── 01-VISION.md           ← les trois renversements, cibles, modèle économique
+│   ├── 01-VISION.md           ← les cinq renversements, cibles, modèle économique
 │   ├── 02-ARCHITECTURE.md     ← socle AOSP, l'Enceinte, risques structurants
 │   ├── 03-REGENCE.md          ← gouvernance, scrutin, modèle de menace, résilience
 │   ├── 04-DESIGN.md           ← couleurs, typographie, accessibilité
@@ -227,8 +231,11 @@ SERF/
 │   ├── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
 │   ├── 09-BRIEF-DESIGN.md     ← brief autoportant : écrans, accessibilité, règles
 │   ├── 10-SURFACES.md         ← les ~35 surfaces d'un OS : écrire / adapter / adopter
-│   └── 11-ETAT-DE-LART.md     ← recherche sourcée : vote, gouvernance, droit, socle
-└── .claude/skills/heure/      ← relever l'heure, sans l'annoncer
+│   ├── 11-ETAT-DE-LART.md     ← recherche sourcée : vote, gouvernance, droit, socle
+│   └── 12-FAILLES-OUVERTES.md ← les défauts connus et non corrigés — À LIRE
+└── .claude/skills/
+    ├── heure/                 ← relever l'heure, sans l'annoncer
+    └── coherence/             ← renvois, compteurs, vocabulaire, avant chaque commit
 ```
 
 **Distinction à tenir : `CLAUDE.md` dit *où on en est*, `JOURNAL.md` dit *comment on y est
@@ -242,17 +249,19 @@ repreneur de refaire les mêmes débats. Ne jamais fondre l'un dans l'autre.
 
 ## Repères
 
-- **[CHARTE.md](CHARTE.md)** — le texte qui borne tout le reste. Titre I non révisable ; Titre VII
+- **[docs/12-FAILLES-OUVERTES.md](docs/12-FAILLES-OUVERTES.md)** — **à lire avant d'écrire du
+  code.** Les défauts connus et non corrigés, par gravité.
+- **[CHARTE.md](CHARTE.md)** — le texte qui borne tout le reste. Titre I non révisable ; **Titre IX**
   fait expirer la Régence.
 - **[docs/03-REGENCE.md](docs/03-REGENCE.md)** — le cœur intellectuel : périmètre, corps électoral,
   secret/vérifiabilité/coercition, paradoxe du client, résilience.
-- **[ROADMAP.md](ROADMAP.md) § Arbitrages ouverts** — ce qui reste à trancher : portée statutaire
-  des votes, microG, financement, licence.
+- **[ROADMAP.md](ROADMAP.md) § Arbitrages ouverts** — ce qui reste à trancher : confirmation du
+  socle, calibrage des seuils, financement, licence.
 - **[docs/05-PUBLICATION.md](docs/05-PUBLICATION.md)** — les quatre cercles, l'ordre d'exécution du
   premier push, les clés, la continuité, le cloisonnement des identités.
 - **[JOURNAL.md](JOURNAL.md)** — la chronologie et les revirements.
-- Dépôt distant : `https://github.com/Aku-Origin/SERF.git` — **vide à ce jour**, aucun commit poussé.
-- Mémoire projet : `C:\Users\dcssa\.claude\projects\D--Claude-SERF\memory\` (`MEMORY.md` = index).
+- Dépôt distant : `https://github.com/Aku-Origin/SERF.git` — **public, poussé**. Miroirs Codeberg,
+  Software Heritage et Radicle : **pas encore en place**, priorité du jalon 0 bis.
 
 **Références externes** : Belenios (vote vérifiable, Inria) · GrapheneOS (durcissement) ·
 LineageOS (support matériel) · /e/OS et iodéOS (précédents français dégooglisés) · F-Droid ·
@@ -261,5 +270,7 @@ UnifiedPush · OpenStreetMap.
 ## Environnement
 
 - Windows 11, shell PowerShell principal (Bash POSIX dispo).
-- Dépôt git initialisé le 3 août 2026, branche `main`. **Rien n'est encore commité ni poussé.**
+- Dépôt git initialisé le 3 août 2026, branche `main`, signé `Père Sans-Ciel <sans-ciel@aku-origin.org>`.
+  **Poussé sur GitHub.** *Le domaine `aku-origin.org` reste à enregistrer — il figure dans chaque
+  commit et s'usurpe en attendant.*
 - Console Python : forcer `PYTHONIOENCODING=utf-8` (cp932 bloque l'Unicode).

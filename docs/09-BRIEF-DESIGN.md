@@ -56,24 +56,33 @@ thème clair est un premier rôle, pas un rattrapage.
 
 ### Régence — le rouge, scindé par usage
 
-| Jeton | Hex | Usage |
-|---|---|---|
-| `regence-800` | `#6E1414` | Remplissage pressé |
-| `regence-700` | `#8C1A1A` | Remplissage survolé |
-| `regence-600` | `#A62121` | **Remplissage principal** |
-| `regence-400` | `#D65A5A` | **Texte et bordures accentués** |
-| `regence-300` | `#E99494` | Texte sur fond très sombre |
+*Toutes les valeurs ci-dessous sont **calculées** sur `nuit-900` `#0A1424`,
+formule WCAG 2.x. Celles publiées avant le 3 août 2026 étaient estimées et
+fausses — voir [`04-DESIGN.md`](04-DESIGN.md).*
 
-> **Règle absolue :** `regence-600` ne porte **jamais** de texte sur fond nuit —
-> contraste 3.2:1, échec WCAG AA. Il est un **remplissage**, avec du blanc dessus
-> (6.4:1 ✓). Pour du texte rouge sur fond sombre : `regence-400` minimum.
+| Jeton | Hex | Usage | Mesuré |
+|---|---|---|---|
+| `regence-800` | `#7A1C1C` | Remplissage pressé | — |
+| `regence-700` | `#A32222` | Remplissage survolé | — |
+| `regence-600` | `#C62828` | **Remplissage principal** | **3.28:1** ✓ · blanc dessus **5.62:1** |
+| `regence-400` | `#D65A5A` | Texte accentué, contextes AA | **4.80:1** |
+| `regence-300` | `#E99494` | Texte accentué, **chemin de vote** | **8.02:1** |
+
+> **Règle absolue :** `regence-600` ne porte **jamais** de texte sur fond nuit.
+> C'est un **remplissage**, avec du blanc dessus. Texte rouge sur fond sombre :
+> `regence-400` minimum, `regence-300` obligatoire sur le chemin de vote.
 
 ### Clarté et sémantique
 
 `#FFFFFF` · `#F6F7F9` *(fond clair)* · `#E9ECF1` *(surfaces claires)*
 
-`#2E7D5B` **scellé** (chiffré, vérifié) · `#B8860B` **alerte** (permission
-sensible) · `#C13030` **péril** (non chiffré, fuite)
+`#3E9E75` **scellé** (5.58:1) · `#D4A017` **alerte** (7.77:1) ·
+`#E05252` **péril** (4.83:1)
+
+> **Le péril ne se signale jamais par la teinte seule.** Rouge institutionnel et
+> rouge d'alarme sont indiscernables pour une personne protanope ou deutéranope —
+> les anciennes valeurs étaient à 1.30:1 l'une de l'autre. Un état de péril porte
+> **toujours** un pictogramme et un libellé ; la couleur ne fait que renforcer.
 
 **Le rouge est rare.** Il ne signale que trois choses : un acte régalien (voter,
 signer, révoquer), un état critique, un sceau. Partout, il ne signifie plus rien.

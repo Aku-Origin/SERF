@@ -13,7 +13,8 @@
 # Les clés de signature de l'image système sont la racine de confiance de SERF.
 # Leur fuite permet de forger une image SERF malveillante que les appareils
 # accepteraient au verified boot.
-/keys/
+/keys/*
+!/keys/*.pub
 *.pem
 *.pk8
 *.jks

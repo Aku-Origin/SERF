@@ -43,24 +43,41 @@ stress, en marchant.
 | `nuit-700` | `#182C50` | Bordures, séparateurs |
 | `nuit-600` | `#223A66` | Bordures actives |
 | `nuit-500` | `#2F4B80` | États désactivés |
-| `nuit-400` | `#4C6BA0` | Texte tertiaire |
-| `nuit-300` | `#7A93BD` | Texte secondaire (sombre) |
-| `nuit-200` | `#B0C0D8` | Icônes |
-| `nuit-100` | `#DCE4EF` | Fond principal (thème clair) |
+| `nuit-400` | `#4C6BA0` | Bordures actives, éléments **non textuels** — **3.44:1**, échoue AA en texte |
+| `nuit-350` | `#96AACB` | Texte tertiaire — **7.83:1** ✓ AAA |
+| `nuit-300` | `#7A93BD` | Texte secondaire, contextes **AA** — **5.92:1** ✓ AA · ✗ AAA |
+| `nuit-200` | `#B0C0D8` | Icônes, texte secondaire sur chemin de vote — **9.99:1** ✓ AAA |
+| `nuit-100` | `#DCE4EF` | Fond principal (thème clair) — **14.39:1** en texte sur nuit |
+
+*Corrigé le 3 août : `nuit-400` était donné comme « texte tertiaire » alors qu'il
+échoue au seuil AA de 4.5:1. Jeton `nuit-350` introduit pour ce rôle.*
 
 ### Régence — le rouge, scindé par usage
 
-| Jeton | Hex | Usage | Contraste sur `nuit-900` |
-|---|---|---|---|
-| `regence-800` | `#6E1414` | Remplissage d'état pressé | — (fond) |
-| `regence-700` | `#8C1A1A` | Remplissage survolé | — (fond) |
-| `regence-600` | `#A62121` | **Remplissage principal** (boutons, sceaux) | 3.2:1 — **fonds uniquement** |
-| `regence-400` | `#D65A5A` | **Texte et bordures accentués** | 6.1:1 ✓ AA |
-| `regence-300` | `#E99494` | Texte accentué sur fond très sombre | 9.4:1 ✓ AAA |
+> **Palette corrigée le 3 août 2026.** Les quatre contrastes précédemment annoncés
+> étaient faux — surestimés jusqu'à 27 %, et l'ancien `regence-600` (`#A62121`,
+> **2.51:1** réel contre 3.2 annoncé) échouait même au seuil de 3:1 des composants
+> d'interface. Toutes les valeurs ci-dessous sont **calculées**, formule WCAG 2.x
+> sur `nuit-900` `#0A1424`.
 
-> **Règle stricte :** `regence-600` ne porte **jamais** de texte directement sur
-> fond nuit. Il sert de remplissage, avec du blanc dessus (contraste 6.4:1 ✓).
-> Pour du texte rouge sur fond sombre, utiliser `regence-400` ou plus clair.
+| Jeton | Hex | Usage | Contraste mesuré |
+|---|---|---|---|
+| `regence-800` | `#7A1C1C` | Remplissage pressé | — (fond) |
+| `regence-700` | `#A32222` | Remplissage survolé | — (fond) |
+| `regence-600` | `#C62828` | **Remplissage principal** (boutons, sceaux) | **3.28:1** ✓ composants · blanc dessus **5.62:1** ✓ AA |
+| `regence-400` | `#D65A5A` | Texte accentué — contextes **AA** | **4.80:1** ✓ AA · ✗ AAA |
+| `regence-300` | `#E99494` | Texte accentué — **obligatoire sur le chemin de vote** | **8.02:1** ✓ AAA |
+
+> **Règles strictes.**
+> `regence-600` ne porte **jamais** de texte sur fond nuit : c'est un remplissage,
+> avec du blanc dessus. Pour du texte rouge sur fond sombre, `regence-400`
+> minimum — et `regence-300` dès qu'on est sur le chemin de vote, où la cible est
+> 7:1.
+>
+> **Le double contrainte du remplissage est étroite :** le fond doit atteindre 3:1
+> contre la nuit *et* porter du blanc à 4.5:1. Ces deux exigences tirent en sens
+> inverse. La fenêtre utile va d'environ `#C62828` à `#D23B3B` — au-delà, le blanc
+> décroche. Tout changement de ce jeton se recalcule.
 
 ### Clarté — les neutres
 
@@ -72,15 +89,26 @@ stress, en marchant.
 
 ### Sémantique
 
-| Jeton | Hex | Sens |
-|---|---|---|
-| `etat-scelle` | `#2E7D5B` | Chiffré, vérifié, protégé |
-| `etat-alerte` | `#B8860B` | Attention, permission sensible |
-| `etat-peril` | `#C13030` | Danger, fuite de données, non chiffré |
+| Jeton | Hex | Sens | Contraste mesuré |
+|---|---|---|---|
+| `etat-scelle` | `#3E9E75` | Chiffré, vérifié, protégé | **5.58:1** ✓ AA |
+| `etat-alerte` | `#D4A017` | Attention, permission sensible | **7.77:1** ✓ AAA |
+| `etat-peril` | `#E05252` | Danger, fuite, non chiffré | **4.83:1** ✓ AA |
 
-`etat-peril` et `regence-600` sont volontairement proches mais distincts : le
-rouge institutionnel ne doit pas être confondu avec le rouge d'alarme. En cas de
-doute d'un utilisateur, c'est un défaut de conception à corriger.
+*Corrigés le 3 août : les valeurs précédentes (`#2E7D5B` 3.69:1, `#B8860B`,
+`#C13030` 3.28:1) échouaient toutes au niveau AA en texte. **Le jeton qui signale
+le danger était celui qui se voyait le moins.***
+
+> **Le rouge institutionnel et le rouge d'alarme ne se distinguent pas par la
+> teinte, et il faut cesser de prétendre le contraire.** Les anciennes valeurs
+> étaient à **1.30:1** l'une de l'autre — indiscernables, et l'écart reposait
+> presque entièrement sur la teinte, donc effacé chez une personne protanope ou
+> deutéranope.
+>
+> La distinction ne peut donc pas être chromatique. **Un état de péril porte
+> toujours un pictogramme et un libellé** ; la couleur ne fait que le renforcer.
+> C'est l'application de la règle générale — aucune information par la seule
+> couleur — au cas où elle était le plus tentante à contourner.
 
 ---
 
@@ -128,8 +156,13 @@ monochrome.
 
 Un OS qui exclut n'est pas souverain. Exigences minimales :
 
-- Contraste WCAG AA (4.5:1 texte, 3:1 éléments d'interface) sur **tous** les
-  thèmes, vérifié automatiquement en intégration continue
+- **WCAG 2.2 AAA sur le chemin de vote** (7:1 texte), **AA partout ailleurs**
+  (4.5:1 texte, 3:1 éléments d'interface), sur **tous** les thèmes. Cible
+  détaillée en [`09-BRIEF-DESIGN.md §6`](09-BRIEF-DESIGN.md)
+- **Vérification automatique en intégration continue, non négociable.** Les
+  quatre contrastes annoncés dans ce document jusqu'au 3 août 2026 étaient tous
+  faux : ils avaient été estimés, pas calculés. Un contrôle automatisé les aurait
+  arrêtés le jour même
 - Zones tactiles ≥ 48 dp
 - Aucune information portée par la couleur seule — un vote « pour » ne se
   distingue jamais d'un « contre » par la seule teinte

@@ -95,7 +95,10 @@ Contenu :
 
 ## Jalon 2 — La ROM
 
-- [ ] Choix définitif du socle (LineageOS recommandé, cf. architecture §2)
+- [ ] Choix définitif du socle — **lignée GrapheneOS** recommandée, cf.
+      [architecture §2](docs/02-ARCHITECTURE.md). *Prémisses à réétayer sur
+      sources primaires avant confirmation, cf.
+      [failles ouvertes](docs/12-FAILLES-OUVERTES.md)*
 - [ ] Liste courte d'appareils cibles, avec verified boot vérifié modèle par modèle
 - [ ] Build reproductible, à l'octet près — **préalable à toute distribution**
 - [ ] Substituts souverains par défaut (F-Droid, UnifiedPush, BeaconDB, OSM)
