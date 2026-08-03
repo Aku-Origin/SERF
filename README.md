@@ -49,7 +49,7 @@ dans une *Enceinte* qui contrôle intégralement ce qu'elles voient :
 Réserve honnête : cela ne contourne **pas** l'attestation matérielle forte. Les
 applications bancaires et France Identité exigent un système certifié par Google
 et refuseront. C'est un problème de régulation, pas d'ingénierie — voir
-[architecture §6](docs/02-ARCHITECTURE.md).
+[architecture §7](docs/02-ARCHITECTURE.md).
 
 ---
 
@@ -188,6 +188,7 @@ Voir [`docs/07-SUBSIDIARITE.md`](docs/07-SUBSIDIARITE.md).
 | [`docs/06-REGISTRE.md`](docs/06-REGISTRE.md) | Le Registre : transparence non falsifiable, témoignage citoyen |
 | [`docs/07-SUBSIDIARITE.md`](docs/07-SUBSIDIARITE.md) | Les communautés fédérées : gouverner à l'échelon proche |
 | [`docs/08-RESILIENCE.md`](docs/08-RESILIENCE.md) | Gouverner sans réseau : maillage, radio, papier, IEM |
+| [`docs/09-BRIEF-DESIGN.md`](docs/09-BRIEF-DESIGN.md) | Brief de conception autoportant : écrans, accessibilité, règles |
 | [`ROADMAP.md`](ROADMAP.md) | Jalons, du prototype à la première image flashable |
 | [`JOURNAL.md`](JOURNAL.md) | Journal de bord — les décisions datées, avec leur pourquoi |
 

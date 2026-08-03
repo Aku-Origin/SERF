@@ -1,5 +1,9 @@
 # 04 — Système de design
 
+> **Pour concevoir des écrans, lire plutôt [`09-BRIEF-DESIGN.md`](09-BRIEF-DESIGN.md)** —
+> brief autoportant, avec les écrans, le niveau d'accessibilité visé et les dix
+> règles à ne pas enfreindre. Le présent document est la référence des jetons.
+
 > **Bleu nuit** pour la souveraineté. **Rouge** pour le prestige discret.
 > **Blanc** pour la clarté. Trois couleurs, tenues avec discipline.
 

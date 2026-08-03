@@ -160,7 +160,7 @@ transformer une promesse de vie privée en fait vérifiable.
 | Localisation réseau | BeaconDB (communautaire) | — |
 | Cartographie | OpenStreetMap | — |
 | Sauvegarde | Chiffrée E2E, hébergeur au choix | — |
-| **Attestation forte** | **Aucun** | **Aucun — voir §6** |
+| **Attestation forte** | **Aucun** | **Aucun — voir §7** |
 
 La colonne du milieu est le défaut ; celle de droite est la porte de sortie qui
 évite l'abandon. L'utilisateur choisit, application par application, et voit ce
@@ -173,7 +173,7 @@ des services Google**. Elle ne résout **pas** l'attestation matérielle forte
 (Play Integrity en niveau matériel) : les applications bancaires, France Identité
 et certains DRM vérifient que l'appareil exécute un système certifié par Google,
 et refusent quoi qu'il arrive. Aucune ingénierie honnête n'en vient à bout ;
-c'est un problème de régulation (DMA), traité en §6.
+c'est un problème de régulation (DMA), traité en §7.
 
 **Ne jamais laisser croire le contraire.** Un utilisateur qui migre en croyant
 garder son application bancaire est un utilisateur perdu, et un détracteur créé.
@@ -181,6 +181,31 @@ garder son application bancaire est un utilisateur perdu, et un détracteur cré
 ---
 
 ## 5. Périmètre matériel
+
+### Deux périmètres, à ne jamais confondre
+
+**La Régence est universelle. Le système est ciblé.**
+
+L'application Table Ronde — délibérer, voter, vérifier le Registre — fonctionne
+sur **tout** : Android ancien, iPhone, navigateur web, matériel d'entrée de gamme,
+connexion faible ou absente. **Nul n'est exclu de la gouvernance pour une raison
+de matériel.** Ce serait fatal : écarter la moitié de la population parce qu'elle
+porte le mauvais téléphone reviendrait à reproduire ce qu'on prétend défaire.
+
+SERF, le système d'exploitation, s'installe sur une liste plus étroite — celle où
+le démarrage vérifié est réellement possible, condition de la promesse de sécurité.
+
+**Conséquence stratégique : la Régence recrute, l'OS convertit.** On entre par
+l'application, sur le téléphone qu'on a déjà. On migre quand on veut, ou jamais.
+Personne n'a à changer d'appareil pour commencer à gouverner.
+
+**Réserve à dire, et à afficher :** un bulletin déposé depuis un appareil non
+vérifié offre de moindres garanties d'intégrité du client — le paradoxe du client
+([`03-REGENCE.md §5`](03-REGENCE.md)) y est plus aigu. La vérification d'inclusion et le témoignage fonctionnent toujours ;
+l'équivalence, non. On l'affiche sobrement, sans faire de la peur un argument de
+conversion.
+
+### Le périmètre du système
 
 Un OS sans appareil cible est un exercice de style. Trois stratégies :
 
@@ -200,7 +225,56 @@ qui s'exécute est bien celui qui a été audité.
 
 ---
 
-## 6. Risques structurants
+## 6. La confiance matérielle : mouchards et composants opaques
+
+Tout téléphone contient des composants que son porteur ne contrôle pas et ne peut
+pas auditer. Il faut le regarder en face, parce que la promesse de souveraineté s'y
+joue autant que dans le logiciel.
+
+**Le modem est un ordinateur autonome.** Il exécute son propre système temps réel,
+sous firmware propriétaire signé, certifié par le régulateur. Personne hors du
+circuit constructeur ne peut le lire. S'y ajoutent, selon les appareils, un
+processeur sécurisé, un contrôleur de capteurs toujours actif, et le firmware de
+la carte SIM.
+
+### Ce qui n'est pas vrai
+
+**On ne « désactive » pas un modem par logiciel** si l'on veut du réseau
+cellulaire. Le mode avion logiciel est une *requête adressée au modem* — pas une
+garantie sur son comportement. Prétendre le contraire serait mentir.
+
+**Et un mouchard imposé au niveau matériel ne se retire pas par du code.** Si un
+composant de traçage est soudé et alimenté indépendamment, aucun système
+d'exploitation ne l'éteint. C'est une question de matériel et de droit, pas
+d'ingénierie logicielle.
+
+### Ce qui est vrai, et faisable
+
+**Principe : zéro confiance matérielle.** On ne cherche pas à faire confiance aux
+composants opaques — on les traite comme hostiles et on organise le système en
+conséquence.
+
+| Défense | Ce qu'elle obtient |
+|---|---|
+| **Traiter le modem comme un réseau hostile** | Aucun accès direct à la mémoire, isolation par IOMMU, chiffrement de bout en bout au-dessus de lui. Il achemine des octets qu'il ne peut pas lire |
+| **Interrupteurs matériels** | Une coupure physique de l'alimentation du modem, du micro, de la caméra. **Le seul « éteint » qui en soit un.** Existant : Purism Librem 5, MNT Reform |
+| **Sélection du matériel** | Privilégier les appareils au démarrage documenté, sans coprocesseur de gestion opaque, et dont le constructeur publie ses sources |
+| **Journal d'activité** | Rendre visible ce qui parle, à qui, quand, et combien. On ne peut rien contre ce qu'on ne voit pas |
+| **Ne dépendre d'aucun signal externe** | Ni GPS pour l'heure, ni réseau pour délibérer (voir [`08-RESILIENCE.md`](08-RESILIENCE.md)) |
+
+**Le levier qui manque est réglementaire.** L'interdiction d'un traçage matériel
+imposé relève du droit européen — RGPD, DMA, directive équipements radio. C'est à
+porter politiquement, avec le reste. Un projet de souveraineté qui prétendrait
+résoudre cela par du code se raconterait une histoire.
+
+**Ce que SERF peut promettre honnêtement :** aucun mouchard *logiciel*, aucune
+télémétrie, aucune porte dérobée (Charte, art. 1 et 2, non révisables) ; et pour
+le matériel, l'isolement, la coupure physique quand elle existe, et **la
+visibilité de tout le reste**.
+
+---
+
+## 7. Risques structurants
 
 **Play Integrity — risque existentiel.** Si les applications bancaires et
 France Identité refusent de s'exécuter, SERF reste un objet militant sans

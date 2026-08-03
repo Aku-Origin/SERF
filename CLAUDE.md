@@ -108,6 +108,9 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Échelle | **Le dispositif est reproductible à tout échelon** — 7 membres minimum, procédure allégée en dessous de 500 | Imposer treize délégués à un village de quarante tue le dispositif par la procédure. `7-30` : l'assemblée *est* la Table Ronde · `30-500` : cinq sièges · `500+` : les Treize |
 | Fédération | **Les communautés cosignent les registres les unes des autres** | Falsifier un registre local exigerait de falsifier tous ceux qui l'attestent. La protection vient du voisinage — aucune autorité de contrôle nécessaire |
 | Messagerie | **Matrix**, ne rien réinventer — et **jamais de fil algorithmique** | Protocole fédéré déjà retenu par l'État français. Un fil optimisé pour l'engagement produit l'inverse de l'élévation : ligne rouge de conception |
+| Périmètres | **La Régence est universelle, l'OS est ciblé** (art. 7 ter) | L'app Table Ronde tourne sur tout — iPhone compris. Le système reste sur la liste où le démarrage vérifié est possible. *La Régence recrute, l'OS convertit* : personne n'a à changer de téléphone pour commencer à gouverner |
+| Accessibilité | **WCAG 2.2 AAA sur le chemin de vote**, AA ailleurs · **version FALC obligatoire** (art. 14 bis) | Une proposition sans version intelligible ne peut être mise aux voix. Si voter est un devoir, le commun doit rendre le vote votable — un texte incompréhensible est un texte auquel on ne peut pas consentir |
+| Matériel opaque | **Zéro confiance matérielle** : isoler le modem, interrupteurs physiques, tout rendre visible | On ne désactive pas un modem par logiciel, et un mouchard soudé ne se retire pas par du code. Le levier manquant est réglementaire — le prétendre résolu par du code serait se raconter une histoire |
 | Résilience | **Aucune fonction essentielle ne suppose le réseau.** Quatre modes : plein, maillé, différé, papier | Les preuves de Merkle sont valides quel que soit le transport — clé USB, QR, LoRa. Un scrutin municipal entier pèse moins qu'une seconde de vidéo |
 | Horloge et position | **Ne jamais dépendre du GPS.** L'ordre du Registre est intrinsèque | Le signal le plus facile à brouiller et à falsifier. Un horodatage est du confort, jamais une preuve |
 | IEM | **Aucun logiciel n'en protège** — c'est de la physique. On protège les *données* : sauvegarde froide, dispersion, **ancrage papier trimestriel** (BnF, notaire, archives, presse) | 64 caractères imprimés suffisent à revérifier tout le Registre depuis une seule copie survivante, sans réseau ni autorité |
@@ -212,7 +215,8 @@ SERF/
 │   ├── 05-PUBLICATION.md      ← miroirs, clés, continuité, cloisonnement — PRIORITÉ
 │   ├── 06-REGISTRE.md         ← transparence non falsifiable, témoignage citoyen
 │   ├── 07-SUBSIDIARITE.md     ← les communautés fédérées — l'échelle d'un pays
-│   └── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
+│   ├── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
+│   └── 09-BRIEF-DESIGN.md     ← brief autoportant : écrans, accessibilité, 10 règles
 └── .claude/skills/heure/      ← relever l'heure, sans l'annoncer
 ```
 

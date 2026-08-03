@@ -136,7 +136,7 @@ repose pas sur la bonne foi d'un opérateur — elle est mathématique.
 **Pourquoi pas l'eID étatique**, malgré sa résistance au Sybil supérieure : elle
 crée une dépendance à l'État, contradictoire avec un projet qui se construit par
 le bas ; et son intégration bute de toute façon sur l'attestation Play Integrity
-(cf. [architecture §6](02-ARCHITECTURE.md)), donc elle n'est même pas
+(cf. [architecture §7](02-ARCHITECTURE.md)), donc elle n'est même pas
 prototypable aujourd'hui. Elle reste ouverte comme **second collège optionnel**
 si la Table Ronde le décide un jour.
 

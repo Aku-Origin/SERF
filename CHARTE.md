@@ -105,6 +105,21 @@ Texte en langue claire, longueur tenable, délai suffisant, accessibilité plein
 (art. 6). Un devoir de se prononcer sur des textes incompréhensibles ne serait pas
 un devoir : ce serait un piège.
 
+**Article 7 ter — Universalité d'accès.**
+Nul n'est écarté de la délibération ni du scrutin en raison de l'appareil qu'il
+possède. Les fonctions de gouvernance — délibérer, voter, vérifier le Registre —
+sont accessibles depuis tout matériel d'usage courant, y compris ancien, d'entrée
+de gamme, ou relevant d'un autre système d'exploitation.
+
+Cette obligation est distincte du périmètre d'installation du système lui-même,
+lequel peut être restreint aux appareils où les garanties de sécurité sont
+techniquement tenables. **La gouvernance est universelle ; le système ne l'est
+pas.**
+
+Lorsqu'un bulletin est déposé depuis un appareil dont l'intégrité ne peut être
+vérifiée, cette circonstance est **portée à la connaissance de son auteur**, sans
+que son vote en soit ni écarté ni pondéré.
+
 **Article 8 — Admission par parrainage.**
 L'entrée s'opère par parrainage. Le candidat est présenté par **trois** Régents
 déjà inscrits, qui attestent de son existence distincte et répondent de cette
@@ -164,6 +179,19 @@ Le délai de délibération est un **minimum d'ordre public**. Il ne peut être
 abrégé, y compris par décision unanime. Il protège l'Assemblée contre elle-même :
 c'est la seule défense connue contre le vote d'humeur et contre la mobilisation
 soudaine d'un groupe organisé.
+
+**Article 14 bis — Intelligibilité.**
+Toute proposition soumise au vote comporte une version **facile à lire et à
+comprendre** — une idée par phrase, aucun terme technique non défini sur place.
+Cette version est celle qui s'affiche **par défaut** ; le texte intégral lui est
+adjoint, et non l'inverse.
+
+Une proposition dépourvue de version intelligible **ne peut être mise aux voix**.
+
+Cette exigence découle de l'article 7 bis : si voter est un devoir, alors le
+commun doit rendre le vote votable. **Un texte que l'on ne peut pas comprendre est
+un texte auquel on ne peut pas consentir** — l'intelligibilité n'est donc pas une
+faveur consentie à quelques-uns, mais une condition de validité du scrutin.
 
 **Article 15 — Seuil de mise à l'ordre du jour.**
 Une proposition est inscrite lorsqu'elle réunit le soutien de **1 % des Régents ou
