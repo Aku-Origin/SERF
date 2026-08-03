@@ -106,7 +106,55 @@ les gens lisent avant de voter.**
 
 ## 5. Les écrans à concevoir
 
-### 5.1 — L'ordre du jour
+Deux ensembles, qui suivent la césure de la §7 : **neuf écrans pour la Régence**,
+qui tournent partout — Android ancien, iPhone, navigateur ; **deux écrans de
+plus** qui n'existent que dans le système SERF, parce qu'ils supposent de contrôler
+la pile entière.
+
+| | Écran | Ensemble |
+|---|---|---|
+| 1 | Devenir Régent | Régence |
+| 2 | Mes échelons | Régence |
+| 3 | L'ordre du jour | Régence |
+| 4 | La proposition *(porte le geste des quatre expressions)* | Régence |
+| 5 | La parole | Régence |
+| 6 | Ce que j'ai dit | Régence |
+| 7 | Ce qu'ils ont fait | Régence |
+| 8 | Le Registre | Régence — **consultable sans compte** |
+| 9 | L'état du lien | Régence |
+| 10 | Le tableau de souveraineté | Système seulement |
+| 11 | L'Enceinte | Système seulement |
+
+### 5.0 — Devenir Régent
+
+Le seul parcours d'entrée. On y demande son admission, on suit ses trois
+parrainages, on reçoit son jeton d'éligibilité.
+
+L'écran doit rendre lisible ce qui se passe, parce que c'est contre-intuitif :
+**le parrainage est public, le vote ne l'est pas.** Trois personnes attestent que
+vous existez distinctement ; aucune ne saura jamais comment vous votez. Le dire en
+une phrase, sur cet écran, vaut mieux que dix pages de documentation.
+
+Contrainte : **l'attente est normale et doit être présentée comme telle.** Un
+parrainage prend le temps qu'il prend. Aucune barre de progression, aucune
+relance, aucune incitation à recruter vite — c'est exactement le comportement
+qu'un attaquant voudrait encourager.
+
+### 5.1 — Mes échelons
+
+Les communautés auxquelles on appartient — immeuble, quartier, coopérative,
+métier, commune — et ce qui délibère dans chacune.
+
+**Présentation à plat, jamais en arborescence.** Ces appartenances se recoupent
+sans hiérarchie : ce ne sont pas des poupées russes, c'est un tissu. Une
+présentation en niveaux emboîtés induirait qu'un échelon commande l'autre, ce que
+l'article 44 ter interdit.
+
+Depuis cet écran : rejoindre une communauté, en créer une à sept, et **la
+quitter** — la sortie doit être aussi visible que l'entrée. Un ensemble qu'on ne
+peut pas quitter n'a aucune raison de bien traiter ses membres.
+
+### 5.2 — L'ordre du jour
 
 Ce qui se décide en ce moment. Chronologique, jamais classé par « pertinence ».
 Chaque entrée porte : son titre en langue claire, son étape (délibération /
@@ -116,19 +164,20 @@ scrutin ouvert / clos), le temps restant, et rien d'autre.
 « 68 % de Oui » pendant le vote fabrique un effet de ralliement. Les résultats
 n'apparaissent qu'à la clôture.
 
-### 5.2 — La proposition *(l'écran le plus important)*
+### 5.3 — La proposition *(l'écran le plus important)*
 
 En haut : **la version FALC** — Facile À Lire et à Comprendre. Phrases courtes,
 un sujet par phrase, aucun jargon. **C'est la version par défaut**, pas une
-option d'accessibilité reléguée.
+option d'accessibilité reléguée. Une proposition qui n'en a pas ne peut pas être
+mise aux voix (Charte, art. 14 bis).
 
 En dessous, dépliables : le texte intégral, les objections déposées, les
 amendements, et **ce qui a fait changer d'avis** — le cœur de la mémoire du
 projet.
 
-### 5.3 — Les quatre expressions
+En bas, le geste central : **les quatre expressions.**
 
-C'est le geste central du système. Quatre boutons, jamais trois, jamais cinq :
+#### Le geste — quatre boutons, jamais trois, jamais cinq
 
 | | Ce que ça dit |
 |---|---|
@@ -151,7 +200,25 @@ Contraintes de conception :
 - **Aucune confirmation festive.** Pas d'animation de succès, pas de « merci ».
   Un vote est un acte ordinaire de citoyen, pas une performance.
 
-### 5.4 — Ce que j'ai dit
+### 5.4 — La parole
+
+Là où l'on délibère : objections, amendements, contre-propositions. Adossé à
+**Matrix**, protocole fédéré déjà retenu par l'État français.
+
+Trois contraintes qui le distinguent de tout ce qui existe :
+
+- **Ordre chronologique, point.** Aucun classement par pertinence, popularité ou
+  réaction. Ce qui remonte à l'ordre du jour, c'est ce qui a recueilli des
+  parrainages — jamais ce qui a provoqué des réactions.
+- **La parole peut devenir opposable.** Une objection déposée s'inscrit au
+  Registre : il faudra y répondre. C'est ce qui distingue une délibération d'un
+  fil de commentaires — la parole cesse de se dissiper.
+- **Aucune mesure d'engagement affichée.** Ni compteur de vues, ni approbations,
+  ni badges. **On ne construit pas un réseau social** : un flux optimisé pour
+  l'engagement produit l'exact inverse de l'élévation. Ligne rouge, pas
+  préférence.
+
+### 5.5 — Ce que j'ai dit
 
 L'historique personnel de ses expressions. Chacune accompagnée de **sa preuve
 d'inclusion, vérifiable hors ligne**.
@@ -162,7 +229,7 @@ d'inclusion, vérifiable hors ligne**.
 > le système n'a pas le droit de rompre — et elle doit être visuellement
 > distincte de toute autre coche de l'écosystème logiciel.
 
-### 5.5 — Ce qu'ils ont fait *(l'écran qui n'existe nulle part)*
+### 5.6 — Ce qu'ils ont fait *(l'écran qui n'existe nulle part)*
 
 La redevabilité des Treize. Pour chaque membre : ses **votes nominatifs**, ses
 présences, ses réponses motivées. Pour l'organe : le **compteur de défiance**, son
@@ -174,12 +241,39 @@ présences, ses réponses motivées. Pour l'organe : le **compteur de défiance*
 C'est l'écran que nulle institution n'offre aujourd'hui. Il doit être aussi soigné
 que l'écran de vote.
 
-### 5.6 — Le tableau de souveraineté
+### 5.7 — Le Registre
+
+La consultation publique de la mémoire du commun : décisions, motifs, objections,
+et ce qui a fait changer d'avis.
+
+**Accessible sans compte, sans identification, sans installation.** Lire ce que
+décide un commun ne doit jamais exiger d'en faire partie — c'est ce qui permet à
+un journaliste, un chercheur, un élu ou un curieux de vérifier par lui-même. Un
+registre qu'il faut mériter n'est pas public.
+
+Chaque entrée porte son empreinte, copiable, et **l'état d'ancrage** : la feuille
+trimestrielle qui la couvre, où elle a été déposée.
+
+### 5.8 — L'état du lien
+
+Le mode de fonctionnement en cours : **plein**, **maillé**, **différé**,
+**papier**.
+
+Contrainte de ton : ce n'est **jamais une erreur**. Le système descend, il ne
+tombe pas. « Différé — votre bulletin partira au prochain contact » n'est pas une
+panne à signaler en rouge, c'est un fonctionnement nominal à énoncer calmement.
+Traiter le hors-ligne comme une anomalie apprendrait aux gens qu'ils dépendent du
+réseau, ce qui est précisément ce qu'on défait.
+
+On y trouve aussi : les bulletins en attente d'envoi, l'export en sauvegarde
+froide, et le partage de proche en proche pour aider un voisin à se synchroniser.
+
+### 5.9 — Le tableau de souveraineté *(système seulement)*
 
 Ce que chaque application a tenté : permissions demandées, serveurs contactés,
 volume transmis, heure. La surveillance des surveillants.
 
-### 5.7 — L'Enceinte
+### 5.10 — L'Enceinte *(système seulement)*
 
 Par application : réseau ouvert / filtré / coupé, et pour chaque permission le
 choix entre **réel**, **vide** et **sous-ensemble**. Le vocabulaire doit rendre
@@ -257,16 +351,29 @@ d'ancrage trimestrielle.
 
 ---
 
-## 9. Les dix règles à ne pas enfreindre
+## 9. Les règles à ne pas enfreindre
 
-1. Aucun classement algorithmique, nulle part. L'ordre est chronologique.
-2. Une seule notification système : l'ouverture d'un scrutin.
-3. Les quatre expressions ont le même poids visuel.
-4. Aucun résultat partiel pendant un scrutin ouvert.
-5. Le rouge `regence-600` ne porte jamais de texte.
-6. Aucune information portée par la seule couleur.
-7. « Vérifié » signifie *calculé sur votre appareil*, jamais *affirmé par un
-   serveur*.
-8. Version FALC par défaut, texte intégral en second.
-9. Aucune célébration, aucune récompense, aucune incitation au retour.
-10. Le silence d'un organe est affiché comme un événement, jamais comme un vide.
+*(Sans numéro d'ensemble : une liste qui annonce son propre compte devient fausse
+dès qu'on l'allonge.)*
+
+- **Aucun classement algorithmique, nulle part.** L'ordre est chronologique. Ce
+  qui monte à l'ordre du jour a recueilli des parrainages, jamais des réactions.
+- **Une seule notification système** : l'ouverture d'un scrutin.
+- **Les quatre expressions ont le même poids visuel.** Aucune par défaut, aucune
+  mise en avant, « Ignorer » jamais traité comme un renoncement.
+- **Aucun résultat partiel pendant un scrutin ouvert.**
+- **Aucune mesure d'engagement affichée** : ni vues, ni approbations, ni badges,
+  ni séries. On ne construit pas un réseau social.
+- **Le rouge `regence-600` ne porte jamais de texte.**
+- **Aucune information portée par la seule couleur.**
+- **« Vérifié » signifie *calculé sur votre appareil***, jamais *affirmé par un
+  serveur*.
+- **Version FALC par défaut**, texte intégral en second.
+- **Le Registre se lit sans compte.** Lire ce que décide un commun n'exige jamais
+  d'en faire partie.
+- **Les échelons se présentent à plat**, jamais en arborescence : aucun échelon ne
+  commande un autre.
+- **Le hors-ligne n'est jamais une erreur.** Le système descend, il ne tombe pas.
+  Rien en rouge, rien à réparer.
+- **Aucune célébration, aucune récompense, aucune incitation au retour.**
+- **Le silence d'un organe s'affiche comme un événement**, jamais comme un vide.
