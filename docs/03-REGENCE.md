@@ -199,11 +199,48 @@ Défenses cumulables, aucune suffisante seule :
 - **Vérification hors-bande** — possibilité de vérifier son bulletin depuis un
   appareil tiers, sur un serveur indépendant.
 
-**À dire publiquement, sans détour :** la Régence ne peut pas offrir les
-garanties du vote papier en isoloir. Elle offre autre chose — une gouvernance
-continue, vérifiable, à coût de participation quasi nul, sur un objet qui
-n'était jusqu'ici gouverné par personne. Prétendre l'inverse détruirait la
-confiance à la première contestation sérieuse.
+### Les codes de retour — la défense qui contraint réellement le client
+
+*Correction du 3 août 2026. Ce document affirmait d'abord que le paradoxe était
+sans solution connue. C'était faux, et la solution est déployée depuis des
+années.*
+
+Le mécanisme des **codes de retour**, employé en Suisse depuis Neuchâtel 2015 :
+
+> L'électeur reçoit, **sur un canal indépendant de l'appareil**, une feuille de
+> codes personnalisés. Après avoir déposé son bulletin, le client affiche des
+> codes. S'ils correspondent à ceux du papier, le bulletin enregistré est bien
+> celui qu'il voulait.
+
+**Pourquoi c'est la seule défense qui morde.** Toutes les autres — construction
+reproductible, démarrage vérifié, transparence des binaires — rendent une
+compromission *détectable a posteriori*. Les codes de retour la rendent
+**impossible à dissimuler à l'électeur lui-même, sur-le-champ** : un client
+entièrement compromis ne peut pas afficher un code qu'il n'a aucun moyen de
+connaître.
+
+**Le défaut à ne pas répéter.** La mise en œuvre suisse a été critiquée parce que
+le mode d'emploi n'est expliqué qu'en ligne, sur le site de vote. Celui qui
+contrôle le site contrôle donc l'explication, et peut faire accepter un code faux.
+**L'explication doit voyager avec le papier**, jamais seulement à l'écran.
+
+**Le point ouvert pour SERF :** la remise suppose un canal indépendant, donc
+classiquement une adresse postale — ce qui heurte le pseudonymat du corps
+électoral. Piste à concevoir : remise en main propre par les trois parrains au
+moment de l'admission, ce qui utilise un lien de confiance déjà établi et ne crée
+aucun fichier d'adresses.
+
+### Ce qu'on peut dire, et ce qu'on ne peut pas
+
+La Régence ne peut pas offrir les garanties du vote papier en isoloir — la
+coercition reste hors de portée. Elle offre autre chose : une gouvernance
+continue, vérifiable, à coût de participation quasi nul, sur un objet qui n'était
+jusqu'ici gouverné par personne. **Et avec les codes de retour, une garantie
+d'intégrité du client que le vote papier lui-même n'offre pas** — un bulletin
+glissé dans une urne ne se vérifie plus jamais.
+
+Prétendre à davantage détruirait la confiance à la première contestation
+sérieuse.
 
 ---
 

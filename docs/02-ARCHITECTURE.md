@@ -47,19 +47,42 @@ Trois candidats, avec des compromis très différents.
 | **LineageOS** | Support de ~200 appareils déjà fait, communauté active | Durcissement sécurité faible ; il faut le reconstruire |
 | **GrapheneOS** | Le durcissement le plus abouti au monde | Support Pixel uniquement ; portage ailleurs = quasi-réécriture |
 
-**Recommandation : LineageOS comme base, durcissement inspiré de GrapheneOS.**
+### Décision rouverte — 3 août 2026
 
-Le raisonnement : le support matériel est le coût le plus lourd et le moins
-gratifiant du projet. LineageOS l'offre gratuitement sur un large parc, y compris
-du matériel d'occasion — ce qui sert directement l'argument de souveraineté
-(prolonger la vie des appareils plutôt que dépendre d'achats neufs). Le
-durcissement, lui, est du code que l'on peut porter incrémentalement, jalon par
-jalon.
+> **La recommandation initiale était LineageOS. La recherche l'a invalidée.**
+> Détail et sources : [`11-ETAT-DE-LART.md §4`](11-ETAT-DE-LART.md).
 
-Le contre-argument mérite d'être entendu : GrapheneOS offre une sécurité
-supérieure *tout de suite*, et « sécurité » est un des trois piliers annoncés.
-Mais s'enfermer sur Pixel — matériel américain, non disponible en France par
-canal souverain — est en contradiction frontale avec le récit du projet.
+Le raisonnement initial : le support matériel est le coût le plus lourd du projet,
+LineageOS l'offre gratuitement sur un large parc d'occasion, et s'enfermer sur du
+Pixel — matériel américain — contredirait le récit de souveraineté.
+
+**Trois faits l'ont défait.**
+
+**LineageOS ne peut structurellement pas tenir la promesse.** Les ROM non
+officielles échouent à l'attestation matérielle parce qu'elles rompent la chaîne
+de certification — donc pas d'applications bancaires, donc pas d'adoption. Et sur
+la majorité des appareils concernés, le démarrage vérifié ne peut même pas être
+reverrouillé. **Un socle qui n'atteste ni ne verrouille ne porte aucun des trois
+piliers.**
+
+**L'objection « Pixel uniquement » est en train de tomber.** GrapheneOS a annoncé
+en mars 2026 un partenariat avec Motorola, appareils visés fin 2026 / début 2027.
+Notre jalon ROM vient après le jalon scrutin — soit dans plusieurs années. Le
+verrou n'existera probablement plus à cette échéance.
+
+**Une voie légitime existe pour l'attestation**, que j'ignorais : l'API
+d'attestation matérielle standard d'Android est plus forte que Play Integrity et
+sait mettre en liste blanche les clés d'un système alternatif. Ce n'est donc pas
+une lutte perdue mais un travail de plaidoyer appuyé sur un standard — et le
+résultat est déjà visible, la plupart des banques de détail européennes
+fonctionnant sur GrapheneOS en 2026.
+
+**Recommandation révisée : lignée GrapheneOS, appareils issus des partenariats
+constructeurs.** On renonce au parc d'occasion large, qui était un argument
+écologique et social réel — mais il ne compensait pas l'impossibilité de tenir la
+promesse de sécurité.
+
+*À confirmer par Diego : c'est une révision de fond, pas un ajustement.*
 
 ---
 

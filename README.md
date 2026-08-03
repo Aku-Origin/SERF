@@ -190,6 +190,7 @@ Voir [`docs/07-SUBSIDIARITE.md`](docs/07-SUBSIDIARITE.md).
 | [`docs/08-RESILIENCE.md`](docs/08-RESILIENCE.md) | Gouverner sans réseau : maillage, radio, papier, IEM |
 | [`docs/09-BRIEF-DESIGN.md`](docs/09-BRIEF-DESIGN.md) | Brief de conception autoportant : écrans, accessibilité, règles |
 | [`docs/10-SURFACES.md`](docs/10-SURFACES.md) | Les ~35 surfaces d'un OS : ce qu'on écrit, adapte ou adopte |
+| [`docs/11-ETAT-DE-LART.md`](docs/11-ETAT-DE-LART.md) | Recherche sourcée : vote vérifiable, précédents, droit français, socle |
 | [`ROADMAP.md`](ROADMAP.md) | Jalons, du prototype à la première image flashable |
 | [`JOURNAL.md`](JOURNAL.md) | Journal de bord — les décisions datées, avec leur pourquoi |
 

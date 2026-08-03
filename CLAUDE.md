@@ -87,7 +87,11 @@ renversement, lui trouver son mécanisme dans la même séance.
 
 | Sujet | Décision | Pourquoi |
 |---|---|---|
-| Socle | Fork AOSP, base **LineageOS**, durcissement inspiré GrapheneOS | Le support matériel est le coût le plus lourd et le moins gratifiant ; GrapheneOS enfermerait sur Pixel, matériel américain — contradiction frontale avec le récit |
+| Socle | ~~LineageOS~~ → **lignée GrapheneOS**, appareils des partenariats constructeurs. **Rouvert le 3 août, à confirmer** | Les ROM non officielles échouent à l'attestation et ne reverrouillent pas le démarrage : pas de banques, pas d'adoption, aucun des trois piliers. Et le verrou Pixel tombe — partenariat Motorola annoncé en mars 2026 |
+| Registrar du scrutin | **Éclaté en seuil : 3 émetteurs sur 5, jamais unique** (art. 10) | Une preuve mécanisée sur Belenios a établi que le secret du bulletin ne tient pas si l'organe d'éligibilité triche — alors que son rôle paraît étranger au scrutin. Faille latente chez nous jusqu'au 3 août |
+| Paradoxe du client | **Les codes de retour** — feuille papier remise hors appareil, comparée après le vote | Seule défense qui contraigne un client compromis *sur-le-champ* : il ne peut afficher un code qu'il n'a jamais vu. **L'explication doit voyager avec le papier** — la faille de la mise en œuvre suisse est de l'expliquer en ligne |
+| Portée des votes | **Résolu** : une association loi 1901 peut statutairement se lier à ses scrutins | Liberté statutaire quasi totale, et les statuts ont force de loi pour les membres. L'obligation devient opposable devant le juge civil |
+| La Parole | **Aucun fil de réponses** · cartographier l'accord à la manière de Pol.is | vTaiwan l'a éprouvé : interdire la réplique supprime la dynamique d'affrontement. Le regroupement par proximité de position décrit, il ne hiérarchise pas — seule exception admise au refus de l'algorithmique |
 | iOS | **Hors périmètre**, définitivement | Bootloader verrouillé sans voie de déblocage. Le promettre coûterait toute crédibilité au premier examen technique |
 | Identité électorale | **Parrainage (3 parrains, 5/an max) + jeton d'éligibilité signé en aveugle** | Aucune dépendance à l'État, cohérent avec « par le dessous », constructible sans partenaire externe. Montée en charge lente : assumée |
 | Ordre des jalons | **Le scrutin avant la ROM** | On teste le risque n°1 tôt. Ne dépend d'aucun matériel, d'aucun fork, d'aucune certification |
@@ -221,7 +225,8 @@ SERF/
 │   ├── 07-SUBSIDIARITE.md     ← les communautés fédérées — l'échelle d'un pays
 │   ├── 08-RESILIENCE.md       ← gouverner sans réseau : maillage, LoRa, papier, IEM
 │   ├── 09-BRIEF-DESIGN.md     ← brief autoportant : écrans, accessibilité, règles
-│   └── 10-SURFACES.md         ← les ~35 surfaces d'un OS : écrire / adapter / adopter
+│   ├── 10-SURFACES.md         ← les ~35 surfaces d'un OS : écrire / adapter / adopter
+│   └── 11-ETAT-DE-LART.md     ← recherche sourcée : vote, gouvernance, droit, socle
 └── .claude/skills/heure/      ← relever l'heure, sans l'annoncer
 ```
 

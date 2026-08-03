@@ -13,6 +13,88 @@
 
 ---
 
+## 2026-08-03, 11h30 — Publication, et une recherche qui corrige deux décisions
+
+**Poussé sur GitHub** : https://github.com/Aku-Origin/SERF — public, cinq commits.
+Compétence `coherence` ajoutée, après m'être fait prendre deux fois dans la même
+séance par des renvois périmés (`§6` devenu faux après insertion, « sept écrans »
+resté dans un titre après changement de la liste).
+
+### Ce que la recherche a corrigé
+
+**Une faille active dans notre propre texte.** L'analyse à preuves mécanisées de
+Belenios a établi que **le secret du bulletin ne tient pas si l'organe
+d'éligibilité se comporte mal** — alors même que son rôle paraît étranger au
+scrutin. Or notre émetteur de jetons aveugles *est* cet organe. La faille était
+chez nous depuis le matin, sous une phrase qui affirmait que la séparation était
+« cryptographique et non déclarative ». Corrigé : article 10, émetteur éclaté en
+seuil, trois sur cinq.
+
+Leçon de méthode, plus large que le cas : **une analyse à la main manque les
+hypothèses qu'une preuve mécanisée trouve.** Pour un système de vote, la
+vérification formelle n'est pas un luxe académique.
+
+**Le paradoxe du client n'était pas insoluble.** J'avais écrit qu'il n'avait « pas
+de solution parfaite connue ». Les **codes de retour** — feuille papier reçue hors
+appareil, comparée après le vote — sont déployés en Suisse depuis 2015. C'est la
+seule défense qui contraigne un client compromis *sur-le-champ* plutôt qu'a
+posteriori : il ne peut pas afficher un code qu'il n'a jamais vu. Et le défaut
+documenté de la mise en œuvre suisse est la vraie leçon : **le protocole n'y est
+expliqué qu'en ligne**, donc celui qui contrôle le site contrôle l'explication.
+L'explication doit voyager avec le papier.
+
+Point ouvert : la remise suppose un canal indépendant, classiquement postal, ce
+qui heurte le pseudonymat. Piste — remise en main propre par les trois parrains à
+l'admission.
+
+**Le socle : j'avais tort.** J'avais écarté GrapheneOS parce qu'il enfermait sur
+du Pixel. Mais LineageOS **échoue structurellement à l'attestation matérielle** et
+ne reverrouille pas le démarrage sur la plupart des appareils — donc pas
+d'applications bancaires, donc pas d'adoption, donc aucun des trois piliers. Et
+mon objection tombe : partenariat GrapheneOS–Motorola annoncé en mars 2026,
+appareils fin 2026/début 2027, soit avant notre jalon ROM.
+
+Troisième fait que j'ignorais : l'**API d'attestation matérielle standard**
+d'Android est plus forte que Play Integrity et sait mettre en liste blanche les
+clés d'un système alternatif. L'attestation n'est donc pas une lutte perdue mais
+un plaidoyer appuyé sur un standard — et la plupart des banques de détail
+européennes fonctionnent déjà sur GrapheneOS en 2026, ce qui valide l'Enceinte en
+production.
+
+### Ce que la recherche a validé
+
+**vTaiwan valide l'article 35 par son échec.** La référence mondiale de la
+délibération numérique repose aujourd'hui sur des bénévoles et voit sa portée
+limitée parce que **le gouvernement n'est pas tenu de considérer ses conclusions**.
+C'est exactement le trou que comble l'obligation de réponse motivée. Une
+délibération que personne n'est tenu d'examiner s'éteint — non par désintérêt,
+mais parce que participer devient rationnellement absurde.
+
+**Decidim avertit.** Plateforme la plus déployée institutionnellement, et critique
+académique sévère : la participation y est réduite à quelques options de faible
+qualité, le débat ouvert absent ou très limité. L'outil ne protège pas d'une
+institution qui le configure. D'où l'intérêt de nos articles 35, 37 et 38, qui
+contraignent l'organe et non seulement l'assemblée.
+
+**Pol.is offre deux mécanismes à reprendre** : interdire les réponses — ce qui
+supprime la dynamique d'affrontement — et regrouper les participants par proximité
+de position pour faire apparaître les accords que des camps opposés ignorent
+avoir. Le second décrit sans hiérarchiser : seule exception admise à notre refus
+du traitement algorithmique.
+
+**Le droit français est favorable.** La loi de 1901 ne définit pas les organes de
+gouvernance ; la liberté statutaire est quasi totale et **les statuts ont force de
+loi pour les membres**. Des statuts peuvent donc lier la structure à ses scrutins
+contraignants, opposables devant le juge civil. L'arbitrage n°1 est résolu.
+
+**Et le RGPD ne s'oppose pas au Registre.** La CNIL retient exactement le
+mécanisme de notre article 26 quinquies — engagement cryptographique, empreinte à
+clé, destruction de la clé rendant l'information irretrouvable. Nous sommes
+alignés sur la doctrine de l'autorité plutôt que sur une interprétation
+personnelle.
+
+---
+
 ## 2026-08-03, 11h02 — Registre, communautés, résilience
 
 **Premier commit poussé dans l'histoire du projet : `f24c512`**, signé

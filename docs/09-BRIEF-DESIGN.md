@@ -218,6 +218,16 @@ Trois contraintes qui le distinguent de tout ce qui existe :
   ni badges. **On ne construit pas un réseau social** : un flux optimisé pour
   l'engagement produit l'exact inverse de l'élévation. Ligne rouge, pas
   préférence.
+- **Aucun fil de réponses.** On dépose une position, on ne réplique pas à
+  quelqu'un. Contre-intuitif, et cela supprime d'un coup la dynamique
+  d'affrontement qui rend tout forum inutilisable. Mécanisme éprouvé par Pol.is,
+  l'outil de vTaiwan ([`11-ETAT-DE-LART.md §2`](11-ETAT-DE-LART.md)).
+- **Cartographier l'accord, pas le conflit.** Regrouper les participants par
+  proximité de position fait apparaître ce sur quoi des camps opposés s'accordent
+  déjà — l'inverse exact de ce que produit un fil de discussion. C'est un usage
+  d'analyse qui **ne classe rien et n'amplifie rien** : il décrit. Seule
+  exception admise au refus du traitement algorithmique, et elle doit rester
+  visualisation, jamais hiérarchisation.
 
 ### 5.4 bis — La messagerie *(privée)*
 

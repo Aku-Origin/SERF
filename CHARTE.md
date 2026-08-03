@@ -13,10 +13,20 @@ une machine qu'il a payée sans en détenir les règles. Il ne peut ni savoir ce
 s'y exécute, ni s'y opposer, ni emporter ce qu'il y a produit. Il est serf d'une
 terre dont le seigneur est ailleurs.
 
-SERF est constitué pour renverser ce rapport, et trois renversements le guident :
-**payer la santé plutôt que la maladie ; la souveraineté du peuple plutôt qu'une
-gouvernance de peu ; la liberté plutôt que la soumission.** Chacun est porté dans
-ce texte par un mécanisme, car une valeur sans mécanisme n'est qu'une déclaration.
+SERF est constitué pour renverser ce rapport. Cinq renversements le guident :
+
+- **la santé plutôt que la maladie, l'élévation plutôt que l'éducation** — on
+  finance l'amont, non l'aval *(art. 23)* ;
+- **la souveraineté du peuple plutôt qu'une gouvernance de peu** — le nombre de
+  personnes pèse, non les montants *(art. 22)* ;
+- **la liberté plutôt que la soumission** — on n'interdit rien, on encercle ;
+- **l'échelon proche plutôt que le sommet** — les communautés s'attestent
+  mutuellement *(Titre VI bis)* ;
+- **la mémoire plutôt que l'amnésie** — le pourquoi est inscrit avec le quoi
+  *(art. 26 sexies)*.
+
+Chacun est porté dans ce texte par un mécanisme, **car une valeur sans mécanisme
+n'est qu'une déclaration**.
 
 La **Régence** administre ce commun dans l'attente que son corps électoral soit en
 état de régner. Elle est, par construction, **temporaire**. Les délais et seuils
@@ -139,8 +149,19 @@ votes émis.
 La séparation entre l'admission et le scrutin est **cryptographique et non
 déclarative** : le Régent admis obtient un jeton d'éligibilité signé en aveugle.
 L'organe émetteur certifie un droit de vote sans pouvoir observer le bulletin ;
-l'urne vérifie le jeton sans pouvoir identifier son porteur. Aucun opérateur,
-aucune coalition d'opérateurs, ne peut relier un bulletin à un Régent.
+l'urne vérifie le jeton sans pouvoir identifier son porteur.
+
+**L'organe émetteur est éclaté en seuil.** Le jeton procède du concours d'au moins
+**trois émetteurs distincts sur cinq**, et aucun d'eux ne détient seul de quoi
+relier un jeton à une personne. Il ne peut être unique, ni relever d'une seule
+personne morale.
+
+Cette exigence n'est pas une précaution de rédaction. L'analyse à preuves
+mécanisées d'un protocole de vote éprouvé a établi que **le secret du bulletin ne
+tient pas si l'organe d'éligibilité se comporte mal** — alors même que son rôle
+paraît étranger au scrutin. Un émetteur unique, si scrupuleux soit-il, est un point
+où le secret du vote de tous repose sur la conduite d'un seul. Voir
+[`docs/11-ETAT-DE-LART.md §1`](docs/11-ETAT-DE-LART.md).
 
 **Article 11 — Annulation d'une chaîne frauduleuse.**
 S'il est établi qu'un Régent a parrainé des identités fictives, son parrainage et

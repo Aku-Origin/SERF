@@ -130,10 +130,19 @@ Ce qui n'est possible qu'en contrôlant la pile entière.
 
 Décisions bloquantes, à trancher avant le jalon 1. Chacune engage des années.
 
-**1. Portée des votes.** Consultatifs, ou statutairement contraignants pour la
-structure porteuse ? Le second est la seule version qui tient la promesse — et
-exige des statuts rédigés pour cela. Bloquant pour le choix de la forme
-juridique.
+**1. ~~Portée des votes.~~ — Résolu le 3 août 2026.** La loi de 1901 ne définit
+pas les organes de gouvernance d'une association : la liberté statutaire est
+quasi totale, et **les statuts ont force de loi pour les membres**. Des statuts
+peuvent donc lier la structure aux scrutins contraignants de la Charte, et
+l'obligation devient opposable devant le juge civil.
+Voir [`docs/11-ETAT-DE-LART.md §3`](docs/11-ETAT-DE-LART.md).
+*Reste à faire rédiger la clause de liaison par un juriste — cela ne se règle pas
+par recherche documentaire.*
+
+**1 bis. Le socle — rouvert le 3 août 2026.** La recommandation LineageOS est
+invalidée : ces ROM échouent à l'attestation matérielle et ne reverrouillent pas
+le démarrage. Recommandation révisée : lignée GrapheneOS, appareils issus des
+partenariats constructeurs. **À confirmer par Diego.**
 
 **2. Calibrage des seuils de la Charte.** 3 parrains, 5 parrainages par an, 7
 jours de délibération, 1 % ou 100 soutiens, 36 mois de Régence : ces nombres sont
