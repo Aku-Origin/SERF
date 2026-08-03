@@ -106,6 +106,10 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Expressions de vote | **Oui · Non · À nuancer · Ignorer** | « À nuancer » renvoie en délibération. « Ignorer » récuse la question — ce n'est pas l'abstention, qui est le silence |
 | Le reset | Un « Ignorer » majoritaire = 1 point de défiance · **5 points sur 12 mois glissants ouvrent de plein droit le scrutin de dissolution** | C'est le câblage qui empêche « Ignorer » d'être un vote perdu : l'expression répétée arme le seul pouvoir réel de l'Assemblée |
 | Composition des Treize | 12 Corps + **le Siège Ouvert** (tiré au sort parmi tous les Régents) · 6 élus / 6 tirés, mode alternant à chaque renouvellement | Aucun Corps ne s'installe ni ne se professionnalise. *Lecture de l'art. 29 à confirmer — deux autres restent ouvertes* |
+| Codes de retour papier | **Écartés (Diego, 3 août)** — pousser le sans-confiance à la place | L'enveloppe s'ouvre en transit, la logistique est absurde, et une vérification post-hoc constate le dégât sans l'empêcher. Limite exacte à tenir : la cryptographie rend sans confiance tout ce qui suit le départ du bulletin, **jamais l'appareil lui-même** — c'est une frontière, pas un trou. Sur SERF elle est petite et auditable (démarrage vérifié, build reproductible, attestation) ; ailleurs on le dit |
+| Financement | **Sujet non ouvert par Diego** — retiré des besoins | C'est moi qui l'avais listé. À ne pas remettre tant qu'il ne le soulève pas |
+| Structure juridique | **Pas urgent, et pas une source de légitimité** | Elle sert à trois choses prosaïques : détenir de l'argent qui ne soit pas celui de Diego, éviter qu'il réponde personnellement, rendre un vote opposable entre membres. Utile quand il y aura de l'argent ou des membres |
+| Audit | **Revue de sécurité par Fable en première passe.** Audit crypto externe plus tard — piste : Quarkslab (français, qualification ANSSI) | Décidé le 3 août |
 | Le Registre | **Journal de transparence à arbre de Merkle — PAS une blockchain** | Une blockchain résout l'ordre entre inconnus sans identité ; on a déjà une identité. Notre problème est de détecter la *réécriture* — c'est de l'inviolabilité par la preuve, pas du consensus. Et la preuve d'enjeu pondère par la fortune : ce serait écrire l'inverse de l'art. 22 dans l'infrastructure |
 | Sécurisé par chaque citoyen | **Chaque appareil est témoin** : conserve la dernière tête signée, exige la preuve de cohérence, échange avec les appareils croisés | C'est la seule défense contre la vue scindée. Et la triche produit sa propre preuve : deux têtes incohérentes signées par l'opérateur le condamnent sans qu'aucune autorité n'arbitre |
 | Vote | **Droit et devoir**, sans sanction | Tenable seulement grâce aux quatre expressions : le silence n'est jamais nécessaire. Réciproquement le commun doit *rendre le vote votable* — sinon le devoir est un piège |
@@ -155,6 +159,28 @@ renversement, lui trouver son mécanisme dans la même séance.
 ---
 
 ## Façon de travailler
+
+### Le rythme — règle apprise le 3 août 2026, à ses dépens
+
+**Diego n'a pas lu le dépôt.** En une séance, j'ai produit cinq mille lignes sur douze sujets, dont
+une Charte de cinquante-six articles écrite en son nom. Il s'est retrouvé avec « un article 12
+mauvais sans savoir ce que c'est ». Son diagnostic : *« tu es parti dans tous les sens. »* Il a
+raison, et c'est un défaut de méthode, pas de volume.
+
+1. **Expliquer avant d'écrire.** Un mécanisme se présente en prose, on en discute, *ensuite* il entre
+   dans un document. Jamais l'inverse. Un texte que Diego n'a pas compris n'engage rien — et une
+   Charte qu'il n'a pas lue ne le représente pas.
+2. **Un sujet à la fois, fini avant le suivant.** Pas six documents dans un tour.
+3. **Ne jamais déduire un accord.** Le 3 août, « on reprend un OS et on le conçoit » a été transformé
+   en validation du socle GrapheneOS. C'était faux. Une décision n'est actée que si Diego l'a
+   énoncée sur ce point précis.
+4. **Inline plutôt que workflow.** Un fan-out produit plus de texte plus vite : c'est la maladie, pas
+   le remède. Todo séquentiel + agent de contrôle en fin d'étape.
+5. **Agent de contrôle adversarial en fin d'étape.** Celui du 3 août a trouvé quatre contrastes faux,
+   une contradiction entre les art. 24 et 32, et un tirage au sort non vérifiable. Rien de cela
+   n'était visible de l'intérieur.
+
+### Cadence
 
 - **Un jalon à la fois** ; le jalon courant est le *goal*. Jalon 0 (fondations) → 1 (Régence hors
   OS) → 2 (ROM) → 3 (intégration). Voir **[ROADMAP.md](ROADMAP.md)**.
