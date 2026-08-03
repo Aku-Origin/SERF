@@ -50,7 +50,15 @@ de renvoyer.
 
 > Les articles du présent titre ne sont **pas révisables**. Aucun scrutin, aucune
 > majorité, aucune urgence, aucune injonction ne peut les suspendre ni les
-> abroger. Une version de SERF qui y contreviendrait n'est pas une version de SERF.
+> abroger.
+>
+> **Ils n'énoncent pas ce que nous prétendons savoir. Ils énoncent ce que nous
+> acceptons d'avance : d'être vérifiés, d'être contredits, d'être quittés.**
+>
+> Nous ne garantissons pas d'avoir raison. Nous garantissons qu'avoir tort ne
+> coûtera rien à ceux qui le constateront.
+>
+> Une version de SERF qui y contreviendrait n'est pas une version de SERF.
 
 **Article 1 — Absence de collecte non consentie.**
 Aucune donnée n'est transmise hors de l'appareil sans un consentement explicite,
@@ -86,8 +94,26 @@ y compris par ses propres organes.
 **Article 6 — Non-discrimination et accessibilité.**
 Nul n'est écarté en raison de son handicap, de sa langue, de son appareil ou de
 ses moyens. Toute fonction relative à la délibération et au scrutin est utilisable
-de manière autonome par une personne en situation de handicap. Une procédure de
-vote qui exige l'assistance d'un tiers est nulle.
+**de manière autonome** par une personne en situation de handicap.
+
+Une procédure qui contraint quelqu'un à se faire assister ne le prive pas
+seulement de son autonomie : **elle lui retire le secret de son vote**, puisqu'il
+doit le dicter à un tiers. C'est à ce titre que l'accessibilité figure au socle, et
+non par courtoisie.
+
+En conséquence :
+
+1. **Un scrutin ne s'ouvre pas** si le contrôle d'accessibilité échoue. La
+   prévention est en amont.
+2. S'il s'ouvre malgré tout et qu'une catégorie de personnes n'a pu voter seule,
+   **le scrutin n'est pas annulé : il est rouvert à leur bénéfice.** Nul ne perd
+   son vote, et ceux qui ont été empêchés obtiennent le leur.
+3. L'empêchement inscrit un point de défiance à l'organe qui a laissé publier.
+
+**Aucun manquement à la présente Charte ne peut fonder l'annulation d'un
+scrutin.** Qui pourrait annuler pourrait opposer son veto — un pouvoir trop grand
+pour figurer dans un texte que nul ne peut réviser. On répare, on rouvre, on
+sanctionne ; on n'efface pas ce que des gens ont exprimé.
 
 ---
 
@@ -118,13 +144,17 @@ un devoir : ce serait un piège.
 **Article 7 ter — Universalité d'accès.**
 Nul n'est écarté de la délibération ni du scrutin en raison de l'appareil qu'il
 possède. Les fonctions de gouvernance — délibérer, voter, vérifier le Registre —
-sont accessibles depuis tout matériel d'usage courant, y compris ancien, d'entrée
-de gamme, ou relevant d'un autre système d'exploitation.
+sont accessibles depuis **tout matériel d'usage courant**, quel qu'en soit le
+système d'exploitation.
 
-Cette obligation est distincte du périmètre d'installation du système lui-même,
-lequel peut être restreint aux appareils où les garanties de sécurité sont
-techniquement tenables. **La gouvernance est universelle ; le système ne l'est
-pas.**
+Cette obligation est distincte du périmètre d'installation du système lui-même.
+Celui-ci ne s'installe que là où il peut **demeurer à jour** : aucun appareil sous
+SERF ne conserve un noyau ou des correctifs périmés.
+
+**La gouvernance est universelle ; le système est tenu à jour.** Ce n'est pas le
+commun qui écarte le matériel ancien — c'est son constructeur, lorsqu'il cesse de
+livrer les mises à jour dont dépendent les couches que nous ne maîtrisons pas.
+Cela se dit publiquement et sans détour, y compris lorsque cela déplaît.
 
 Lorsqu'un bulletin est déposé depuis un appareil dont l'intégrité ne peut être
 vérifiée, cette circonstance est **portée à la connaissance de son auteur**, sans

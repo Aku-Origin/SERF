@@ -228,13 +228,37 @@ vérifié offre de moindres garanties d'intégrité du client — le paradoxe du
 l'équivalence, non. On l'affiche sobrement, sans faire de la peur un argument de
 conversion.
 
+### Les formats visés — et ce qu'ils coûtent vraiment
+
+L'horizon n'est pas le téléphone seul : **téléphone, tablette, montre, poste de
+travail.** Tous ne relèvent pas du même chantier, et il faut le dire avant de le
+promettre.
+
+| Format | Faisabilité | Ce que ça suppose |
+|---|---|---|
+| **Téléphone** | Le socle | C'est le chantier décrit ici |
+| **Tablette** | Quasi gratuite | Même socle, même code, adaptation d'affichage |
+| **Montre** | Plausible, même lignée | Wear OS dérive d'AOSP : le fork est de même nature. Le vrai coût est ailleurs — une montre n'a ni écran ni saisie pour délibérer. Elle peut **notifier et vérifier**, pas porter la Parole |
+| **Poste de travail** | **Un second projet, pas un portage** | AOSP n'est pas un système de bureau. Ce serait un Linux durci partageant la Charte, le Registre et la Régence — mais pas le code du téléphone |
+
+**Ce qui se partage entre tous les formats**, et qui est l'essentiel : la Charte,
+le Registre, l'identité, le protocole de scrutin, le témoignage. **Ce qui ne se
+partage pas** : le socle système.
+
+Dire « SERF tournera sur PC » sans préciser que c'est un second chantier serait
+précisément la promesse démentie qui tue un projet de souveraineté au premier
+examen technique.
+
 ### Le périmètre du système
 
 Un OS sans appareil cible est un exercice de style. Trois stratégies :
 
-1. **Parc d'occasion large** (via LineageOS) — accessible, écologique, mais
-   qualité inégale et verified boot souvent impossible (bootloader non
-   reverrouillable sur la majorité des modèles).
+1. ~~**Parc d'occasion large**~~ — **écartée.** C'était l'option accessible et
+   écologique, et elle tombe pour deux raisons cumulées : le démarrage vérifié y
+   est le plus souvent impossible à reverrouiller, et surtout un appareil que son
+   constructeur n'alimente plus **ne peut pas rester à jour** sous la couche
+   système, ce qu'exige l'article 7 ter. Le renoncement est réel et il faut le
+   nommer : on perd l'argument du prolongement de la vie des appareils.
 2. **Une liste courte certifiée** — 3 à 5 modèles testés, verified boot garanti.
    Crédible en sécurité, restreint en diffusion.
 3. **Partenariat constructeur européen** (Fairphone, Murena, HMD) — la voie

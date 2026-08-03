@@ -335,7 +335,7 @@ chemin de vote est : ordre du jour → proposition → expression → confirmati
 | **Cognition** | **Version FALC obligatoire de toute proposition.** Une phrase, une idée. Aucun jargon non défini sur place. Aucun compte à rebours anxiogène. |
 | **Audition** | Aucune information portée par le son seul. Sous-titres systématiques. Interprétation LSF pour les textes fondateurs. |
 | **Lecture** | Le Registre est **consultable sans compte**. Lire ne demande jamais de s'identifier. |
-| **Matériel** | Fonctionne sur un appareil de six ans, 2 Go de RAM, écran de 4,5 pouces. |
+| **Matériel** | **L'application** fonctionne sur tout appareil courant, y compris modeste, y compris sous un autre système. **Le système**, lui, ne s'installe que là où il peut rester à jour — et se conçoit pour plusieurs formats : téléphone, tablette, montre, poste de travail. |
 | **Réseau** | Fonctionne hors ligne — voir [`08-RESILIENCE.md`](08-RESILIENCE.md). |
 
 **Le FALC mérite d'être souligné**, parce qu'il découle directement de la Charte :
