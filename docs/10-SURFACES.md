@@ -8,7 +8,42 @@
 
 ---
 
-## 1. La discipline
+## 0. Adopter n'est pas maquiller
+
+> **On reprend un socle, on ne le laisse pas tel quel.** Ne pas réécrire n'est pas
+> ne pas concevoir.
+
+Ce document tranche, pour chaque surface, s'il faut du **code neuf**. C'est une
+question d'économie d'ingénierie, et rien d'autre. Elle ne dit pas ce qui relève
+de la **conception**, qui porte sur l'ensemble et n'est déléguée à personne.
+
+Le maquillage, c'est changer les couleurs et poser un logo. La conception, c'est
+décider ce que le système fait **par défaut**, ce qu'il **refuse** de faire, et
+comment les surfaces se répondent. Rien de cela n'est hérité — quelle que soit
+l'origine du code.
+
+Ce qui reste nôtre sur **chaque** surface, y compris adoptée :
+
+| | Ce que nous décidons |
+|---|---|
+| **Les défauts** | Ce qui est actif au premier démarrage. La plupart des gens ne changeront jamais un réglage : le défaut *est* le produit |
+| **Les retraits** | Ce qu'on enlève. Toute fonction contraire au Titre I disparaît, même utile, même attendue |
+| **Le comportement des permissions** | Toute application passe par l'Enceinte. Aucune n'accède au réel parce que son auteur l'avait prévu ainsi |
+| **Les parcours** | Comment on passe d'une surface à l'autre, ce qui est à un geste et ce qui demande un détour délibéré |
+| **L'accessibilité** | Niveau AA minimum, AAA sur le chemin de vote — **et c'est un critère d'adoption** |
+| **Le ton** | Vocabulaire, densité, absence de célébration. Une application adoptée est réécrite dans sa langue |
+
+**Le point le plus contraignant est l'accessibilité.** Une application par ailleurs
+excellente qui échoue au niveau AA n'est **pas adoptable** : soit on l'adapte, soit
+on la remplace, soit on l'écrit. C'est ce qui empêche « adopter » de devenir
+« se contenter de » — et c'est mesurable, donc opposable.
+
+**Conséquence sur les chiffres ci-dessous :** ils comptent des lignes de code, pas
+de l'intention. *Aucune* surface n'échappe à la conception.
+
+---
+
+## 1. La discipline d'écriture
 
 **On n'écrit que ce qui porte la thèse. On adopte tout le reste.**
 
