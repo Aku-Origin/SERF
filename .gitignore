@@ -1,0 +1,41 @@
+# Artefacts de build AOSP (volumineux — jamais versionnés)
+/out/
+/build-artifacts/
+*.img
+*.zip
+*.tar.gz
+
+# Arbre source AOSP synchronisé par `repo` (des dizaines de Go)
+/aosp/
+/.repo/
+
+# Secrets de signature — CRITIQUE : ne jamais versionner
+# Les clés de signature de l'image système sont la racine de confiance de SERF.
+# Leur fuite permet de forger une image SERF malveillante que les appareils
+# accepteraient au verified boot.
+/keys/
+*.pem
+*.pk8
+*.jks
+*.keystore
+.env
+.env.*
+!.env.example
+
+# Outillage
+node_modules/
+__pycache__/
+.venv/
+venv/
+target/
+.gradle/
+build/
+local.properties
+
+# Éditeurs / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
