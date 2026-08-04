@@ -160,10 +160,57 @@ Lorsqu'un bulletin est déposé depuis un appareil dont l'intégrité ne peut ê
 vérifiée, cette circonstance est **portée à la connaissance de son auteur**, sans
 que son vote en soit ni écarté ni pondéré.
 
+**Article 7 quater — Les trois statuts.**
+Porter SERF n'est pas être Régent. Trois statuts, et un seul emporte le droit de
+vote :
+
+| Statut | L'appareil | Le Registre | Le vote |
+|---|---|---|---|
+| **Porteur** | Entier | Lecture, délibération, parole | Non |
+| **Régent** | Entier | Idem | **Oui** |
+| **Suspendu** | Entier | Idem | En attente |
+
+**On ne coupe jamais l'appareil de quelqu'un.** Aucune sanction, aucune
+contestation, aucun délai ne prive un porteur de son téléphone, de ses messages ni
+de sa lecture du Registre. Ce qui se suspend est le pouvoir, jamais l'usage.
+
+Le statut de Porteur n'est pas une antichambre subie : c'est celui du nouveau venu,
+du jeune, de la personne en cours de récupération. Il lit, il suit, il parle, il
+apprend le commun avant de le gouverner.
+
 **Article 8 — Admission par parrainage.**
 L'entrée s'opère par parrainage. Le candidat est présenté par **trois** Régents
 déjà inscrits, qui attestent de son existence distincte et répondent de cette
 attestation.
+
+Nul n'est admis avant **seize ans révolus**. Cet âge est **attesté par les
+parrains** et n'est jamais établi par une pièce d'identité : l'exiger imposerait
+l'état civil et anéantirait la séparation de l'article 10. Une attestation fausse
+relève de l'article 11.
+
+*Cette solution est déclarative, donc imparfaite, et il faut le dire. La cible est
+la **preuve d'âge anonyme** — un attribut certifié par un tiers qui ignore l'usage
+qu'on en fait, et vérifié sans révéler ni le nom ni la date. C'est la technique de
+l'article 10 appliquée à un autre attribut. Elle suppose un émetteur qui connaisse
+les âges réels : à adopter dès qu'il en existe un.*
+
+**Article 8 bis — L'année de présence.**
+Nul ne devient Régent avant **douze mois** de statut de Porteur. Le délai vaut pour
+tous, sans considération d'âge — de sorte que l'on vote au plus tôt à dix-sept ans.
+
+Il a deux raisons, et la seconde n'était pas cherchée :
+
+1. **On apprend un commun avant de le gouverner.** L'entrée se mérite par la
+   présence, non par un anniversaire.
+2. **C'est la meilleure défense anti-Sybil du texte.** Un attaquant doit désormais
+   *entretenir* ses identités fictives pendant un an — les garder actives, les
+   faire parrainer, les rendre plausibles — avant qu'elles ne vaillent une voix.
+   L'attaque devient coûteuse, et surtout **visible longtemps avant d'être
+   décisive**.
+
+Le délai court à compter de l'inscription comme Porteur. Il n'est pas abrégeable.
+Son effet au démarrage — nul ne vote la première année — est précisément ce que
+couvre la Régence provisoire du Titre IX.
 
 **Article 9 — Limitation du parrainage.**
 Chaque Régent ne peut parrainer plus de **cinq** admissions par période de douze
@@ -200,10 +247,60 @@ parrainer. La constatation relève du collège de vérification (art. 46) et est
 susceptible de recours devant l'Assemblée.
 
 **Article 12 — Perte de la qualité de Régent.**
-Elle résulte de la renonciation volontaire, de l'annulation prévue à l'article 11,
-ou d'une absence totale de participation pendant vingt-quatre mois consécutifs.
-Dans ce dernier cas, la réinscription est de droit, immédiate, et sans nouveau
-parrainage.
+Elle résulte de la **renonciation volontaire** ou de l'**annulation prévue à
+l'article 11**. Elle ne résulte de rien d'autre.
+
+**L'inactivité ne coûte rien.** Ne pas voter n'est jamais une cause de déchéance,
+et le commun ne tient aucun décompte individuel de participation.
+
+*Une version antérieure faisait perdre la qualité de Régent après vingt-quatre
+mois sans participation. Elle a été retirée pour deux raisons. Elle obligeait à
+tenir, par personne, la trace de qui avait participé — ce qui, croisé au graphe
+public de l'article 10, rendait calculable la liste de ceux qui ne votent pas,
+dans un commun où voter est un devoir. C'était l'exact instrument de pression que
+l'article 24 existe pour empêcher. Et elle contredisait l'article 7 bis : un droit
+qu'on perd faute d'en avoir usé est un droit conditionné.*
+
+**Article 12 bis — Protection de l'inexpérience.**
+Jusqu'à **vingt-et-un ans révolus**, les actes d'un Régent sont inscrits au
+Registre **exactement comme ceux de tout autre** — même visibilité, même
+permanence, aucun régime dérogatoire, aucune zone d'ombre.
+
+**Ce qui diffère n'est pas ce qu'on voit : c'est ce qu'on peut en tirer.** Aucun
+jugement ne s'y attache. Aucune sanction ne l'atteint. Rien de ce qu'il fait avant
+vingt-et-un ans ne peut lui être opposé, ni entrer en négatif dans quelque
+appréciation, classement ou mesure de mérite que ce soit.
+
+S'il a parrainé une identité fictive, les admissions frauduleuses tombent — la
+fraude doit être défaite — mais **lui ne perd ni sa qualité ni sa faculté de
+parrainer**.
+
+**La part de responsabilité qu'il ne porte pas incombe à ses parrains.** Celui qui
+fait entrer un jeune répond d'une partie de ce qu'il fera. Cette règle n'appelle
+aucun quota : celui qui recrute cent jeunes en assume cent fois la part.
+
+*Ce que le commun ne peut pas faire, et qui doit être dit : il peut s'interdire de
+juger, il ne peut pas interdire aux autres de lire. Le Registre est public, et un
+tiers n'est lié par aucune de nos règles. La seule chose opposable est le contexte :
+le Registre porte, avec chaque acte, le statut de son auteur au moment où il l'a
+posé.*
+
+**Article 12 ter — Récupération d'un accès perdu.**
+La perte d'un appareil ou d'une clé ne fait perdre ni la qualité de Régent, ni
+l'ancienneté acquise. La récupération obéit à quatre règles :
+
+1. Elle est un **acte public inscrit au Registre**, jamais une demande discrète.
+2. Elle ne prend effet qu'après un **délai annoncé**, pendant lequel chacun peut la
+   voir.
+3. **Le détenteur de la clé en cours oppose un veto immédiat**, sans avoir rien à
+   prouver : détenir la clé suffit. Tant que l'appareil répond, il tranche.
+4. **Deux demandes concurrentes gèlent l'une et l'autre**, et le nombre arbitre.
+
+Une tentative de récupération frauduleuse relève de l'article 11.
+
+*Le délai est le cœur du dispositif : il transforme une prise silencieuse en acte
+annoncé. Et l'appareil actif est le meilleur des témoins — s'il ne répond plus
+pendant tout le délai, la clé est réputée perdue.*
 
 ---
 

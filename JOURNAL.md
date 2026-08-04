@@ -13,6 +13,108 @@
 
 ---
 
+## 2026-08-04, 15h — Bloc 2 : qui vote
+
+Lecture de la Charte avec Diego, bloc par bloc, à son rythme. Le Titre I a été
+clos hier (commit `f6d157e`) ; aujourd'hui le Titre II.
+
+### L'article 12 saute
+
+C'était l'article dont Diego s'était plaint sans savoir ce qu'il contenait, et
+l'audit avait raison de le désigner. Deux défauts, et un seul aurait suffi.
+
+Déchoir quelqu'un après vingt-quatre mois d'inactivité **oblige à tenir, par
+personne, la trace de qui a participé**. Croisé au graphe de parrainage public,
+cela rendait calculable la liste de ceux qui ne votent pas — dans un commun où
+voter est un devoir. C'est l'instrument de pression que l'article 24 existe pour
+empêcher. Et cela contredisait l'article 7 bis : un droit qu'on perd faute d'en
+avoir usé est un droit conditionné.
+
+Ne restent que la renonciation volontaire et la cascade de l'article 11.
+**L'inactivité ne coûte rien.**
+
+### Les trois statuts — l'idée de Diego
+
+*« L'OS ne doit pas bloquer le nouvel utilisateur, il doit bloquer uniquement le
+droit de vote, comme pour les plus jeunes. »*
+
+D'où **Porteur · Régent · Suspendu**. Porter SERF n'est pas être Régent. Le
+Porteur a l'appareil entier, lit le Registre, délibère, parle — il ne vote pas.
+C'est l'état du jeune, du nouveau venu, de la personne en cours de récupération.
+
+Ce qui en fait un principe et pas une commodité : **on ne coupe jamais l'appareil
+de quelqu'un.** La sanction touche le pouvoir, jamais l'usage.
+
+### Seize pour entrer, dix-sept pour voter — et un bénéfice imprévu
+
+Diego : seize ans, puis un an d'attente. J'ai objecté qu'un âge exigerait une
+pièce d'identité, donc l'état civil, donc l'anéantissement du jeton aveugle — et
+il a répondu par la seule question qui comptait : *« donc tu laisses un gamin de
+treize ans voter ? »* J'avais recommandé le parrainage seul en glissant sur ce
+cas. C'était malhonnête.
+
+Retenu : **âge attesté par les parrains, jamais prouvé par pièce**, sous leur
+responsabilité (art. 11). Solution déclarative, donc imparfaite, et c'est écrit
+comme tel. Cible affichée : la **preuve d'âge anonyme** — même technique que
+l'article 10, appliquée à un autre attribut. L'émetteur ignore l'usage, le
+vérificateur n'apprend que le seuil. Dès qu'un émetteur existe.
+
+**Et l'année de présence vaut bien plus que ce que Diego lui demandait.** Il l'a
+posée pour la maturité des jeunes. Appliquée à tous, elle devient la meilleure
+défense anti-Sybil du texte : un attaquant doit désormais *entretenir* ses fausses
+identités pendant un an avant qu'elles ne vaillent une voix. L'attaque devient
+chère, et surtout visible longtemps avant d'être décisive. Le vide de la première
+année est exactement ce que la Régence provisoire couvre — les deux mécanismes
+s'emboîtent sans qu'on ait rien forcé.
+
+### La protection de l'inexpérience — ma version était mauvaise
+
+J'avais traduit « protection innocence » par : occulter les expressions des
+jeunes, les inscrire par engagement cryptographique plutôt qu'en clair. Diego a
+refusé, et sa version est meilleure :
+
+> *« Tout ce qu'il fait est aussi clair que pour les autres, la différence c'est
+> qu'aucun jugement ne peut s'y appliquer. Il a aucune expérience donc il est
+> innocent, ses erreurs ne sont pas de sa faute, en partie de sa responsabilité
+> mais pas complètement. »*
+
+Ma version créait une zone d'ombre. La sienne garde tout en pleine lumière et
+retire seulement le droit de condamner. Jusqu'à vingt-et-un ans : visibilité
+identique, aucune sanction, et rien qui puisse entrer en négatif dans une future
+mesure de mérite — c'est là que ça se serait joué sans qu'on le voie venir.
+
+**Et la part qu'il ne porte pas incombe à ses parrains.** Conséquence : on ne
+parraine plus un jeune à la légère. Ça règle sans quota le recrutement de masse
+que je proposais de plafonner — le coût est sur celui qui recrute, pas sur celui
+qui est recruté.
+
+Limite écrite noir sur blanc : le commun peut s'interdire de juger, il ne peut pas
+interdire aux autres de lire. La seule chose opposable est le contexte — le
+Registre porte le statut de l'auteur au moment de l'acte.
+
+### Récupération d'accès
+
+Mécanisme de Diego, corrigé par lui : *l'appareil actif est le veto*. S'il répond,
+il tranche ; s'il ne répond plus de tout le délai, la clé est réputée perdue.
+Acte public au Registre, délai annoncé, deux demandes concurrentes se gèlent et le
+nombre arbitre.
+
+### Le désaccord de la séance
+
+Diego voulait **pondérer les bulletins selon l'appareil** — moins de poids pour
+les appareils à risque. J'ai tenu contre, et il n'a pas insisté : pondérer selon
+le matériel fait mécaniquement compter les pauvres moins que les autres, ce qui
+est l'exact contraire de l'article 22. Retenu à la place : **on ne pondère jamais,
+on publie toujours** la composition du scrutin.
+
+### Rappel de méthode, encore
+
+Le relevé d'heure a montré que la session avait franchi minuit — les décisions
+d'hier sont datées du 3, celles-ci du 4. C'est exactement le piège que la
+compétence `heure` décrit, et il s'est produit dès le deuxième jour.
+
+---
+
 ## 2026-08-03, 11h30 — Publication, et une recherche qui corrige deux décisions
 
 **Poussé sur GitHub** : https://github.com/Aku-Origin/SERF — public, cinq commits.

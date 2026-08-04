@@ -32,7 +32,12 @@ preuve ?
 d'entrées, publications de têtes d'arbre, ancrages trimestriels), ou assumer une
 horloge de confiance faible et l'écrire. **Pas les deux.**
 
-### F2 — La liste des non-votants est dérivable
+### ~~F2 — La liste des non-votants est dérivable~~ — **CORRIGÉE le 4 août 2026**
+
+*L'article 12 a été réécrit : la déchéance pour inactivité est supprimée, et le
+commun ne tient plus aucun décompte individuel de participation. Ne restent que la
+renonciation volontaire et la cascade de l'article 11. La contradiction avec
+l'article 7 bis tombe du même coup. Texte d'origine du défaut conservé ci-dessous.*
 
 L'article 10 rend le graphe de parrainage public. L'article 12 fait perdre la
 qualité de Régent après « une absence **totale de participation** pendant

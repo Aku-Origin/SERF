@@ -93,6 +93,12 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Portée des votes | **Résolu** : une association loi 1901 peut statutairement se lier à ses scrutins | Liberté statutaire quasi totale, et les statuts ont force de loi pour les membres. L'obligation devient opposable devant le juge civil |
 | La Parole | **Aucun fil de réponses** · cartographier l'accord à la manière de Pol.is | vTaiwan l'a éprouvé : interdire la réplique supprime la dynamique d'affrontement. Le regroupement par proximité de position décrit, il ne hiérarchise pas — seule exception admise au refus de l'algorithmique |
 | iOS | **Hors périmètre**, définitivement | Bootloader verrouillé sans voie de déblocage. Le promettre coûterait toute crédibilité au premier examen technique |
+| Les trois statuts | **Porteur · Régent · Suspendu** (art. 7 quater) | Porter SERF n'est pas être Régent. **On ne coupe jamais l'appareil de quelqu'un** — la sanction touche le pouvoir, jamais l'usage |
+| Âge et ancienneté | **16 ans révolus pour entrer, 12 mois de Porteur pour voter** → on vote au plus tôt à 17 ans (art. 8, 8 bis) | L'âge est *attesté par les parrains*, jamais prouvé par pièce : l'exiger imposerait l'état civil et anéantirait le jeton aveugle. Cible : **preuve d'âge anonyme** dès qu'un émetteur existe |
+| L'année de présence | **Vaut pour tous, pas seulement les jeunes** | Bénéfice non cherché : c'est la meilleure défense anti-Sybil du texte. L'attaquant doit *entretenir* ses faux comptes un an — coûteux, et visible longtemps avant d'être décisif. Le vide de la première année est ce que couvre la Régence provisoire |
+| Article 12 | **L'inactivité ne coûte rien** — ne restent que la renonciation et la cascade de l'art. 11 | Déchoir pour inactivité obligeait à tracer qui a participé ; croisé au graphe public, ça rendait calculable la liste des non-votants. Et un droit qu'on perd faute d'en avoir usé est un droit conditionné — contraire à l'art. 7 bis |
+| Protection de l'inexpérience | **Jusqu'à 21 ans : tout est visible, aucun jugement ne s'applique** (art. 12 bis) | Diego : *« il a aucune expérience donc il est innocent »*. On n'occulte rien — on retire le droit de condamner. **La part qu'il ne porte pas incombe à ses parrains**, ce qui règle le recrutement de masse sans quota |
+| Récupération d'accès | **Acte public au Registre, délai annoncé, veto instantané du détenteur, deux demandes se gèlent** (art. 12 ter) | Le délai transforme une prise silencieuse en acte annoncé. L'appareil actif est le meilleur témoin : s'il ne répond plus de tout le délai, la clé est réputée perdue |
 | Identité électorale | **Parrainage (3 parrains, 5/an max) + jeton d'éligibilité signé en aveugle** | Aucune dépendance à l'État, cohérent avec « par le dessous », constructible sans partenaire externe. Montée en charge lente : assumée |
 | Ordre des jalons | **Le scrutin avant la ROM** | On teste le risque n°1 tôt. Ne dépend d'aucun matériel, d'aucun fork, d'aucune certification |
 | Cryptographie du scrutin | Partir de **Belenios**, ne pas réimplémenter | Éprouvé et audité. Réimplémenter du vote homomorphe est la façon la plus sûre d'introduire une faille |
@@ -131,6 +137,36 @@ renversement, lui trouver son mécanisme dans la même séance.
 | Signature | **Père Sans-Ciel / Le Sans-Ciel** — une **charge transmissible**, non un masque (Charte art. 52) | Un masque disparaît avec son porteur ; une charge se transmet. Règle par le haut la continuité |
 | Cloisonnement | **Une seule identité par dépôt** — règle d'hygiène, révisable avant le premier push | Un dépôt public, miroité et archivé ne se corrige pas : une mention lie deux identités pour toujours, dans tous les clones. Après le push, ça ne se défait plus |
 | Questions à Diego | **L'outil à choix multiples est bienvenu** | Contrairement à l'espace Voyage : ici les arbitrages sont des bifurcations nettes, mieux servies par des options tranchées que par de la prose ouverte |
+
+---
+
+## Décidé avec Diego, pas encore écrit dans les documents techniques
+
+Ces mécanismes sont **tranchés** ; il leur manque leur place. Ne pas les rouvrir, les écrire.
+
+- **Code vocal à correspondance tournante.** Pour voter à la voix : « dis *Jul* pour oui, *Leon*
+  pour non », correspondance régénérée toutes les trente secondes. Celui qui écoute n'apprend rien,
+  un enregistrement ne prouve rien. **Délivrée à l'oreille, jamais à l'écran** ; reconnaissance
+  vocale **entièrement locale** (art. 1). *Résout la coercition, pas le paradoxe du client* — un
+  logiciel compromis tient les deux bouts. → `09-BRIEF-DESIGN`, `03-REGENCE`.
+- **Signalement d'une conversation.** Toute discussion doit pouvoir être signalée — chantage,
+  harcèlement — pour que la personne soit protégée et entendue. *Tension à trancher : un
+  destinataire qui peut prouver ce qui a été dit détruit le déni plausible que le chiffrement
+  offre. On ne peut pas avoir les deux.* → `10-SURFACES §4`.
+- **Attestation : publier, jamais pondérer.** Chaque résultat porte sa composition (« 71 % des
+  bulletins venaient d'appareils attestés »). Pondérer selon l'appareil ferait compter les pauvres
+  moins que les autres — l'exact contraire de l'art. 22. → `06-REGISTRE`, `09-BRIEF-DESIGN`.
+- **Mérite.** À concevoir. **Ligne rouge : le mérite ne pondère jamais un vote.** Il peut valoir
+  reconnaissance et ressources, jamais pouvoir. Et on récompense qui trouve une faille *technique*,
+  jamais qui dénonce une *personne* — sinon on paie la fabrication d'accusations.
+- **Résumeur des « À nuancer », sur le modèle d'OASIS** (`D:\Claude\OASIS`) : *le SLM est une
+  cognition louée, cosmétique ; la rigueur vient du harnais, pas du prompt.* Protocole de Diego :
+  **trois exécutions par scrutin, convergence → ça passe, divergence → lecture humaine bloc par
+  bloc.** Modèle, poids et consigne publics et versionnés au Registre ; déterministe ; ne remplace
+  jamais les originaux ; l'arithmétique façon Pol.is passe avant le résumé. → `06-REGISTRE`,
+  `09-BRIEF-DESIGN`.
+- **Formats visés** : téléphone, tablette, montre (notifie et vérifie, ne porte pas la Parole),
+  poste de travail — **un second projet, pas un portage**. Déjà écrit en `02-ARCHITECTURE §5`.
 
 ---
 
