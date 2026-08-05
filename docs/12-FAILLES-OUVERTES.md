@@ -15,6 +15,60 @@
 
 Ces quatre-là coûtent très cher après la première ligne écrite.
 
+### F0 — L'arithmétique du corps électoral contredit les seuils de dévolution
+
+**Trouvé par simulation, 4 août 2026. C'est le défaut le plus grave du texte, et
+il rend le Titre IX inapplicable tel qu'écrit.**
+
+Les règles d'entrée et les seuils de dévolution ont été rédigés séparément et
+jamais multipliés l'un par l'autre. Or ils se déterminent entièrement.
+
+**Les règles :** trois fondateurs au départ · cinq parrainages par Régent et par
+an (art. 9) · trois parrains par admission (art. 8) · douze mois de statut de
+Porteur avant de devenir Régent (art. 8 bis).
+
+**Ce que ça donne :**
+
+| Année | Régents | Année | Régents |
+|---|---|---|---|
+| 1 | 3 | 7 | 168 |
+| 2 | 8 | 8 | 318 |
+| **3** | **13** | 9 | 598 |
+| 4 | 26 | 10 | 1 128 |
+| 5 | 47 | 11 | 2 124 |
+| 6 | 90 | 12 | 4 004 |
+
+**À trente-six mois — le terme absolu et non prorogeable de l'article 55 — il y a
+treize Régents.** Pour treize sièges (art. 27). Chaque membre du corps électoral
+est délégué ; il ne reste personne dans l'Assemblée pour aviser, ni pour dissoudre.
+Le quorum de 20 % de l'article 40 vaut alors **trois personnes**. Et comme les
+sortants ne sont pas rééligibles au mandat suivant, **une seconde Table Ronde ne
+peut pas être formée.**
+
+Les seuils de l'article 54 arrivent bien plus tard : **500 Régents vers l'an 9,
+2 000 vers l'an 11, 10 000 au-delà de l'an 13.** Le texte prévoit une dévolution
+progressive qui, en pratique, n'a pas lieu — le terme absolu tombe d'abord, sur un
+corps de treize personnes.
+
+**Ce n'est pas un cas limite : c'est la trajectoire par défaut.**
+
+**Ce qu'il faut trancher — et les options s'excluent :**
+
+1. **Abaisser le nombre de sièges à faible effectif.** L'article 44 quinquies le
+   fait déjà pour les communautés (7-30 : l'assemblée *est* la Table Ronde). La
+   même règle devrait valoir pour le commun SERF lui-même. **C'est la correction
+   la moins coûteuse.**
+2. **Allonger le terme absolu**, ce que l'article 55 interdit explicitement — et
+   pour une bonne raison : une régence qui peut proroger son terme n'en est pas
+   une.
+3. **Desserrer l'entrée** — plus de parrainages annuels, moins de parrains, délai
+   plus court. Mais **la lenteur de la croissance et la résistance au Sybil sont
+   la même propriété** : on ne relâche pas l'une sans perdre l'autre. Voir F11.
+
+*Ce défaut n'était visible ni à la lecture, ni à l'audit adversarial. Il est
+apparu à la première simulation. Leçon de méthode : un texte de gouvernance doit
+être **exécuté**, pas seulement relu.*
+
 ### F1 — Le Registre ne peut pas porter les délais de la Charte
 
 L'article 26 septies pose que **l'ordre du Registre est intrinsèque** et qu'« un

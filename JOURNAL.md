@@ -13,6 +13,88 @@
 
 ---
 
+## 2026-08-05, 14h — Bloc 3a, et la simulation qui casse le Titre IX
+
+### « À nuancer » n'était pas ce que j'avais écrit
+
+Correction de Diego : *« Nuancer va donner des arguments, c'est pas refaire, c'est
+oui cependant ou avec tel et tel chose. »*
+
+J'en avais fait un renvoi en délibération — un blocage procédural, avec deux
+renvois maximum. C'est une adhésion sous réserve. Elle compte du côté du oui, et
+elle **porte du texte** : les réserves, les arguments, ce qui devrait être pris en
+compte. Ces écrits appellent une réponse publique (art. 35), et le silence coûte
+un point de défiance.
+
+**On ne bloque pas, on oblige à entendre.** Une nuance n'arrête pas une décision ;
+elle crée une dette d'explication à la charge de celui qui décide. C'est plus fin
+que ma version, et ça donne enfin sa raison d'être au résumeur — ce sont ces
+textes-là qu'il faudra rendre lisibles quand il y en aura dix mille.
+
+### Le trou qu'ouvrait « les Treize décident »
+
+Diego : *« Les décisions et applications seront prises par la Table Ronde, que le
+peuple adhère ou pas. Ceci dit, si le peuple n'adhère pas, la table se fait à un
+moment dissoute. »*
+
+C'est cohérent — une démocratie de révocation. Mais tout le poids de l'édifice
+repose alors sur le compteur de défiance, ce qui rend la faille F5 bien plus
+grave qu'elle ne paraissait. Et un trou apparaissait, que je n'avais pas vu :
+**rien n'obligeait les Treize à consulter.** Le compteur ne s'incrémente que sur ce
+qui a été soumis ou sur un avis écarté. Ne rien demander et n'écouter personne
+n'accumulait jamais rien. Le silence total était la stratégie parfaite.
+
+Trois fermetures, validées : **obligation de consulter** deux fois l'an et avant
+tout engagement majeur (art. 35 bis) · **le silence coûte** un point de défiance
+(art. 38.4) · **la saisine est inconditionnelle** (art. 15 bis).
+
+Cette dernière règle du même coup le veto que j'avais découvert en présentant le
+bloc : l'article 14 bis interdit de mettre aux voix une proposition sans version
+en langue simple, sans dire qui en juge — donc n'importe qui pouvait bloquer
+n'importe quoi en déclarant une version trop obscure. Résolu sans créer d'organe :
+**l'insuffisance se signale, elle ne s'oppose pas.** Un texte incompréhensible est
+déjà sanctionné — on ne le comprend pas, on l'ignore, et l'« Ignorer » majoritaire
+coûte à son auteur.
+
+### La simulation — et le défaut le plus grave du texte
+
+Diego : *« Maintenant tu simules ce qui se passe dans cette société avec ce
+système. »* J'ai calculé au lieu d'imaginer, et l'arithmétique a tranché.
+
+Trois fondateurs · cinq parrainages par Régent et par an · trois parrains par
+admission · douze mois de Porteur avant de voter. Il en résulte :
+
+```
+an 3 : 13 Régents     an 9  :   598
+an 5 : 47             an 11 : 2 124
+an 7 : 168            an 12 : 4 004
+```
+
+**À trente-six mois — le terme absolu et non prorogeable de l'article 55 — il y a
+treize Régents pour treize sièges.** Tout le corps électoral est délégué ; il ne
+reste personne pour aviser ni pour dissoudre. Le quorum de 20 % vaut trois
+personnes. Et les sortants n'étant pas rééligibles, **une seconde Table Ronde ne
+peut pas être formée.**
+
+Les seuils de dévolution de l'article 54 — 500, 2 000, 10 000 — arrivent
+respectivement vers les années 9, 11 et 13. La dévolution progressive que le texte
+organise n'a jamais lieu : le terme absolu tombe d'abord, sur treize personnes.
+
+Les règles d'entrée et les seuils avaient été écrits séparément et **jamais
+multipliés l'un par l'autre**. Ce n'est pas un cas limite, c'est la trajectoire par
+défaut. Inscrit en F0, avant toutes les autres failles.
+
+**Et une chose que la simulation rend visible sans qu'on l'ait cherchée : la
+lenteur de la croissance et la résistance au Sybil sont la même propriété.** On ne
+peut pas desserrer l'entrée sans perdre la défense. Le ramp de dix ans n'est pas un
+mauvais réglage, c'est le mécanisme qui fonctionne.
+
+**Leçon de méthode, et elle vaut pour la suite : un texte de gouvernance doit être
+exécuté, pas seulement relu.** Ni la lecture attentive, ni l'audit adversarial
+n'avaient vu F0. Une seule simulation l'a sorti en une minute.
+
+---
+
 ## 2026-08-04, 15h — Bloc 2 : qui vote
 
 Lecture de la Charte avec Diego, bloc par bloc, à son rythme. Le Titre I a été

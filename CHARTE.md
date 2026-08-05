@@ -345,6 +345,21 @@ faveur consentie à quelques-uns, mais une condition de validité du scrutin.
 Une proposition est inscrite lorsqu'elle réunit le soutien de **1 % des Régents ou
 de cent Régents**, le seuil le plus bas des deux étant retenu.
 
+**Article 15 bis — La saisine est inconditionnelle.**
+Une proposition qui réunit son seuil **va au vote**. Ni la Table Ronde, ni aucun
+organe ne peut l'écarter, la retarder au-delà des délais du cycle, ni la
+subordonner à son appréciation.
+
+En particulier, **l'insuffisance alléguée d'une version en langue simple ne bloque
+rien**. Elle se signale, elle ne s'oppose pas. La sanction d'un texte
+incompréhensible est déjà dans le dispositif : on ne le comprend pas, donc on
+l'ignore (art. 19), et l'« Ignorer » majoritaire coûte à son auteur. Nul n'a besoin
+d'un pouvoir de refus là où le désaveu suffit.
+
+*Sans cet article, l'exigence d'intelligibilité de l'article 14 bis se retournerait
+en droit de veto : il suffirait de juger une version trop obscure pour empêcher
+n'importe quelle proposition d'exister.*
+
 **Article 16 — Notification.**
 L'ouverture d'un scrutin donne lieu à une notification système unique, adressée à
 tous les Régents. Ce canal ne peut être supprimé, filtré, retardé ni hiérarchisé
@@ -372,15 +387,19 @@ conséquence. On ne s'abstient pas en ignorant ; on désavoue.
 Ces quatre expressions valent pour toute question sauf les scrutins contraignants
 du Titre V, binaires par nature.
 
-**Article 18 — Effet de « À nuancer » : le renvoi.**
-Lorsque « À nuancer » recueille au moins **un tiers** des expressions, ou
-davantage que « Oui », le texte n'est ni adopté ni rejeté : il est **renvoyé en
-délibération** pour sept jours au moins, puis republié amendé et soumis à nouveau.
+**Article 18 — Effet de « À nuancer » : l'adhésion sous réserve.**
+« À nuancer » est **une adhésion, non un blocage**. Elle dit *oui, cependant* — oui
+avec ceci, oui à condition de cela. Elle se compte du côté de l'adhésion : un texte
+qui recueille peu de « Oui » et beaucoup de « À nuancer » est **adopté**.
 
-Un même texte ne peut être renvoyé plus de **deux fois**. Au terme du troisième
-scrutin sans majorité, il est réputé rejeté et ne peut être redéposé avant six
-mois. Sans cette limite, une question mal née épuiserait l'Assemblée
-indéfiniment.
+Ce qui la distingue est qu'elle **porte du texte** : les réserves, les arguments,
+ce qui devrait être pris en compte. Ces écrits sont inscrits au Registre.
+
+**Ils appellent une réponse publique** dans les conditions de l'article 35. Ne pas
+y répondre coûte un point de défiance (art. 38).
+
+*On ne bloque pas, on oblige à entendre.* Une nuance n'arrête pas une décision ;
+elle crée une dette d'explication à la charge de celui qui décide.
 
 **Article 19 — Effet de « Ignorer » : la nullité et la défiance.**
 Lorsque « Ignorer » recueille la **majorité absolue** des expressions, la
@@ -692,6 +711,16 @@ lui donne. Si elle s'en écarte, elle en publie le motif.
 Passer outre un avis est permis. **Le faire en silence ne l'est pas.** C'est cet
 article, et lui seul, qui empêche « consultatif » de vouloir dire « ignoré ».
 
+**Article 35 bis — Obligation de consulter.**
+La Table Ronde ne peut pas gouverner en silence. Elle **saisit l'Assemblée pour
+avis** au moins deux fois par an, et systématiquement avant tout engagement
+majeur : affectation de ressources d'importance, partenariat, révocation d'un
+mandat, modification du dépôt officiel.
+
+*Sans cet article, le silence serait la stratégie parfaite : le compteur de
+défiance ne s'incrémente que sur ce qui a été soumis ou sur un avis écarté. Un
+organe qui ne demande rien et n'écoute personne n'accumule jamais rien.*
+
 **Article 36 — Le second vote contraignant : la Charte.**
 La présente Charte ne peut être révisée que par l'Assemblée, dans les conditions
 de l'article 25, et jamais par la Table Ronde.
@@ -714,7 +743,9 @@ suivants :
 2. un avis majoritaire de l'Assemblée est écarté sans réponse motivée publiée dans
    le délai de l'article 35 ;
 3. un avis majoritaire portant sur le même objet est écarté trois fois
-   consécutivement, même motivé.
+   consécutivement, même motivé ;
+4. **l'obligation de consulter de l'article 35 bis n'est pas tenue.** Ne rien
+   demander coûte autant que ne pas répondre.
 
 Le compteur est **glissant sur douze mois**. Les points inscrits contre une Table
 Ronde ne se transmettent pas à celle qui lui succède.
