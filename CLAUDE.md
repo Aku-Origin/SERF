@@ -168,6 +168,24 @@ Ces mécanismes sont **tranchés** ; il leur manque leur place. Ne pas les rouvr
 - **Formats visés** : téléphone, tablette, montre (notifie et vérifie, ne porte pas la Parole),
   poste de travail — **un second projet, pas un portage**. Déjà écrit en `02-ARCHITECTURE §5`.
 
+### Pistes ouvertes, non tranchées
+
+- **« L'IA de l'autonomie »** (Diego, 4 août 2026) — application autonome, distribuable
+  immédiatement : encyclopédie complète **hors ligne** (Kiwix) + SLM local en RAG, pour apprendre à
+  penser par soi-même. C'est le renversement « l'élévation plutôt que l'éducation » en produit, et
+  la chose la plus vite livrable du projet — elle ne dépend ni de l'OS, ni du scrutin, ni d'un
+  partenaire. **Contradiction à résoudre avant d'écrire :** une IA qui pense à ta place ne t'apprend
+  pas à penser. Donc — elle conduit à la source au lieu de répondre, n'affirme jamais sans montrer
+  d'où ça vient, « je ne sais pas » est une sortie normale, et elle enseigne la méthode plus que le
+  contenu. **Le seul bon indicateur : l'usage doit décroître** quand les gens savent chercher
+  seuls. *Statut : proposée, ni cadrée ni décidée — projet distinct ou compagnon de SERF, à
+  trancher.*
+- **Le crédit social chinois est le contre-modèle à citer publiquement.** Même diagnostic que le
+  nôtre — le collectif est à refonder — et mécanisme inverse : la confiance y est produite par le
+  contrôle au lieu d'être éprouvée par le vote. C'est ce qui donne sa portée à la ligne rouge du
+  mérite : **il ne pondère jamais un vote.** On nous fera la comparaison ; autant l'avoir déjà
+  tranchée.
+
 ---
 
 ## Invariants (toujours tenir)
