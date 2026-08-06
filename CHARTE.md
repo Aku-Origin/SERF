@@ -28,9 +28,10 @@ SERF est constitué pour renverser ce rapport. Cinq renversements le guident :
 Chacun est porté dans ce texte par un mécanisme, **car une valeur sans mécanisme
 n'est qu'une déclaration**.
 
-La **Régence** administre ce commun dans l'attente que son corps électoral soit en
-état de régner. Elle est, par construction, **temporaire**. Les délais et seuils
-de sa dévolution sont inscrits au Titre IX et ne dépendent pas de sa volonté.
+L'**Amorçage** administre ce commun dans l'attente que son corps électoral soit en
+état de régner. Il est, par construction, **temporaire** — un système démarre, il
+ne démarre pas indéfiniment. Les délais et seuils de sa dévolution sont inscrits au
+Titre IX et ne dépendent pas de sa volonté.
 
 ### Les deux corps
 
@@ -210,7 +211,7 @@ Il a deux raisons, et la seconde n'était pas cherchée :
 
 Le délai court à compter de l'inscription comme Porteur. Il n'est pas abrégeable.
 Son effet au démarrage — nul ne vote la première année — est précisément ce que
-couvre la Régence provisoire du Titre IX.
+couvre l'Amorçage du Titre IX.
 
 **Article 9 — Limitation du parrainage.**
 Chaque Régent ne peut parrainer plus de **cinq** admissions par période de douze
@@ -244,7 +245,7 @@ où le secret du vote de tous repose sur la conduite d'un seul. Voir
 S'il est établi qu'un Régent a parrainé des identités fictives, son parrainage et
 l'ensemble des admissions qui en découlent sont annulés, et il perd la faculté de
 parrainer. La constatation relève du collège de vérification (art. 46) et est
-susceptible de recours devant l'Assemblée.
+susceptible de recours devant les Régents.
 
 **Article 12 — Perte de la qualité de Régent.**
 Elle résulte de la **renonciation volontaire** ou de l'**annulation prévue à
@@ -304,11 +305,18 @@ pendant tout le délai, la clé est réputée perdue.*
 
 ---
 
-# TITRE III — L'Assemblée des Régents
+# TITRE III — Les Régents
 
 **Article 13 — Définition.**
-L'Assemblée est la réunion de tous les Régents. Elle n'a ni présidence, ni bureau,
-ni siège permanent. Elle se manifeste par ses délibérations et ses scrutins.
+Les Régents sont l'ensemble des personnes admises au corps électoral. Ils ne
+forment ni chambre, ni corps constitué : il n'y a ni présidence, ni bureau, ni
+siège, et rien ne se réunit. Ils se manifestent par leurs délibérations et leurs
+scrutins, chacun depuis son appareil.
+
+**Aucun nom au singulier ne leur est donné.** Un corps constitué peut être saisi,
+puis ignoré, puis vidé de sa substance sans que personne ne se sente visé. Des
+personnes, non : chaque règle qui les concerne doit les nommer au pluriel, et
+répondre de ce qu'elle leur fait.
 
 ## Chapitre 1 — La procédure
 
@@ -324,7 +332,7 @@ dans l'ordre :
 | **Scrutin** | 72 heures | Vote, après annonce ferme de la date |
 
 Le délai de délibération est un **minimum d'ordre public**. Il ne peut être
-abrégé, y compris par décision unanime. Il protège l'Assemblée contre elle-même :
+abrégé, y compris par décision unanime. Il protège les Régents contre eux-mêmes :
 c'est la seule défense connue contre le vote d'humeur et contre la mobilisation
 soudaine d'un groupe organisé.
 
@@ -420,7 +428,7 @@ il compte contre son auteur.
 **Article 21 — Quatre modalités.**
 Toute question ne se réduit pas à une adhésion ou à un refus. Réduire une
 allocation de ressources à une suite de votes binaires revient à faire trancher
-par la procédure ce que l'Assemblée devrait délibérer. La proposition indique sa
+par la procédure ce que les Régents devraient délibérer. La proposition indique sa
 modalité dès son dépôt :
 
 | Modalité | Objet | Effet recherché |
@@ -487,7 +495,7 @@ celui qui le contraint la manière dont il a voté.
 | Titre I | **Non révisable** | — |
 
 L'absence de quorum sur l'ordinaire est assumée : un quorum général transforme
-l'abstention en veto et paralyse l'Assemblée. En contrepartie, les deux scrutins
+l'abstention en veto et paralyse le commun. En contrepartie, les deux scrutins
 contraignants exigent une participation réelle, et non une majorité d'habitués.
 
 **Article 26 — Publicité et vérification.**
@@ -696,11 +704,11 @@ lui soit confié par la présente Charte, et aucun qui échappe au Titre V.
 # TITRE V — Le lien entre les deux corps
 
 **Article 34 — Principe : l'avis, et la révocation.**
-Les scrutins de l'Assemblée sont **consultatifs**, à l'exception des deux scrutins
+Les scrutins des Régents sont **consultatifs**, à l'exception des deux scrutins
 contraignants : la dissolution de la Table Ronde et la révision de la Charte.
 
-Ce partage est délibéré. Une assemblée qui tranche tout se paralyse et se fatigue ;
-une assemblée qui ne peut rien n'est qu'un décor. Les Régents ne cogèrent pas le
+Ce partage est délibéré. Un commun où tout se vote se paralyse et s'épuise ; un
+commun où rien ne se vote n'est qu'un décor. Les Régents ne cogèrent pas le
 détail — ils détiennent le pouvoir qui ne se contourne pas : **renvoyer ceux qui
 décident.**
 
@@ -712,7 +720,7 @@ Passer outre un avis est permis. **Le faire en silence ne l'est pas.** C'est cet
 article, et lui seul, qui empêche « consultatif » de vouloir dire « ignoré ».
 
 **Article 35 bis — Obligation de consulter.**
-La Table Ronde ne peut pas gouverner en silence. Elle **saisit l'Assemblée pour
+La Table Ronde ne peut pas gouverner en silence. Elle **saisit les Régents pour
 avis** au moins deux fois par an, et systématiquement avant tout engagement
 majeur : affectation de ressources d'importance, partenariat, révocation d'un
 mandat, modification du dépôt officiel.
@@ -722,7 +730,7 @@ défiance ne s'incrémente que sur ce qui a été soumis ou sur un avis écarté
 organe qui ne demande rien et n'écoute personne n'accumule jamais rien.*
 
 **Article 36 — Le second vote contraignant : la Charte.**
-La présente Charte ne peut être révisée que par l'Assemblée, dans les conditions
+La présente Charte ne peut être révisée que par les Régents, dans les conditions
 de l'article 25, et jamais par la Table Ronde.
 
 Cette réserve n'est pas une précaution de style : si la Table Ronde pouvait
@@ -740,7 +748,7 @@ suivants :
 
 1. une proposition qu'elle a portée recueille un « Ignorer » majoritaire
    (art. 19) ;
-2. un avis majoritaire de l'Assemblée est écarté sans réponse motivée publiée dans
+2. un avis majoritaire des Régents est écarté sans réponse motivée publiée dans
    le délai de l'article 35 ;
 3. un avis majoritaire portant sur le même objet est écarté trois fois
    consécutivement, même motivé ;
@@ -758,7 +766,7 @@ Le scrutin contraignant de dissolution s'ouvre :
 3. **de droit** à chaque échéance de demi-mandat, sous forme de confirmation des
    sièges renouvelés.
 
-La voie (1) est l'aboutissement de l'« Ignorer » : une expression que l'Assemblée
+La voie (1) est l'aboutissement de l'« Ignorer » : une expression que les Régents
 répète finit par armer le seul pouvoir qu'elle détienne réellement.
 
 **Article 40 — Le scrutin de dissolution.**
@@ -799,7 +807,7 @@ l'empêcherait de gouverner — ce qui est une autre manière de le dissoudre.
 5. l'attribution et le retrait des mandats techniques ;
 6. sa propre procédure interne, dans les limites du Titre IV.
 
-Chacune de ces décisions peut être précédée d'un avis de l'Assemblée, et chacune
+Chacune de ces décisions peut être précédée d'un avis des Régents, et chacune
 tombe sous l'article 35.
 
 **Article 43 — Limites.**
@@ -818,7 +826,7 @@ procède alors de cette convention seule, et non de la présente Charte.
 
 **Article 44 bis — Reproductibilité du dispositif.**
 Toute communauté — immeuble, quartier, village, école, coopérative, syndicat,
-association, entreprise — peut constituer sa propre assemblée, son propre
+association, entreprise — peut constituer ses propres Régents, son propre
 registre et sa propre Table Ronde, selon les règles de la présente Charte.
 
 Cette faculté ne s'autorise de personne et ne se demande à personne. Aucun
@@ -848,7 +856,7 @@ qu'elle encadre tue le dispositif qu'elle prétend protéger.
 
 | Membres | Organisation | Délibération |
 |---|---|---|
-| 7 à 30 | L'assemblée **est** la Table Ronde | 3 jours |
+| 7 à 30 | **Tous les Régents sont la Table Ronde** — aucune délégation | 3 jours |
 | 30 à 500 | Table Ronde de **cinq** sièges — trois tirés au sort, deux élus | 5 jours |
 | Plus de 500 | Structure des Treize (Titre IV) | 7 jours |
 
@@ -888,7 +896,7 @@ des propriétés. Ils sont attribués pour une durée déterminée n'excédant p
 vingt-quatre mois, et sont incompatibles avec un siège à la Table Ronde.
 
 **Article 46 — Collège de vérification.**
-Un collège élu par l'Assemblée, distinct des mandataires techniques et des membres
+Un collège élu par les Régents, distinct des mandataires techniques et des membres
 de la Table Ronde, constate les fraudes au parrainage, vérifie la régularité des
 scrutins et publie un rapport après chaque vote. Il ne dispose d'aucun pouvoir de
 décision.
@@ -904,7 +912,7 @@ complot, là où une seule trahison, une seule contrainte ou une seule négligen
 suffirait autrement.
 
 **Article 48 — Révocation individuelle.**
-Tout mandat technique peut être révoqué par la Table Ronde, ou par l'Assemblée
+Tout mandat technique peut être révoqué par la Table Ronde, ou par les Régents
 statuant dans les conditions de l'article 25. La révocation emporte retrait
 immédiat des clés et des accès.
 
@@ -924,7 +932,7 @@ mandataire du commun ; elle n'en est pas propriétaire.
 
 **Article 51 — Continuité.**
 La dissolution, le rachat ou la défaillance de la structure porteuse est sans
-effet sur l'existence du commun. L'Assemblée désigne alors une nouvelle structure
+effet sur l'existence du commun. Les Régents désignent alors une nouvelle structure
 et lui transfère les mandats.
 
 **Article 52 — Transmission de la charge.**
@@ -939,12 +947,18 @@ déclenche à la disparition de quelqu'un.
 
 ---
 
-# TITRE IX — De la Régence et de sa fin
+# TITRE IX — De l'Amorçage et de sa fin
 
-**Article 53 — Régence provisoire.**
+**Article 53 — L'Amorçage.**
 Tant que le corps électoral n'est pas constitué, les fondateurs exercent les
 compétences de la Table Ronde à titre provisoire. Ils sont tenus au Titre I dès le
 premier jour, sans exception ni délai.
+
+Cette période n'est pas une attente : **c'est le temps où le corps électoral se
+constitue.** Les communautés qui se gouvernent déjà — associations, coopératives,
+communes, collectifs — y entrent avec les leurs, et les fondateurs n'ont d'autre
+office que de tenir la maison jusqu'à ce qu'elles soient assez nombreuses pour
+n'avoir plus besoin d'eux.
 
 **Article 54 — Dévolution automatique.**
 La dévolution s'opère par seuils, de plein droit, **sans qu'aucune décision des
@@ -952,18 +966,18 @@ fondateurs ne soit requise ni ne puisse y faire obstacle** :
 
 | Seuil atteint | Effet |
 |---|---|
-| **500 Régents** | Constitution des premiers Corps ; l'Assemblée avise, l'article 35 s'applique |
+| **500 Régents** | Constitution des premiers Corps ; les Régents avisent, l'article 35 s'applique |
 | **2 000 Régents** | Installation de la Table Ronde des Treize ; les points 1 à 3 de l'article 42 lui reviennent |
-| **10 000 Régents** ou **36 mois** après l'admission du premier Régent, au premier des deux termes | **La Régence prend fin.** L'intégralité de l'article 42 revient à la Table Ronde, et les deux scrutins contraignants à l'Assemblée |
+| **10 000 Régents** ou **36 mois** après l'admission du premier Régent, au premier des deux termes | **L'Amorçage prend fin.** L'intégralité de l'article 42 revient à la Table Ronde, et les deux scrutins contraignants aux Régents |
 
 **Article 55 — Terme absolu.**
-Le délai de trente-six mois n'est prorogeable par aucune décision, y compris de
-l'Assemblée elle-même. Si les seuils de population ne sont pas atteints à son
-échéance, la Régence prend fin malgré tout et les organes exercent la plénitude de
-leurs compétences, quel que soit leur effectif.
+Le délai de trente-six mois n'est prorogeable par aucune décision, y compris des
+Régents eux-mêmes. Si les seuils de population ne sont pas atteints à son échéance,
+l'Amorçage prend fin malgré tout et les organes exercent la plénitude de leurs
+compétences, quel que soit leur effectif.
 
-Une régence qui peut prolonger son propre terme n'est pas une régence. C'est le
-pouvoir qu'elle prétendait garder au chaud.
+Un amorçage qui peut prolonger son propre terme n'en est pas un. C'est le pouvoir
+qu'il prétendait garder au chaud.
 
 **Article 56 — Adoption.**
 La présente Charte entre en vigueur lorsqu'elle est adoptée par le premier corps

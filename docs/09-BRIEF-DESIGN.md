@@ -380,7 +380,7 @@ L'identité appelle un **sceau**, non un logo. Un sceau signifie l'authentificat
 et l'acte officiel — exactement ce que fait SERF.
 
 **Piste :** une couronne renversée devenue table. Le pouvoir descendu du souverain
-vers l'assemblée ; le serf devenu régent, en une forme.
+vers les Régents ; le serf devenu régent, en une forme.
 
 **Contraintes :** lisible à 24 px en icône de notification · fonctionnel en
 monochrome · gravable · reconnaissable imprimé en noir et blanc sur une feuille

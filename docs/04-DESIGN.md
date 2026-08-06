@@ -146,7 +146,7 @@ L'identité visuelle appelle un **sceau**, pas un logo. Un sceau signifie
 l'authentification, l'acte officiel, l'engagement — exactement ce que fait SERF.
 
 Piste : une **couronne renversée devenue table** — le pouvoir descendu du
-souverain vers l'assemblée. Le serf qui devient régent, en une forme.
+souverain vers les Régents. Le serf qui devient régent, en une forme.
 Contrainte : doit rester lisible à 24 px (icône de notification) et en
 monochrome.
 

@@ -174,7 +174,7 @@ configurée *par* ces institutions, qui réduisent la participation à ce qu'ell
 sont prêtes à concéder. L'outil ne protège pas de cela.
 
 **Ce que SERF en tire :** la Charte doit contraindre l'organe, pas seulement
-outiller l'assemblée. C'est déjà le cas — art. 35, 37 (la Table Ronde ne peut pas
+outiller les Régents. C'est déjà le cas — art. 35, 37 (la Table Ronde ne peut pas
 modifier les seuils qui l'atteignent), 38 (compteur de défiance). **Le succès de
 Decidim en déploiement et son échec en qualité démocratique valident ce
 verrouillage.**

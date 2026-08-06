@@ -13,6 +13,165 @@
 
 ---
 
+## 2026-08-06, 16h — Le mot « Assemblée » tombe, et la mémoire l'emporte sur la sortie
+
+### Le compteur de défiance ne protégeait pas ceux qu'il devait protéger
+
+Diego avait posé trois questions : *combien de fois la Table Ronde est-elle
+dissoute, combien de fois est-elle freinée, combien de fois le peuple perd-il ?*
+La simulation a répondu, et la réponse est mauvaise.
+
+Sous le quorum de 20 % de l'article 25, **zéro dissolution — jamais**. Pas
+rarement : jamais. Et comme l'article 41 traite un échec au quorum comme un rejet,
+le compteur retombe à zéro à chaque tentative et la pétition se bloque six mois.
+**Essayer coûte plus cher que ne rien faire. L'abstention absout.** La stratégie
+optimale d'une Table Ronde qui veut durer devient : maintenir la participation
+basse, avec des scrutins fréquents, techniques et ennuyeux.
+
+Diego a demandé d'où sortaient les 12 % de participation. **De moi** — ce sont des
+paramètres inventés, comme les « 3 » et « 8 points par an » de conduite. Il fallait
+le dire. Ce qui ne dépend pas de mes chiffres, en revanche : le mur à 20 % est
+écrit dans l'article 25, et l'effacement est écrit dans l'article 41. Le vrai
+défaut est là — **on a écrit un dispositif dont la fonction s'inverse selon un
+paramètre qu'on ne connaît pas.** Un garde-fou qui a besoin qu'on devine juste n'en
+est pas un.
+
+Trois corrections proposées, non tranchées : un échec au quorum n'efface rien · le
+quorum décroît quand le compteur monte · la confirmation de demi-mandat n'est pas
+une dissolution. Diego reprend l'architecture des organes — la correction attendra
+qu'elle soit posée.
+
+### « Assemblée » : le mot était faux, pas seulement vieux
+
+Diego : *« L'assemblée ? On est dans l'ancien monde ? Puisque tout le peuple mature
+a le devoir de vote, c'est débile. »*
+
+Il a doublement raison. *Assembler*, c'est se réunir — or personne ne se réunit :
+on vote chacun depuis son appareil, étalé sur 72 heures. L'article 13 avouait
+lui-même le problème en précisant « ni présidence, ni bureau, ni siège permanent »,
+c'est-à-dire en retirant tout le contenu du mot qu'il venait d'employer.
+
+**Le mot disparaît sans remplacement.** Pas de nouveau nom de corps — sinon on
+recrée la même chose sous une étiquette neuve. On écrit *les Régents*, toujours au
+pluriel, et *le commun* pour ce qu'ils gouvernent.
+
+Le motif n'est pas esthétique : **un corps constitué peut être saisi, puis ignoré,
+puis vidé de sa substance sans que personne ne se sente visé. Des personnes, non.**
+C'est écrit dans le nouvel article 13, pour que la règle survive à ceux qui l'ont
+posée.
+
+Vingt-sept occurrences reprises dans huit fichiers. J'en avais d'abord raté la
+moitié : mon `grep` était sensible à la casse et laissait passer tous les
+« assemblée » en minuscule — dont *« l'assemblée est la Table Ronde »* de
+l'article 44 quinquies, le plus important. C'est Diego qui l'a vu. La règle du
+contrôle de cohérence a été corrigée en conséquence.
+
+### « Régence provisoire » devient **l'Amorçage**
+
+Le mot « Régence » portait trois sens : la couche du produit, la période
+transitoire du Titre IX, et la racine de « Régent ». D'où la confusion de Diego :
+*« SERF est bien un système d'exploitation Régence français, pourquoi
+provisoire ? »*
+
+*Amorçage* dit ce que la chose est. Un système démarre ; le commun aussi. Et une
+séquence de démarrage qui ne finit jamais est un plantage — le mot meurt de
+lui-même, ce qui est exactement le propos de l'article 55.
+
+### L'Amorçage n'est pas une attente
+
+Je posais les trois fondateurs comme tenant la maison faute de corps électoral.
+Diego : *« Sauf si la première année est de l'accumulation — combien de groupes en
+France sont prêts à changer mais n'ont pas l'outil ? »*
+
+C'est une période de **recrutement**, pas d'attente. Et le vivier existe :
+associations, coopératives, communes, collectifs, syndicats — des gens qui se
+gouvernent déjà, mal outillés. **Ça change l'arithmétique de F0** : le calcul des
+treize Régents à trente-six mois suppose une entrée individu par individu. Une
+association de deux cents membres en apporte deux cents d'un coup.
+
+Reste à écrire comment l'anti-Sybil tient dans ce mode. Une association qui existe
+depuis quinze ans se fabrique moins facilement que cinq faux comptes — mais ça
+s'écrit, ça ne s'espère pas.
+
+### On scelle, on ne supprime pas
+
+J'avais proposé, pour le contenu illicite, de garder l'engagement cryptographique
+et de détruire le contenu. Diego a démoli la proposition : *« Comment tu peux être
+sûr que c'est intact si t'en effaces la moitié ? C'est comme dire que l'eau est
+verte sans dire que j'ai mis du colorant. »*
+
+Il a raison, et c'est pire que la perte du *pourquoi*. Une empreinte prouve qu'une
+chose existait, jamais ce qu'elle était. Marquer « cette entrée était illégale »
+puis détruire l'entrée, c'est produire **une accusation que plus personne ne pourra
+jamais contrôler** — donc une censure munie d'une preuve d'honnêteté. Règle de
+méthode n°6 : une décision de conception qui se retourne en arme.
+
+Retenu : **le contenu est scellé, non supprimé** — chiffré, présent, prouvablement
+inchangé, mais non diffusé ; clé éclatée entre cosignataires ; tout descellement
+inscrit au Registre. Et Diego ajoute que le scellé s'ouvre **quand la chose est
+éprouvée** : c'est un délai, pas un tombeau. Reste à définir ce qui l'ouvre.
+
+### La mémoire l'emporte sur la sortie
+
+*« Je peux pas protéger une personne face aux générations futures. »*
+
+Décision prise. Elle a une conséquence lourde que je dois écrire ici pour qu'elle
+ne se perde pas : **l'article 4 promet aujourd'hui l'inverse** — « effacer toute
+trace le concernant », sans condition. Il est au **Titre I, non révisable**. La
+Charte n'étant pas encore adoptée, la fenêtre pour le corriger est ouverte ; elle
+se referme définitivement à l'article 56.
+
+Ce qu'il faudra y mettre : la sortie détruit le lien entre la personne et ce
+qu'elle a inscrit ; ce qui fut inscrit comme acte du commun demeure. Et **ça se dit
+à l'entrée**. Quelqu'un qui écrit une objection publique doit savoir, au moment où
+il l'écrit, qu'elle lui survivra — d'autant qu'un texte libre reste reconnaissable
+au style et que « non rattachable » sera toujours une fiction.
+
+### Le droit, et où il s'arrête
+
+J'ai présenté la LCEN et le DSA comme des contraintes de conception. Diego a coupé :
+*« Je refais un gouvernement d'en dessous pour pallier au liberticide actuel, on
+s'en tape. »* Il a un conseil juridique à lui, qu'il saisira quand il le décidera.
+
+Ce que j'ai maintenu, en une phrase et sans y revenir : le risque n'est pas que le
+droit invalide l'idée, c'est qu'une **personne** en réponde devant un tribunal —
+la manière la moins chère de faire tomber le projet sans jamais discuter de l'idée.
+Dit une fois, c'est son appel.
+
+### Les modalités de scrutin se réduisent
+
+Diego, sur les quatre modalités de l'article 21 : *« C'est les mêmes, y'a juste une
+question de fréquence. »* Exact pour répartition et conviction, et presque pour la
+préférentielle : l'expression est identique — répartir son soutien entre des
+options — seule la **résolution** change, exclusive ou proportionnelle, ponctuelle
+ou continue. Condorcet n'est pas une manière de voter mais de dépouiller.
+
+L'article passera de quatre modalités à deux. Bénéfice non cherché : **ça règle
+F12.** La conviction n'était sans procédure que parce qu'on en avait fait une
+modalité étrangère à la fenêtre de 72 heures.
+
+### L'horodatage : Diego résout F1
+
+*« L'horodatage du partage sur tous les appareils, tu ne falsifies rien, c'est
+enregistré. »* Le témoignage réparti **est** l'horloge : l'agrégat des attestations
+« j'ai vu cette tête » borne l'existence d'un état sans qu'aucune horloge
+individuelle ait à être juste. Les délais s'exprimeront en attestations.
+
+Une nuance que je lui dois : l'OS aide mais ne prouve pas — un appareil seul reste
+compromettable, c'est le paradoxe du client. **C'est la répartition qui prouve.**
+Et la garantie est faible tant que les témoins sont peu nombreux — soit exactement
+pendant l'Amorçage.
+
+### Méthode
+
+Diego : *« Fais une liste pour qu'on se perde pas, le sujet est complexe et aura
+tendance à m'emmener de tous les côtés. »* Quinze entrées tenues à jour à chaque
+tour. Le reproche du 3 août — *« tu es parti dans tous les sens »* — vaut aussi
+dans l'autre sens : c'est à moi de tenir le fil quand la conversation part, et
+d'aller au bout de chaque question ouverte.
+
+---
+
 ## 2026-08-05, 14h — Bloc 3a, et la simulation qui casse le Titre IX
 
 ### « À nuancer » n'était pas ce que j'avais écrit

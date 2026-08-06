@@ -99,7 +99,7 @@ elle-même*. « Ignorer » n'est pas l'abstention, qui est le silence. C'est un 
 il est compté, et il porte conséquence.
 
 **Consultatif partout, contraignant sur la révocation.** Les Régents ne cogèrent
-pas le quotidien — une assemblée qui tranche tout se paralyse. Ils détiennent le
+pas le quotidien — un commun où tout se vote se paralyse. Ils détiennent le
 seul pouvoir qui ne se contourne pas : **renvoyer ceux qui décident.** La Table
 Ronde peut passer outre un avis ; elle ne peut pas le faire en silence. Et chaque
 « Ignorer » majoritaire, chaque avis écarté sans réponse motivée, inscrit un point
@@ -150,11 +150,11 @@ Voir [`docs/06-REGISTRE.md`](docs/06-REGISTRE.md).
 
 Tout ce qui précède décrit **un** commun. Le renversement d'échelle tient à ceci :
 **le dispositif est reproductible.** Un immeuble, un village, une école, une
-coopérative, un syndicat, un quartier — chacun peut tenir son assemblée, son
+coopérative, un syndicat, un quartier — chacun peut tenir ses Régents, son
 registre et sa Table Ronde. Sans autorisation, sans adhésion, sans redevance.
 
 **Sept personnes suffisent.** Et la procédure s'allège avec la taille : jusqu'à
-trente membres, l'assemblée *est* la Table Ronde. Imposer treize délégués à un
+trente membres, *tous les Régents sont* la Table Ronde. Imposer treize délégués à un
 village de quarante serait absurde — c'est ainsi que meurent les dispositifs
 démocratiques, par une procédure plus lourde que la décision qu'elle encadre.
 

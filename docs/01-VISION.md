@@ -173,4 +173,4 @@ mensuels, sur chaque appareil supporté). Les pistes non exclusives :
 
 La tension à assumer : **le financement public est le plus accessible et le plus
 contradictoire avec le message.** À arbitrer explicitement — et, si la Régence a
-un sens, ce serait le premier avis légitime à soumettre à l'Assemblée des Régents.
+un sens, ce serait le premier avis légitime à soumettre aux Régents.

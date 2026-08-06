@@ -122,7 +122,7 @@ Aucune ligne n'est satisfaisante seule.
 **L'admission** s'opère par toile de confiance : trois électeurs déjà inscrits
 présentent le candidat et répondent de son existence distincte. Chacun ne peut
 parrainer que cinq admissions par an — ce plafond borne mécaniquement la vitesse
-à laquelle un acteur hostile peut peupler l'assemblée d'identités fictives, et
+à laquelle un acteur hostile peut peupler le corps électoral d'identités fictives, et
 rend l'entreprise visible avant d'être décisive. Le graphe des parrainages est
 public : c'est le seul rempart, il doit être auditable.
 

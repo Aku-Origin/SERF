@@ -16,7 +16,7 @@ Régents, ses Treize. C'est un objet réel, mais un seul.
 La proposition change de nature dès qu'on admet que **le dispositif est
 reproductible**. Un immeuble, un village, une école, une coopérative agricole, un
 syndicat, une association, un quartier, une commune : chacun peut tenir sa propre
-assemblée, son propre registre, sa propre Table Ronde.
+corps de Régents, son propre registre, sa propre Table Ronde.
 
 Aucun de ces échelons n'a besoin d'autorisation. Aucun ne dépend d'un centre. Et
 c'est exactement ce que veut dire **reprendre par le dessous** : on ne conquiert
@@ -71,7 +71,7 @@ lourde que la décision qu'elle encadre.
 
 | Taille | Organisation |
 |---|---|
-| **7 à 30** | L'assemblée **est** la Table Ronde. Aucun collège séparé. Délibération de 3 jours. |
+| **7 à 30** | **Tous les Régents sont la Table Ronde.** Aucune délégation, aucun collège séparé. Délibération de 3 jours. |
 | **30 à 500** | Une Table Ronde de **cinq** sièges — trois tirés au sort, deux élus. Délibération de 5 jours. |
 | **Au-delà de 500** | La structure des Treize s'applique (Charte, Titre IV). Délibération de 7 jours. |
 

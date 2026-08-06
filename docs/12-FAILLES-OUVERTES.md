@@ -40,7 +40,7 @@ Porteur avant de devenir Régent (art. 8 bis).
 
 **À trente-six mois — le terme absolu et non prorogeable de l'article 55 — il y a
 treize Régents.** Pour treize sièges (art. 27). Chaque membre du corps électoral
-est délégué ; il ne reste personne dans l'Assemblée pour aviser, ni pour dissoudre.
+est délégué ; il ne reste plus un seul Régent pour aviser, ni pour dissoudre.
 Le quorum de 20 % de l'article 40 vaut alors **trois personnes**. Et comme les
 sortants ne sont pas rééligibles au mandat suivant, **une seconde Table Ronde ne
 peut pas être formée.**
@@ -55,11 +55,11 @@ corps de treize personnes.
 **Ce qu'il faut trancher — et les options s'excluent :**
 
 1. **Abaisser le nombre de sièges à faible effectif.** L'article 44 quinquies le
-   fait déjà pour les communautés (7-30 : l'assemblée *est* la Table Ronde). La
+   fait déjà pour les communautés (7-30 : *tous les Régents sont* la Table Ronde). La
    même règle devrait valoir pour le commun SERF lui-même. **C'est la correction
    la moins coûteuse.**
 2. **Allonger le terme absolu**, ce que l'article 55 interdit explicitement — et
-   pour une bonne raison : une régence qui peut proroger son terme n'en est pas
+   pour une bonne raison : un amorçage qui peut proroger son terme n'en est pas
    une.
 3. **Desserrer l'entrée** — plus de parrainages annuels, moins de parrains, délai
    plus court. Mais **la lenteur de la croissance et la résistance au Sybil sont
@@ -77,7 +77,7 @@ procédure est en temps horloge : 7 jours de délibération, 72 h de scrutin, **
 jours de réponse motivée** (art. 35), compteur **glissant sur 12 mois** (art. 38),
 36 mois de Régence (art. 55).
 
-Le seul pouvoir réel de l'Assemblée — le point de défiance pour silence — dépend
+Le seul pouvoir réel des Régents — le point de défiance pour silence — dépend
 donc d'une durée que la Charte déclare non probante. Comment prouve-t-on au
 Registre que le délai de l'article 35 a expiré, si rien de temporel n'y fait
 preuve ?
@@ -158,7 +158,48 @@ basculer une désignation.
 
 ## 2. Graves — à trancher avant tout scrutin réel
 
-### F5 — Le compteur de défiance est neutralisable, par trois voies
+### F5 — Le compteur de défiance est neutralisable — et sous le quorum, il se retourne
+
+**Aggravé par simulation, 6 août 2026.** Ce qui suit était décrit comme une
+neutralisation possible. La mesure montre que c'est pire : **sous 20 % de
+participation, le mécanisme travaille contre ceux qu'il devait servir.**
+
+Monte-Carlo, 2 000 tirages, vingt ans, en appliquant les articles 38, 39.3, 40 et 41 :
+
+| Table Ronde | Participation | Dissolutions | Échecs au quorum | Effacements calendaires |
+|---|---|---|---|---|
+| médiocre (3 pts/an) | 5 % et 12 % | **0** | 3,1 | 19,1 |
+| médiocre | 20 % et 35 % | 1,6 | 0 | — |
+| mauvaise (8 pts/an) | 5 % et 12 % | **0** | **23,3** | ~17 |
+| mauvaise | 20 % et 35 % | 11,7 | 0 | — |
+
+**Trois lectures :**
+
+1. **Le quorum est un mur, pas une pente.** À 19,9 % le scrutin échoue toujours,
+   quoi que la Table Ronde ait fait. Une Table Ronde qui veut durer n'a rien
+   d'autre à faire que **maintenir la participation sous le seuil** — des scrutins
+   fréquents, techniques, ennuyeux y suffisent.
+2. **Essayer et échouer est pire que ne rien faire.** L'article 41 traite un échec
+   au quorum comme un rejet : le compteur est effacé et la pétition bloquée six
+   mois. Une mauvaise Table Ronde est mise en cause 23 fois en vingt ans, survit
+   aux 23, et **sort lavée à chaque fois**. *L'abstention absout.*
+3. **L'effacement calendaire tire seul.** 17 à 19 fois sur vingt ans, sans qu'aucun
+   comportement ne l'ait mérité — alors que la fenêtre est déjà glissante sur douze
+   mois.
+
+**Trois corrections proposées, non tranchées** (Diego, 6 août : *« c'est
+problématique »* — la réponse envisagée passe par le mérite à l'élection et par un
+remaniement de l'architecture des organes) :
+
+- **Un échec au quorum n'efface rien.** Seul un rejet par des votants remet le
+  compteur à zéro. Un scrutin qui n'a pas atteint son quorum n'a pas eu lieu.
+- **Le quorum décroît quand le compteur monte.** 5 points → 20 % · 8 points → 10 %
+  · 12 points → aucun quorum. Le frein se resserre à mesure qu'il devient
+  nécessaire, au lieu de se desserrer.
+- **La confirmation de demi-mandat n'est pas un scrutin de dissolution.** Seul le
+  second touche au compteur.
+
+**Les trois voies de neutralisation d'origine, toujours ouvertes :**
 
 - **L'effacement est calendaire.** Un scrutin de dissolution s'ouvre « de droit » à
   chaque demi-mandat (art. 39.3), et un scrutin rejeté remet le compteur à zéro
@@ -209,14 +250,14 @@ c'est autre chose.
 d'arbitrer ». Vrai **pour constater**. Mais aucun article ne dit qui annule un
 scrutin faussé, qui le rejoue, ce qu'il advient du registre corrompu.
 
-Et le compteur de défiance ne s'incrémente que pour mépris de l'Assemblée
+Et le compteur de défiance ne s'incrémente que pour mépris des Régents
 (art. 38) — **jamais pour excès de compétence ni pour atteinte au Titre I**.
 
 **Détection sans remédiation n'est pas un dispositif de sécurité.**
 
 ### F8 — Aux petits échelons, le vote doit être secret et public à la fois
 
-De 7 à 30 membres, « l'assemblée **est** la Table Ronde » (art. 44 quinquies). Or
+De 7 à 30 membres, « **tous les Régents sont** la Table Ronde » (art. 44 quinquies). Or
 le vote des Régents est secret (art. 24) et celui des membres de la Table Ronde
 est « nominatif et publié » (art. 32). **Le même corps est les deux.**
 
@@ -240,7 +281,7 @@ libre.**
 actes de l'organe) et **par engagement** (les expressions des personnes), et dire
 ce qu'il advient d'une objection à la sortie de son auteur.
 
-### F10 — Un seul Régent peut saturer l'Assemblée
+### F10 — Un seul Régent peut saturer le commun
 
 Le seuil de mise à l'ordre du jour est « 1 % ou cent Régents, le plus bas des
 deux » (art. 15) — soit **cinq personnes** au seuil de 500, **une seule** pendant

@@ -70,15 +70,16 @@ Termes décidés, à ne jamais laisser dériver :
 
 | Terme | Sens exact | Erreur à traquer |
 |---|---|---|
-| **Table Ronde** | Les Treize, jamais l'assemblée | Employé pour l'ensemble des porteurs |
-| **Les Régents** | Tous les porteurs — le corps électoral | Appelés « électeurs », « utilisateurs », « citoyens » dans un texte normatif |
-| **L'Assemblée** | La réunion de tous les Régents | Confondue avec la Table Ronde |
+| **Table Ronde** | Les Treize, jamais l'ensemble des porteurs | Employé pour tous les Régents |
+| **Les Régents** | Tous les porteurs admis — **toujours au pluriel, jamais une entité** | Appelés « électeurs », « utilisateurs », « citoyens » ; ou ramassés sous un singulier (« l'Assemblée », « le corps ») |
+| **L'Amorçage** | Les 36 premiers mois, avant que le corps électoral tienne debout — Titre IX | Appelé « la Régence », qui désigne la couche du produit et ne s'éteint pas |
+| **La Régence** | La couche de gouvernance : Table Ronde, Registre, Scrutin. Permanente | Employée pour la période provisoire du Titre IX |
 | **L'Enceinte** | La couche d'encapsulation des applications | Décrite comme un « bac à sable » ou un « blocage » |
 | **Le Registre** | Le journal de transparence | Appelé « blockchain », terme explicitement écarté |
 | **La Parole** | La délibération **publique**, opposable | Confondue avec la messagerie privée |
 
 ```bash
-cd "D:/Claude/SERF" && grep -rn 'blockchain\|électeur\|utilisateur' --include='*.md' . | grep -v 'docs/06-REGISTRE.md'
+cd "D:/Claude/SERF" && grep -rn 'blockchain\|électeur\|utilisateur\|Assemblée\|Régence provisoire' --include='*.md' . | grep -v 'docs/06-REGISTRE.md' | grep -v 'JOURNAL.md'
 ```
 
 Les occurrences d'analyse — « pourquoi pas une blockchain » — sont légitimes ; les
