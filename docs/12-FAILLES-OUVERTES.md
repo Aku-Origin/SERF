@@ -265,7 +265,28 @@ La contradiction est totale et frappe l'échelon que le projet présente comme l
 plus important. **À trancher dans l'article 44 quinquies**, dans un sens ou dans
 l'autre, explicitement.
 
-### F9 — La parole publique est une donnée personnelle inaltérable
+### ~~F9 — La parole publique est une donnée personnelle inaltérable~~ — **CORRIGÉE le 6 août 2026**
+
+*Trouvée par Diego, par une autre porte que la mienne : « si le Régent est secret,
+quand pouvons-nous le tracer ? Il n'est donc jamais lié à son objection. » La
+contradiction n'était pas seulement entre deux articles — le texte confondait deux
+régimes de parole opposés.*
+
+*Corrigé en trois endroits. **L'article 14** sépare les deux et interdit tout texte
+joint à un bulletin : on argumente en délibération, signé et à découvert ; on vote
+au scrutin, en secret et sans un mot. La raison est arithmétique — trois textes
+signés en face de trois bulletins révèlent trois votes, et le style suffit à
+défaire un anonymat promis. **L'article 26 bis** porte la même séparation du côté
+du Registre : « en clair et signé » d'un côté, « chiffré et sans auteur » de
+l'autre. **L'article 26 quinquies** cesse d'affirmer qu'aucune donnée personnelle
+ne figure au Registre — c'était faux — et dit ce que la sortie efface et
+n'efface pas.*
+
+*Ce qui subsiste, assumé et non caché : une objection reste une opinion politique
+attribuable. La différence est qu'elle est désormais **consentie à l'entrée**,
+signée sciemment, et qu'on ne promet plus de « non rattachable » qu'on ne peut pas
+tenir. Diego, 6 août : « je ne peux pas protéger une personne face aux générations
+futures. » Texte d'origine du défaut conservé ci-dessous.*
 
 L'article 26 bis inscrit au Registre les objections et amendements. L'article 26
 quinquies affirme qu'« aucune donnée personnelle n'y figure ».

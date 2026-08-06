@@ -324,17 +324,32 @@ répondre de ce qu'elle leur fait.
 Aucune question n'est mise aux voix sans avoir suivi les quatre étapes suivantes,
 dans l'ordre :
 
-| Étape | Durée | Objet |
-|---|---|---|
-| **Proposition** | — | Dépôt du texte au registre |
-| **Parrainage** | 30 jours max | Recueil du seuil de soutiens (art. 15) |
-| **Délibération** | 7 jours minimum | Amendements, objections, contre-propositions |
-| **Scrutin** | 72 heures | Vote, après annonce ferme de la date |
+| Étape | Durée | Objet | Régime |
+|---|---|---|---|
+| **Proposition** | — | Dépôt du texte au registre | Signée |
+| **Parrainage** | 30 jours max | Recueil du seuil de soutiens (art. 15) | Signé |
+| **Délibération** | 7 jours minimum | Amendements, objections, contre-propositions | **Signée, publique, opposable** |
+| **Scrutin** | 72 heures | Vote, après annonce ferme de la date | **Secret intégral** |
 
 Le délai de délibération est un **minimum d'ordre public**. Il ne peut être
 abrégé, y compris par décision unanime. Il protège les Régents contre eux-mêmes :
 c'est la seule défense connue contre le vote d'humeur et contre la mobilisation
 soudaine d'un groupe organisé.
+
+**Les deux régimes ne se mélangent jamais.** On argumente en délibération, à
+découvert et sous son nom ; on vote au scrutin, en secret et sans un mot. **Aucun
+texte n'est joint à un bulletin, sous aucune forme.**
+
+La raison est arithmétique avant d'être morale. Si trois personnes seulement
+choisissent une expression et que trois textes signés paraissent, leurs trois votes
+sont révélés — le secret ne fuit pas par une faille, il tombe par le nombre. Et un
+texte non signé n'est pas une garantie non plus : le style suffit souvent à
+reconnaître qui écrit, de sorte que l'anonymat promis au bulletin serait une
+fiction.
+
+Il en découle une exigence, et elle est assumée : **qui n'a rien dit pendant les
+sept jours vote sans porter d'argument.** Le délai cesse d'être une attente ; il
+devient le seul moment où l'on peut peser sur le texte.
 
 **Article 14 bis — Intelligibilité.**
 Toute proposition soumise au vote comporte une version **facile à lire et à
@@ -385,7 +400,7 @@ Sur toute question soumise, quatre expressions sont ouvertes :
 |---|---|
 | **Oui** | J'adhère au texte tel qu'il est. |
 | **Non** | Je le refuse. |
-| **À nuancer** | Le principe est recevable, ce texte-ci ne l'est pas. Reprenez-le. |
+| **À nuancer** | J'adhère, avec les réserves qui sont déjà au dossier. |
 | **Ignorer** | Je récuse la question elle-même : mal posée, hors sujet, ou vous n'aviez pas à la poser. |
 
 **L'abstention n'est pas dans cette liste** : elle est le silence, et le silence
@@ -400,11 +415,16 @@ du Titre V, binaires par nature.
 avec ceci, oui à condition de cela. Elle se compte du côté de l'adhésion : un texte
 qui recueille peu de « Oui » et beaucoup de « À nuancer » est **adopté**.
 
-Ce qui la distingue est qu'elle **porte du texte** : les réserves, les arguments,
-ce qui devrait être pris en compte. Ces écrits sont inscrits au Registre.
+Ce qui la distingue est qu'elle **renvoie à du texte** : les réserves écrites en
+délibération, signées, déjà inscrites au Registre. Le bulletin ne porte aucun mot
+(art. 14) — il désigne un dossier qui existe.
 
-**Ils appellent une réponse publique** dans les conditions de l'article 35. Ne pas
-y répondre coûte un point de défiance (art. 38).
+**Ces réserves appellent une réponse publique** dans les conditions de l'article
+35. Ne pas y répondre coûte un point de défiance (art. 38).
+
+Il suit de là qu'**on ne nuance pas au dernier moment**. Qui veut que ses réserves
+pèsent doit les avoir posées, à découvert, pendant les sept jours. C'est le prix du
+secret du bulletin, et il est délibéré.
 
 *On ne bloque pas, on oblige à entendre.* Une nuance n'arrête pas une décision ;
 elle crée une dette d'explication à la charge de celui qui décide.
@@ -507,13 +527,22 @@ est nul.
 ## Chapitre 5 — Le Registre
 
 **Article 26 bis — Inscription universelle des actes de pouvoir.**
-Tout acte de pouvoir est inscrit au Registre : propositions, amendements et
-objections ; bulletins chiffrés, décomptes et preuves de dépouillement ; ordres du
-jour, procès-verbaux et **votes nominatifs** des membres de la Table Ronde ;
-réponses motivées de l'article 35 ; points de défiance et leurs motifs ; élections
-et tirages au sort ; mouvements de ressources et dérogations motivées à l'article
-23 ; images publiées et empreintes de construction ; attributions, révocations et
-transmissions de mandats et de charges.
+Tout acte de pouvoir est inscrit au Registre, **selon deux régimes qui ne se
+confondent jamais** :
+
+**En clair et signé** — propositions, amendements et objections de la délibération ;
+ordres du jour, procès-verbaux et **votes nominatifs** des membres de la Table
+Ronde ; réponses motivées de l'article 35 ; points de défiance et leurs motifs ;
+élections et tirages au sort ; mouvements de ressources et dérogations motivées à
+l'article 23 ; images publiées et empreintes de construction ; attributions,
+révocations et transmissions de mandats et de charges.
+
+**Chiffré et sans auteur** — les bulletins, les décomptes et les preuves de
+dépouillement.
+
+Cette séparation est la même que celle de l'article 14, portée du côté du Registre.
+Une disposition qui inscrirait les deux dans une seule phrase produirait, tôt ou
+tard, le glissement qu'elle prétend interdire.
 
 **Le silence est un événement inscrit.** L'expiration d'un délai sans réponse est
 enregistrée comme telle. Ne rien faire laisse une trace — sans quoi l'inaction
@@ -550,20 +579,31 @@ total du vote individuel.** Un registre qui enregistrerait tout sans cette rése
 ne serait pas une avancée démocratique — ce serait le plus parfait instrument de
 rétorsion jamais construit, offert clés en main à qui s'en emparerait.
 
-**Article 26 quinquies — Effacement et permanence.**
-Le Registre inscrit des **actes**, jamais des personnes. Aucune donnée personnelle
-n'y figure ; ce qui y entre est un engagement cryptographique, qui ne révèle rien
-mais que l'intéressé peut prouver.
+**Article 26 quinquies — Ce que la sortie efface, et ce qu'elle n'efface pas.**
+Les deux régimes de l'article 26 bis ne sortent pas de la même manière.
 
-La correspondance entre une personne et ses engagements est tenue hors du
-Registre et **détruite** lorsqu'elle exerce son droit de sortie (art. 4). Le
-Registre demeure alors intact et vérifiable, et ses entrées deviennent
-définitivement non rattachables : la personne a disparu, l'histoire du commun est
-préservée.
+**Ce qui est chiffré et sans auteur** n'a jamais été rattaché à personne. Il n'y a
+rien à en effacer : le bulletin ne portait aucun nom le jour où il a été déposé.
 
-Cet article règle la contradiction entre un journal permanent et le droit à
-l'effacement. Elle se règle à la conception : après la première inscription, il
-est trop tard.
+**Ce qui a été dit en clair et signé demeure.** Une objection, un amendement, un
+vote nominatif de la Table Ronde sont des actes du commun ; ils ont pesé sur une
+décision, et l'article 26 sexies exige que le pourquoi d'une décision reste
+inscrit avec elle. **La mémoire l'emporte sur la sortie** — non par sévérité, mais
+parce qu'un commun qui perd la raison de ses choix chaque fois que quelqu'un s'en
+va ne transmet rien.
+
+La sortie (art. 4) rend à la personne l'intégralité de ses données, met fin à sa
+participation, interdit qu'aucun acte nouveau lui soit attribué, et **détruit la
+table qui la relie à ce qu'elle a inscrit**. Elle ne retire pas ce qui fut dit.
+
+**Cela se dit à l'entrée, jamais à la sortie.** Nul n'écrit en délibération sans
+avoir été averti, à ce moment-là, que son texte survivra à son départ. Et
+l'avertissement doit être honnête : un texte libre reste reconnaissable à son
+style, de sorte que « définitivement non rattachable » serait une promesse qu'on ne
+peut pas tenir. On ne la fait pas.
+
+*Ce que le commun garantit n'est donc pas l'oubli : c'est qu'on ne puisse plus rien
+ajouter à votre nom, ni se servir contre vous de ce que vous avez rendu.*
 
 **Article 26 sexies — Le pourquoi est inscrit avec le quoi.**
 Toute décision est inscrite au Registre accompagnée de **son motif, des objections
