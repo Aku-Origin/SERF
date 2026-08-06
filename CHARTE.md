@@ -81,9 +81,18 @@ journal public et infalsifiable. Ce qui ne peut être vérifié ne peut être
 distribué.
 
 **Article 4 — Droit de sortie.**
-Tout porteur peut à tout moment désinstaller SERF, exporter l'intégralité de ses
-données dans un format ouvert et documenté, et effacer toute trace le concernant.
-Ce droit ne peut être conditionné, retardé, ni assorti d'aucune contrepartie.
+Tout porteur peut à tout moment quitter SERF. Il emporte toutes ses données dans un
+format ouvert et documenté. Le commun détruit tout ce qu'il détient sur lui, **y
+compris ce qui permettait de savoir que tel écrit était le sien**. Ce droit ne peut
+être conditionné, retardé, ni assorti d'aucune contrepartie.
+
+Ce qu'il a écrit publiquement pendant une délibération reste au Registre. **Ce
+n'est pas une trace qu'on refuse d'effacer : c'est sa part dans une décision qui a
+été prise avec.** Mais plus rien ne le désigne, et plus rien de nouveau ne peut lui
+être attribué.
+
+**On le dit à l'entrée, pas à la sortie.** Le commun ne promet pas l'oubli — il
+promet qu'on ne puisse plus rien ajouter à votre nom.
 
 **Article 5 — Droit de bifurcation.**
 Le code, le registre des décisions et les clés publiques du commun peuvent être
@@ -586,11 +595,14 @@ Les deux régimes de l'article 26 bis ne sortent pas de la même manière.
 rien à en effacer : le bulletin ne portait aucun nom le jour où il a été déposé.
 
 **Ce qui a été dit en clair et signé demeure.** Une objection, un amendement, un
-vote nominatif de la Table Ronde sont des actes du commun ; ils ont pesé sur une
-décision, et l'article 26 sexies exige que le pourquoi d'une décision reste
-inscrit avec elle. **La mémoire l'emporte sur la sortie** — non par sévérité, mais
-parce qu'un commun qui perd la raison de ses choix chaque fois que quelqu'un s'en
-va ne transmet rien.
+vote nominatif de la Table Ronde ne sont pas des traces laissées par quelqu'un :
+ce sont **des contributions au commun**. Elles ont pesé sur une décision, et
+l'article 26 sexies exige que le pourquoi d'une décision reste inscrit avec elle.
+
+**La mémoire l'emporte sur la sortie** — non par sévérité envers celui qui part,
+mais parce qu'un commun qui perd la raison de ses choix chaque fois que quelqu'un
+s'en va ne transmet rien. Celui qui a objecté a rendu service ; on ne lui retire
+pas son ouvrage sous prétexte qu'il s'en va.
 
 La sortie (art. 4) rend à la personne l'intégralité de ses données, met fin à sa
 participation, interdit qu'aucun acte nouveau lui soit attribué, et **détruit la
