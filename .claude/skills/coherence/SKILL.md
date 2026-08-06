@@ -79,7 +79,7 @@ Termes décidés, à ne jamais laisser dériver :
 | **La Parole** | La délibération **publique**, opposable | Confondue avec la messagerie privée |
 
 ```bash
-cd "D:/Claude/SERF" && grep -rn 'blockchain\|électeur\|utilisateur\|Assemblée\|Régence provisoire' --include='*.md' . | grep -v 'docs/06-REGISTRE.md' | grep -v 'JOURNAL.md'
+cd "D:/Claude/SERF" && grep -rni 'blockchain\|électeur\|utilisateur\|assembl\|régence provisoire' --include='*.md' . | grep -v 'docs/06-REGISTRE.md' | grep -v 'JOURNAL.md'
 ```
 
 Les occurrences d'analyse — « pourquoi pas une blockchain » — sont légitimes ; les
