@@ -49,10 +49,16 @@ enseignements de ces déploiements ont nourri une version 2 simplifiée
 Un précédent français de vote vérifiable en collectivité existe donc déjà. C'est
 utile à savoir : SERF n'aurait pas à défricher seul le terrain institutionnel.
 
-### Les codes de retour — la réponse au paradoxe du client
+### Les codes de retour — étudiés, puis écartés
+
+> **État de la décision : écartés par Diego le 3 août 2026.** Ce qui suit reste
+> dans ce document parce que c'est de l'état de l'art réel et sourcé, et parce
+> qu'on nous opposera le précédent suisse. La raison du rejet est en fin de
+> section, et le détail en [`03-REGENCE.md §5`](03-REGENCE.md).
 
 **Le document [`03-REGENCE.md §5`](03-REGENCE.md) affirmait que le paradoxe du
-client n'a pas de solution connue. C'est faux, et il faut le corriger.**
+client n'a pas de solution connue. C'était faux : le mécanisme existe et il
+mord.**
 
 Le mécanisme, déployé en Suisse depuis Neuchâtel 2015 puis par La Poste suisse :
 
@@ -112,7 +118,7 @@ confiance dans l'exploitant**.
 | Décision | Fondement |
 |---|---|
 | **Registrar en seuil, jamais unique** | Faille Belenios — correction de l'art. 10 |
-| **Codes de retour, avec explication sur le papier** | Neuchâtel/Suisse — corrige le paradoxe du client |
+| ~~Codes de retour~~ — **écartés le 3 août** | L'enveloppe s'ouvre en transit, la logistique est intenable sur un corps pseudonyme, et une vérification postérieure constate le dégât sans l'empêcher. À la place : pousser le sans-confiance, et nommer la frontière — la cryptographie ne rend jamais l'appareil sans confiance |
 | **Vérification formelle du protocole** | Ce qui a révélé la faille Belenios |
 | **Ne jamais réimplémenter la cryptographie** | Partir de Belenios, décision inchangée |
 
@@ -325,8 +331,11 @@ la plupart des banques de détail européennes
 
 1. **Article 10 de la Charte** — le registrar doit être éclaté en seuil. Faille
    Belenios. *Urgent : c'est une faille active dans notre texte.*
-2. **[`03-REGENCE.md §5`](03-REGENCE.md)** — le paradoxe du client n'est plus « sans
-   solution connue ». Les codes de retour sont une réponse déployée. À réécrire.
+2. ~~**`03-REGENCE.md §5`** — les codes de retour sont une réponse déployée, à
+   réécrire.~~ **Fait, puis dépassé.** La section a été réécrite le 3 août pour
+   les intégrer, puis le 8 août pour acter leur rejet. Ce qu'elle dit désormais :
+   le paradoxe n'a pas de solution parfaite, la frontière du sans-confiance est
+   l'appareil lui-même, et on l'annonce.
 3. **[`02-ARCHITECTURE.md §2`](02-ARCHITECTURE.md)** — rouvrir le choix du socle.
 4. **[`09-BRIEF-DESIGN.md §5.4`](09-BRIEF-DESIGN.md)** — La Parole : pas de fil de
    réponses, et cartographie des accords à la manière de Pol.is.
@@ -335,8 +344,10 @@ la plupart des banques de détail européennes
 
 ### Restent ouverts
 
-- **La remise des codes de retour** sans adresse postale, donc sans rompre le
-  pseudonymat. Piste : remise par les trois parrains à l'admission.
+- ~~La remise des codes de retour sans adresse postale.~~ **Sans objet** — le
+  mécanisme est écarté, et la piste des trois parrains était morte deux fois
+  (chronologiquement impossible, et elle aurait fait du parrain un vérificateur de
+  vote). Voir F3.
 - **La vérification formelle** de notre protocole — qui, quand, à quel coût.
 - **Les lignes directrices CEPD 02/2025**, à lire intégralement.
 - **La relecture juridique**, qui ne se fait pas par recherche documentaire.

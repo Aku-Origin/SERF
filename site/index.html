@@ -507,10 +507,36 @@ footer p { color: var(--texte-3); }
         <div>
           <dt>iOS — hors périmètre, définitivement</dt>
           <dd>
-            Le chargeur d'amorçage est verrouillé, sans voie de déblocage. Le
-            promettre coûterait toute crédibilité au premier examen technique.
-            <strong>L'application de gouvernance, elle, tournera sur iPhone</strong> —
-            c'est le système qui est ciblé, pas la Régence.
+            Un iPhone vérifie chaque étage de son démarrage contre des clés
+            <strong>fondues dans le silicium</strong> à la fabrication. Il n'existe
+            aucun chemin — ni caché, ni documenté — pour y inscrire la vôtre. Sur
+            certains appareils Android, le constructeur autorise l'inscription
+            d'une clé et le <em>reverrouillage</em> du démarrage : c'est exactement
+            ce qui rend un système souverain possible, et Apple ne l'a jamais
+            permis. Ce n'est donc pas une question d'effort ou de licence :
+            <strong>le matériel refuse d'exécuter ce que nous signons.</strong>
+            Les applications iOS ne tourneront pas davantage sur SERF — la
+            compatibilité Android, elle, est prévue.
+          </dd>
+        </div>
+        <div>
+          <dt>Voter suppose d'avoir installé SERF</dt>
+          <dd>
+            Il n'y aura <strong>pas d'application de vote sur les systèmes des
+            autres</strong>. Sur un appareil qu'on ne contrôle pas, on peut offrir
+            la <em>vérifiabilité</em> — recalculer un résultat, contrôler que son
+            bulletin figure au Registre — mais pas l'intégrité de l'appareil : un
+            téléphone compromis peut afficher un écran qui mente, et promettre le
+            contraire serait la seule chose qui nous discréditerait vraiment.
+            <br><br>
+            À la place, un <strong>installateur en un clic</strong> : on branche
+            l'appareil, on ouvre une page, on clique. Pas de terminal, pas de
+            commandes. C'est un chemin plus exigeant que de télécharger une
+            application, et nous le disons.
+            <br><br>
+            <strong>La vérification, elle, ne suppose rien.</strong> Le Registre se
+            contrôle depuis n'importe quel matériel, hors ligne, et jusque sur
+            papier — c'est le propre d'une preuve.
           </dd>
         </div>
         <div>
@@ -525,9 +551,11 @@ footer p { color: var(--texte-3); }
         <div>
           <dt>Aucun noyau écrit de zéro</dt>
           <dd>
-            Le projet part d'AOSP et emprunte partout où c'est possible : Belenios
-            pour le scrutin, Trillian pour le journal, Matrix pour la parole,
-            F-Droid pour le dépôt. Le temps d'ingénierie va à la couche que
+            Le projet part d'<strong>AOSP</strong> — le code source d'Android que
+            Google publie sans ses services, la base sur laquelle construisent
+            tous les constructeurs — et emprunte partout où c'est possible :
+            Belenios pour le scrutin, Trillian pour le journal, Matrix pour la
+            parole, F-Droid pour le dépôt. Le temps d'ingénierie va à la couche que
             personne d'autre ne construit.
           </dd>
         </div>
@@ -553,12 +581,26 @@ footer p { color: var(--texte-3); }
           </dd>
         </div>
         <div>
-          <dt>Un mouchard soudé ne se retire pas par du code</dt>
+          <dt>Un composant soudé ne se garantit pas par du logiciel</dt>
           <dd>
-            On ne désactive pas un modem par logiciel. On isole, on rend visible, on
-            réclame des interrupteurs physiques — le levier qui manque est
-            réglementaire, et prétendre l'avoir résolu par du logiciel serait se
-            raconter une histoire.
+            En tant que système, on peut beaucoup : <strong>ne pas charger le
+            micrologiciel</strong> dont un composant a besoin pour démarrer — il
+            reste inerte ; couper son alimentation ou son horloge ; refuser de
+            l'énumérer, lui interdire le bus et les accès directs à la mémoire ;
+            et mentir à tout ce qui passe par nous.
+            <br><br>
+            Ce qu'on ne peut pas : un composant qui a <strong>son propre
+            processeur, son propre code et son propre chemin d'alimentation</strong>
+            ne nous demande pas la permission. Le modem cellulaire est le cas
+            d'école — sur la plupart des puces c'est un ordinateur séparé, éveillé
+            quand le processeur principal dort, relié directement à l'antenne. Et
+            surtout : <strong>on ne peut pas prouver l'absence</strong> de ce qu'on
+            ignore. Le silicium ne s'audite pas depuis du logiciel.
+            <br><br>
+            Alors on isole tout ce que le matériel permet d'isoler, on rend tout
+            visible, et on réclame des interrupteurs physiques — parce que
+            <strong>la seule garantie qui ne demande pas de faire confiance au
+            silicium est un fil qu'on peut couper.</strong>
           </dd>
         </div>
       </dl>
@@ -620,6 +662,34 @@ footer p { color: var(--texte-3); }
         l'accessibilité restent nôtres sur chacune. Une application qui échoue au
         niveau AA n'est pas adoptable.
       </p>
+
+      <h3>Les formats visés</h3>
+
+      <div class="tableau">
+        <table>
+          <thead>
+            <tr><th scope="col">Format</th><th scope="col">Ce qu'il porte</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Téléphone</th>
+              <td>Le format de référence. Tout y est.</td>
+            </tr>
+            <tr>
+              <th scope="row">Tablette</th>
+              <td>Même système, mise en page adaptée. C'est le format de la lecture longue — celui où l'on lit une proposition avant de voter.</td>
+            </tr>
+            <tr>
+              <th scope="row">Montre</th>
+              <td><strong>Elle notifie et elle vérifie. Elle ne porte pas la Parole.</strong> Un écran de cette taille ne permet pas de lire un texte avant d'y consentir — y voter serait une invitation à voter sans avoir lu.</td>
+            </tr>
+            <tr>
+              <th scope="row">Poste de travail</th>
+              <td><strong>Un second projet, pas un portage.</strong> Un ordinateur n'a ni le même modèle de menace, ni le même démarrage vérifié, ni le même parc. Le prétendre équivalent ferait échouer les deux.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- ============ 5 ============ -->
@@ -665,7 +735,7 @@ footer p { color: var(--texte-3); }
             <tr>
               <th scope="row">À nuancer</th>
               <td>J'adhère, avec les réserves déjà au dossier.</td>
-              <td>Compte du côté de l'adhésion, et crée une <strong>dette d'explication</strong> : ne pas répondre coûte un point de défiance.</td>
+              <td>Compte du côté de l'adhésion. <strong>Une nuance n'arrête rien, mais elle oblige à répondre</strong> — et les réserves restées sans réponse peuvent être signalées, puis coûter un point de défiance si les Régents le votent.</td>
             </tr>
             <tr>
               <th scope="row">Ignorer</th>
@@ -747,7 +817,7 @@ footer p { color: var(--texte-3); }
             <tr>
               <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/12-FAILLES-OUVERTES.md">12 — Failles ouvertes</a></th>
               <td>Les défauts connus et non corrigés, par gravité. À lire avant tout le reste.</td>
-              <td><span class="marque m-cours">15 ouvertes</span></td>
+              <td><span class="marque m-cours">16 ouvertes</span></td>
             </tr>
             <tr>
               <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/01-VISION.md">01 — Vision</a></th>
@@ -826,8 +896,8 @@ footer p { color: var(--texte-3); }
       <p>
         Le projet s'interdit d'annoncer une vérification non faite. Il tient donc un
         <a href="https://github.com/Aku-Origin/SERF/blob/main/docs/12-FAILLES-OUVERTES.md">registre
-        public de ses propres défauts</a> — <strong>quinze ouverts, deux
-        corrigés</strong>. En voici quatre, pour donner le ton.
+        public de ses propres défauts</a> — <strong>seize ouverts, deux
+        corrigés</strong>. En voici cinq, pour donner le ton.
       </p>
 
       <div class="tableau">
@@ -863,6 +933,19 @@ footer p { color: var(--texte-3); }
                 <strong>Essayer coûte donc plus cher que ne rien faire</strong>, et la
                 stratégie optimale d'un organe qui veut durer devient : maintenir la
                 participation basse.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="marque m-casse">F17</span> Notre propre socle interdit ce qu'on vient de décider</th>
+              <td>
+                Ouverte <strong>le jour même où nous l'avons créée.</strong> L'article
+                6 de la Charte — non révisable — interdit d'écarter quiconque « en
+                raison de son appareil ou de ses moyens ». Or nous venons de décider
+                que voter suppose d'avoir installé SERF. Les deux ne tiennent pas
+                ensemble, et la fenêtre pour choisir se referme à l'adoption de la
+                Charte, définitivement. <strong>C'est la deuxième fois en deux jours
+                qu'une décision juste heurte un socle écrit avant elle</strong> — la
+                règle qui en sort : relire le socle avant de trancher, pas après.
               </td>
             </tr>
             <tr>

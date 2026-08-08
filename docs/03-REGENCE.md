@@ -199,45 +199,75 @@ Défenses cumulables, aucune suffisante seule :
 - **Vérification hors-bande** — possibilité de vérifier son bulletin depuis un
   appareil tiers, sur un serveur indépendant.
 
-### Les codes de retour — la défense qui contraint réellement le client
+### Les codes de retour — écartés
 
-*Correction du 3 août 2026. Ce document affirmait d'abord que le paradoxe était
-sans solution connue. C'était faux, et la solution est déployée depuis des
-années.*
+*Ce document a d'abord affirmé que le paradoxe était sans solution connue. C'était
+faux : les codes de retour sont déployés en Suisse depuis Neuchâtel 2015, et ils
+contraignent réellement un client compromis — il ne peut pas afficher un code
+qu'il n'a aucun moyen de connaître. Le mécanisme a ensuite été **écarté par Diego
+le 3 août 2026**, et pour de bonnes raisons. Les deux corrections figurent ici
+plutôt qu'une seule, parce que la seconde ne s'entend pas sans la première.*
 
-Le mécanisme des **codes de retour**, employé en Suisse depuis Neuchâtel 2015 :
+**Trois raisons dirimantes.**
 
-> L'électeur reçoit, **sur un canal indépendant de l'appareil**, une feuille de
-> codes personnalisés. Après avoir déposé son bulletin, le client affiche des
-> codes. S'ils correspondent à ceux du papier, le bulletin enregistré est bien
-> celui qu'il voulait.
+1. **L'enveloppe s'ouvre en transit.** Rien ne garantit que la feuille reçue est
+   celle qui a été émise. La défense repose alors sur l'intégrité d'un canal
+   postal, c'est-à-dire sur la bonne foi de tiers — ce que la règle de méthode
+   n°1 interdit d'appeler une garantie.
+2. **La logistique est intenable.** Un envoi papier personnalisé par scrutin et
+   par votant, sur un corps électoral pseudonyme qui n'a pas d'adresse déclarée,
+   pour un commun qui tient plusieurs scrutins par an.
+3. **Une vérification postérieure constate le dégât, elle ne l'empêche pas.** On
+   apprend après coup que son bulletin a été altéré, sans pouvoir le corriger.
 
-**Pourquoi c'est la seule défense qui morde.** Toutes les autres — construction
-reproductible, démarrage vérifié, transparence des binaires — rendent une
-compromission *détectable a posteriori*. Les codes de retour la rendent
-**impossible à dissimuler à l'électeur lui-même, sur-le-champ** : un client
-entièrement compromis ne peut pas afficher un code qu'il n'a aucun moyen de
-connaître.
+*Et la piste envisagée — remise en main propre par les trois parrains à
+l'admission — était morte deux fois : un code de retour se calcule par scrutin et
+par option, donc il n'existe pas encore au moment de l'admission ; et quiconque
+détient la feuille peut vérifier après coup comment la personne a voté, ce qui
+ferait du parrain un vérificateur de vote. Voir F3 dans
+[`12-FAILLES-OUVERTES.md`](12-FAILLES-OUVERTES.md).*
 
-**Le défaut à ne pas répéter.** La mise en œuvre suisse a été critiquée parce que
-le mode d'emploi n'est expliqué qu'en ligne, sur le site de vote. Celui qui
-contrôle le site contrôle donc l'explication, et peut faire accepter un code faux.
-**L'explication doit voyager avec le papier**, jamais seulement à l'écran.
+### La frontière exacte, et ce qu'on met à la place
 
-**Le point ouvert pour SERF :** la remise suppose un canal indépendant, donc
-classiquement une adresse postale — ce qui heurte le pseudonymat du corps
-électoral. Piste à concevoir : remise en main propre par les trois parrains au
-moment de l'admission, ce qui utilise un lien de confiance déjà établi et ne crée
-aucun fichier d'adresses.
+On pousse le **sans-confiance** aussi loin qu'il va, et on nomme précisément où il
+s'arrête.
+
+> **La cryptographie rend sans confiance tout ce qui suit le départ du bulletin.
+> Elle ne rend jamais l'appareil lui-même sans confiance.**
+
+C'est une **frontière, pas un trou**. Après le départ du bulletin : chiffrement
+homomorphe, dépouillement à seuil, preuves de dépouillement, journal en ajout
+seul, témoignage réparti — tout se recalcule par n'importe qui, et personne n'a à
+être cru.
+
+Avant le départ du bulletin, il reste l'appareil. Ce qu'on peut faire là est de
+réduire cet écart et de le rendre auditable :
+
+- **Construction reproductible à l'octet près** — le binaire distribué correspond
+  aux sources publiées, et n'importe qui le vérifie.
+- **Démarrage vérifié, avec reverrouillage** — l'appareil refuse d'exécuter ce que
+  nous n'avons pas signé.
+- **Signature multipartite** — trois détenteurs de clés distincts au minimum : il
+  faut un complot, pas une trahison.
+- **Transparence des binaires** — journal public de chaque image publiée. Une
+  image ciblée sur une seule personne devient impossible à cacher.
+- **Attestation publiée, jamais pondérée** — chaque résultat porte la composition
+  du parc qui l'a produit. On ne fait pas compter moins le bulletin de qui a un
+  appareil moins récent : ce serait écrire l'inverse de l'article 22.
+
+**Sur SERF cet écart est petit et contrôlable ; ailleurs il est large.** C'est la
+raison technique pour laquelle le vote suppose SERF, et pourquoi cette limite est
+annoncée au lieu d'être maquillée.
 
 ### Ce qu'on peut dire, et ce qu'on ne peut pas
 
-La Régence ne peut pas offrir les garanties du vote papier en isoloir — la
-coercition reste hors de portée. Elle offre autre chose : une gouvernance
-continue, vérifiable, à coût de participation quasi nul, sur un objet qui n'était
-jusqu'ici gouverné par personne. **Et avec les codes de retour, une garantie
-d'intégrité du client que le vote papier lui-même n'offre pas** — un bulletin
-glissé dans une urne ne se vérifie plus jamais.
+La Régence ne peut pas offrir les garanties du vote papier en isoloir — **la
+coercition reste hors de portée**, et l'intégrité de l'appareil n'est pas
+démontrable, seulement rendue coûteuse à briser.
+
+Elle offre autre chose : une gouvernance continue, vérifiable par n'importe qui, à
+coût de participation quasi nul, sur un objet qui n'était jusqu'ici gouverné par
+personne. Un bulletin glissé dans une urne, lui, ne se vérifie plus jamais.
 
 Prétendre à davantage détruirait la confiance à la première contestation
 sérieuse.

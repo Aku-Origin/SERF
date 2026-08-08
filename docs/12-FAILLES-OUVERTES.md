@@ -13,7 +13,42 @@
 
 ## 1. Bloquantes — à trancher **avant** `serf-registre` et `serf-scrutin`
 
-Ces quatre-là coûtent très cher après la première ligne écrite.
+Celles-ci coûtent très cher après la première ligne écrite. Deux d'entre elles —
+F17 et l'article 4, corrigé le 6 août — ne coûtent pas cher : elles deviennent
+**impossibles** après l'adoption de la Charte.
+
+### F17 — « Voter suppose SERF » heurte le Titre I
+
+**Ouverte le 8 août 2026, par la décision d'abandonner l'application autonome.**
+
+L'article 6 — **Titre I, non révisable** — dispose que *« nul n'est écarté en raison
+de son handicap, de sa langue, de son appareil ou de ses moyens »*.
+
+Or il a été décidé le 8 août qu'il n'y aurait **pas d'application de vote sur les
+systèmes des autres** : voter suppose d'avoir installé SERF. Quelqu'un qui a un
+iPhone, ou un appareil dont le constructeur n'autorise pas l'inscription d'une clé,
+est donc écarté du scrutin **en raison de son appareil**. Et l'exigence de
+réinstaller un système est un obstacle de **moyens** autant que de matériel.
+
+La décision est cohérente et bien motivée — la garantie de sécurité n'est pas
+tenable sur un système qu'on ne maîtrise pas. Mais elle contredit un article que
+personne ne pourra plus modifier après l'article 56.
+
+**Trois issues, et elles s'excluent :**
+
+1. **Restreindre la portée de l'article 6** avant l'adoption — l'universalité
+   s'entend *au sein* du parc où SERF s'installe, et la voie ouverte à tous est
+   celle de la **vérification**, qui ne suppose ni SERF, ni réseau, ni appareil
+   particulier. C'est la correction la moins coûteuse, et il faut l'écrire sans
+   euphémisme : le commun assume d'exclure du vote qui ne change pas de système.
+2. **Rouvrir une voie de participation hors SERF**, en disant ce qu'elle ne
+   garantit pas — c'est-à-dire revenir en partie sur la décision du 8 août.
+3. **Laisser la contradiction.** Alors l'article 6 l'emporte, étant du Titre I, et
+   c'est la décision du 8 août qui est nulle.
+
+*Même schéma que l'article 4 : une décision juste, prise après l'écriture d'un
+socle qui la contredisait, dans une fenêtre qui se referme. Cette classe d'erreur a
+maintenant frappé deux fois — **relire le Titre I avant de trancher, pas après**.*
 
 ### F0 — L'arithmétique du corps électoral contredit les seuils de dévolution
 

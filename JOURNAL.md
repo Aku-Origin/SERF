@@ -13,6 +13,134 @@
 
 ---
 
+## 2026-08-08, 15h — L'application tombe, et le Titre I se fait heurter une deuxième fois
+
+Diego a reconnu, dans les documents que le catalogue cite, des choses qu'on avait
+décidé contre. Il avait raison, et la cause est une faute de méthode à moi :
+**j'enregistrais les décisions dans le tableau de `CLAUDE.md` et dans le registre
+des failles, sans jamais réécrire les documents.** `CLAUDE.md` se contredisait dans
+le même fichier — ligne 92 les codes de retour comme *la* réponse au paradoxe du
+client, ligne 123 leur rejet. Un texte qui se contredit rend tout le reste suspect ;
+pour un lecteur extérieur c'est la dette la plus coûteuse du dépôt.
+
+Purgé : `03-REGENCE §5` réécrit, quatre passages de `11-ETAT-DE-LART` corrigés,
+`CLAUDE.md` remis d'équerre. Les codes de retour restent **décrits** dans l'état de
+l'art — c'est de la recherche réelle et on nous opposera le précédent suisse — mais
+avec leur rejet et ses trois raisons.
+
+### L'application autonome est abandonnée
+
+*« Ça fait 2 entités à construire, on n'a même pas commencé la première, je pense
+que c'est débile. »* Plus : une application hors dépôt officiel n'offre aucune
+garantie de sécurité sur un système qu'on ne contrôle pas.
+
+La césure ne passe donc plus entre la Régence et le système, mais entre **voter** et
+**vérifier** : voter suppose SERF, parce que la cryptographie ne rend sans confiance
+que ce qui suit le départ du bulletin ; vérifier ne suppose rien — n'importe quel
+matériel, hors ligne, jusque sur papier.
+
+À la place, un **installateur en un clic**, sur le modèle de GrapheneOS. Et une
+correction que je dois à Diego : il fondait en partie sa décision sur le fait qu'on
+permettrait *« l'émulation Android et iOS »*. **L'émulation iOS n'existera pas** —
+les applications iOS sont compilées pour le matériel d'Apple, liées à ses
+bibliothèques et signées par ses clés. La décision tient, mais elle coûte les gens
+qui ont un iPhone et n'en changeront pas.
+
+**Prix assumé, écrit dans les documents :** plus de *« la Régence recrute, l'OS
+convertit »*. Personne ne participe sans avoir réinstallé son système — et l'entrée
+par communautés constituées, qui est le cœur de l'Amorçage, suppose désormais de
+flasher les appareils de leurs membres.
+
+### F17 — et c'est la deuxième fois
+
+En écrivant cette révision, la collision est apparue : **l'article 6, Titre I non
+révisable, interdit d'écarter quiconque « en raison de son appareil ou de ses
+moyens ».** Exiger d'avoir installé SERF pour voter le heurte de front.
+
+C'est exactement le schéma de l'article 4 le 6 août : une décision juste, prise
+après l'écriture d'un socle qui la contredisait, dans une fenêtre qui se referme à
+l'article 56. **Deux fois en deux jours.** La leçon est claire et je l'écris ici
+pour ne pas la reperdre — **relire le Titre I avant de trancher, pas après.**
+
+### La vente d'appareils : reportée, et pour une bonne raison
+
+Ce serait la meilleure voie d'adoption : c'est nous qui inscririons la clé et
+reverrouillerions le démarrage. Diego l'écarte pour maintenant : *« l'Europe et la
+France va vouloir arrêter tout ça, ça leur donne le levier, ou alors faut devenir
+illégal et c'est pas mieux. »*
+
+Le raisonnement dépasse le matériel et mérite d'être retenu comme doctrine : **la
+forme de distribution détermine la surface d'attaque.** Un dépôt miroité est
+difficile à tuer ; une société avec du stock, une garantie légale de deux ans et des
+obligations de conformité est facile à tuer.
+
+### Le mouchard — je sous-estimais ce qu'un système peut faire
+
+*« Si on atterrit en tant qu'OS on a accès à ce qu'il y a dans la carte mère, donc
+on peut désactiver ou tromper. »* Il a raison. Ce qui manquait à `02-ARCHITECTURE
+§6`, et qui est le levier logiciel le plus fort dont on dispose : **ne pas charger
+le micrologiciel** qu'un composant attend au démarrage — il reste inerte, et il ne
+demande la permission de personne. S'y ajoutent la coupure d'alimentation ou
+d'horloge, le refus d'énumération et du bus, et le mensonge à tout ce qui passe par
+nous.
+
+Les deux limites qui restent sont dures : un composant avec son propre processeur,
+son propre code et son propre chemin d'alimentation ne nous demande rien ; et **on
+ne peut pas prouver l'absence de ce qu'on ignore.**
+
+Et Diego a trouvé le vrai levier : *« si je vends les appareils avec l'OS ? »* —
+**un problème de matériel se résout à l'achat, pas au code.** Reporté, mais c'est la
+bonne direction.
+
+### Le compteur de défiance et l'abstention
+
+Sur le quorum, Diego : *« en dessous de 20 % de votant ? C'est débile, c'est un
+devoir, ils l'ont au bout du doigt. »* Ma proposition — aucun quorum sur la
+dissolution, quorum conservé sur la révision de la Charte, *renvoyer doit être
+facile, réécrire doit être difficile* — attend qu'il en délibère avec les deux
+personnes qui le rejoignent. Comme les seuils de l'Amorçage.
+
+Sur « Ignorer » contre l'abstention, il tranche autrement que moi : *« si il
+s'abstient c'est qu'il y a un problème, et ignorer et s'abstenir pointent ce
+problème. »* C'est plus fort que ma position, et c'est faisable sans rien rouvrir :
+**le taux de participation est un nombre, pas une liste.** On peut publier « 34 %
+ont voté » sans jamais tenir le registre de qui. À concevoir : ce que produit une
+participation faible — je penche pour une obligation de s'expliquer plutôt qu'un
+point automatique, sinon une abstention organisée devient une arme.
+
+### Le mécanisme de la nuance, par Diego
+
+Chaque « À nuancer » signalé après le vote, avec la réponse en regard · la
+transparence fait pression · et si les signalements atteignent un seuil, **les
+Régents votent** le point de défiance.
+
+C'est meilleur que ce que je proposais : **personne ne juge si la réponse est bonne,
+les Régents la jugent.** Aucun organe créé. Et ça ne fonctionne que grâce à la
+séparation des deux paroles écrite le 6 août — la réserve est publique et signée,
+le bulletin est secret, donc signaler ne révèle aucun vote. Si le texte était resté
+attaché au bulletin, ce mécanisme aurait fuité le vote de chaque signaleur.
+
+### Les jurys
+
+Contrôler sans créer un pouvoir : **jurys tirés au sort, saisis d'une seule
+question, dissous après.** 10 % des Régents hors Table Ronde, **plancher 7, plafond
+200**. Ils publient, ils n'annulent jamais.
+
+Le plafond existe pour une raison mathématique : **la représentativité d'un tirage
+dépend de la taille de l'échantillon, pas du pourcentage.** Deux cents personnes
+décrivent un million d'habitants aussi bien que dix mille. À 10 % sans plafond, un
+« jury » d'un million de Régents ferait cent mille personnes — un référendum, et la
+brièveté qui le protégeait du pouvoir disparaîtrait.
+
+Diego voulait deux organes permanents et a trouvé l'objection lui-même : *« on perd
+le trustless et la confiance par la même occasion. »* La ligne retenue : **la
+vérification n'a besoin d'aucun organe** — c'est des mathématiques, chacun les
+refait chez lui — et **le jugement est irréductiblement non-trustless**. Il rejoint
+le paradoxe du client et la coercition parmi les limites qu'on publie au lieu de
+prétendre les avoir résolues. *Mandat des jurys : non défini.*
+
+---
+
 ## 2026-08-08, 11h — Un catalogue public, et deux défauts trouvés en le mesurant
 
 Diego veut pouvoir montrer le projet : deux personnes le rejoignent peut-être, et

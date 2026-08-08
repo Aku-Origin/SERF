@@ -205,18 +205,50 @@ garder son application bancaire est un utilisateur perdu, et un détracteur cré
 
 ## 5. Périmètre matériel
 
-### Deux périmètres, à ne jamais confondre
+### Renversé le 8 août 2026 — voter suppose SERF
 
-**La Régence est universelle. Le système est ciblé.**
+> **Ce paragraphe disait l'inverse jusqu'au 8 août :** une application Table Ronde
+> tournant sur tout, iPhone compris, et *« nul n'est exclu de la gouvernance pour
+> une raison de matériel »*. Diego a écarté l'application — deux produits à
+> construire quand le premier n'est pas commencé, et **aucune garantie de sécurité
+> tenable sur un système qu'on ne contrôle pas**. Le texte d'origine est conservé
+> dans l'historique du dépôt.
 
-L'application Table Ronde — délibérer, voter, vérifier le Registre — fonctionne
-sur **tout** : Android ancien, iPhone, navigateur web, matériel d'entrée de gamme,
-connexion faible ou absente. **Nul n'est exclu de la gouvernance pour une raison
-de matériel.** Ce serait fatal : écarter la moitié de la population parce qu'elle
-porte le mauvais téléphone reviendrait à reproduire ce qu'on prétend défaire.
+La ligne de partage n'est plus entre la Régence et le système. Elle est entre
+**voter** et **vérifier**.
 
-SERF, le système d'exploitation, s'installe sur une liste plus étroite — celle où
-le démarrage vérifié est réellement possible, condition de la promesse de sécurité.
+**Voter suppose SERF.** Un bulletin part d'un appareil, et la cryptographie ne rend
+sans confiance que ce qui suit son départ — jamais l'appareil lui-même. Sur un
+système qu'on ne maîtrise pas, cet écart est large et invérifiable : un téléphone
+compromis peut afficher un écran qui mente. Distribuer une application de vote en
+laissant croire le contraire serait la seule chose qui nous discréditerait
+vraiment.
+
+**Vérifier ne suppose rien.** Recalculer un résultat, contrôler qu'un bulletin
+figure au Registre, confronter une tête d'arbre à une empreinte imprimée — tout
+cela se fait depuis n'importe quel matériel, hors ligne, et jusque sur papier. Une
+preuve n'a pas besoin qu'on lui fasse confiance ; c'est ce qui la distingue d'une
+affirmation.
+
+À la place de l'application : un **installateur en un clic**, sur le modèle de
+celui de GrapheneOS — on branche l'appareil, on ouvre une page, on clique. La
+difficulté n'est pas l'installateur, c'est **la liste d'appareils dont le
+constructeur accepte qu'on y inscrive sa propre clé et qu'on reverrouille le
+démarrage**. Aucun logiciel ne crée cette permission.
+
+> **⚠ Conflit ouvert avec le Titre I, à trancher avant l'adoption de la Charte.**
+> L'article 6 — **non révisable** — dispose que *« nul n'est écarté en raison de son
+> handicap, de sa langue, de son appareil ou de ses moyens »*. Si voter suppose
+> d'avoir réinstallé son système, quelqu'un est écarté en raison de son appareil.
+> C'est le même genre de collision que celle de l'article 4, repérée le 6 août : la
+> fenêtre pour la corriger se referme à l'article 56, définitivement.
+> Voir [`12-FAILLES-OUVERTES.md`](12-FAILLES-OUVERTES.md).
+
+**Ce que ça coûte, et qui est assumé.** La stratégie d'adoption était *« la Régence
+recrute, l'OS convertit »* : on gouvernait d'abord, on changeait de téléphone
+ensuite. Elle tombe. Personne ne participe sans avoir réinstallé son système, et
+l'entrée par communautés constituées — le cœur de l'Amorçage — suppose désormais de
+flasher les appareils de leurs membres.
 
 **Conséquence stratégique : la Régence recrute, l'OS convertit.** On entre par
 l'application, sur le téléphone qu'on a déjà. On migre quand on veut, ou jamais.
@@ -301,13 +333,47 @@ d'ingénierie logicielle.
 composants opaques — on les traite comme hostiles et on organise le système en
 conséquence.
 
+*Révisé le 8 août 2026, sur objection de Diego : « si on atterrit en tant qu'OS on
+a accès à ce qu'il y a dans la carte mère, donc on peut désactiver ou tromper. » Il
+a raison, et cette section sous-estimait ce qu'un système peut réellement faire.*
+
 | Défense | Ce qu'elle obtient |
 |---|---|
+| **Ne pas charger le micrologiciel** | Beaucoup de composants — modem, Wi-Fi, DSP, capteurs — n'ont pas leur code en propre : le système le leur charge au démarrage. **On ne le charge pas, ils restent inertes.** C'est le levier logiciel le plus fort dont on dispose, et il ne demande la permission de personne |
+| **Couper l'alimentation ou l'horloge** | Beaucoup de circuits permettent d'éteindre un sous-système entier depuis le gestionnaire d'énergie. Pas une requête adressée au composant : une coupure |
+| **Ne pas l'énumérer, lui refuser le bus** | Un périphérique non déclaré n'a pas de pilote, donc pas de canal. Combiné à l'IOMMU, il n'atteint pas la mémoire |
+| **Lui mentir** | Tout ce qui passe *par* le système peut recevoir des données fausses ou vides : position, micro, carnet d'adresses. C'est l'Enceinte appliquée au matériel |
 | **Traiter le modem comme un réseau hostile** | Aucun accès direct à la mémoire, isolation par IOMMU, chiffrement de bout en bout au-dessus de lui. Il achemine des octets qu'il ne peut pas lire |
 | **Interrupteurs matériels** | Une coupure physique de l'alimentation du modem, du micro, de la caméra. **Le seul « éteint » qui en soit un.** Existant : Purism Librem 5, MNT Reform |
 | **Sélection du matériel** | Privilégier les appareils au démarrage documenté, sans coprocesseur de gestion opaque, et dont le constructeur publie ses sources |
 | **Journal d'activité** | Rendre visible ce qui parle, à qui, quand, et combien. On ne peut rien contre ce qu'on ne voit pas |
 | **Ne dépendre d'aucun signal externe** | Ni GPS pour l'heure, ni réseau pour délibérer (voir [`08-RESILIENCE.md`](08-RESILIENCE.md)) |
+
+**Les deux limites qui restent, et elles sont dures.** Un composant qui a *son
+propre processeur, son propre code en mémoire propre et son propre chemin
+d'alimentation* ne nous demande rien — le modem cellulaire en est le cas d'école,
+éveillé quand le processeur principal dort. Et surtout : **on ne peut pas prouver
+l'absence de ce qu'on ignore.** On neutralise tout ce qu'on connaît ; le silicium
+ne s'audite pas depuis du logiciel.
+
+### Le vrai levier est à l'achat, pas au code
+
+**Un problème de matériel ne se résout pas en logiciel — il se résout en
+choisissant ce qui entre dans l'appareil.** Refuser un modèle qui embarque un
+composant douteux, exiger des interrupteurs physiques, publier la nomenclature :
+tout cela devient possible dès lors qu'on est celui qui commande.
+
+C'est ce qui rendrait la vente d'appareils préinstallés doublement intéressante —
+on inscrirait aussi notre clé et on reverrouillerait le démarrage. **Décision du
+8 août : reporté.** Diego : *« l'Europe et la France va vouloir arrêter tout ça, ça
+leur donne le levier. »* Le raisonnement est juste et il vaut au-delà du matériel :
+**la forme de distribution détermine la surface d'attaque.** Un dépôt miroité est
+difficile à tuer ; une société avec du stock, une garantie légale et des
+obligations de conformité est facile à tuer.
+
+Limite à garder en tête même dans ce cas : on n'achète pas des puces, on achète des
+conceptions existantes. À petit volume, notre pouvoir est de **choisir**, pas de
+**spécifier**.
 
 **Le levier qui manque est réglementaire.** L'interdiction d'un traçage matériel
 imposé relève du droit européen — RGPD, DMA, directive équipements radio. C'est à

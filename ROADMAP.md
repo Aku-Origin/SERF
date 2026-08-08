@@ -49,8 +49,22 @@ machine. C'est le point unique de défaillance le plus bête à laisser en place
 ## Jalon 1 — La Régence, prouvée hors de l'OS
 
 **Objectif : démontrer que le scrutin fonctionne, avant d'écrire une ligne de
-code système.** Une application web et Android autonome, utilisable par une
-association réelle pour ses propres décisions.
+code système.** Les briques de la Régence, construites et éprouvées hors de la
+ROM, utilisables par une association réelle pour ses propres décisions.
+
+> **Révision du 8 août 2026 — l'application autonome est abandonnée.** Ce jalon
+> visait d'abord une application web et Android distribuable partout. Diego l'a
+> écartée : deux produits à construire quand le premier n'est pas commencé, et
+> aucune garantie de sécurité tenable sur un système qu'on ne contrôle pas.
+> **Voter suppose SERF.** Le jalon reste hors de la ROM — on écrit et on éprouve
+> les briques — mais la cible de distribution devient l'**installateur en un
+> clic** du jalon 2, sur le modèle de celui de GrapheneOS.
+>
+> Ce que ça coûte, et qui est assumé : plus de *« la Régence recrute, l'OS
+> convertit »*. Personne ne participe sans avoir réinstallé son système, et
+> l'entrée par communautés constituées suppose de flasher les appareils.
+> **La vérification, elle, ne suppose rien** — le Registre se contrôle depuis
+> n'importe quel matériel, hors ligne, y compris sur papier.
 
 C'est délibérément l'inverse de l'ordre intuitif. Raisons :
 

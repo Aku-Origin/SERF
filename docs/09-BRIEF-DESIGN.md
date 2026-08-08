@@ -116,9 +116,12 @@ les gens lisent avant de voter.**
 ## 5. Les écrans à concevoir
 
 Deux ensembles, qui suivent la césure de la §7 : **neuf écrans pour la Régence**,
-qui tournent partout — Android ancien, iPhone, navigateur ; **deux écrans de
-plus** qui n'existent que dans le système SERF, parce qu'ils supposent de contrôler
-la pile entière.
+qui vivent dans le système SERF ; **deux écrans de plus** qui supposent en outre de
+contrôler la pile entière — le canal de notification et la vérification hors-bande.
+
+*Révisé le 8 août 2026 : les neuf écrans de la Régence étaient annoncés comme
+tournant « partout — Android ancien, iPhone, navigateur ». L'application autonome
+est abandonnée, voir §7.*
 
 | | Écran | Ensemble |
 |---|---|---|
@@ -353,15 +356,31 @@ personne aveugle ne peut pas voter seule, la Régence n'est pas une démocratie.
 
 ## 7. Universalité des appareils
 
-Deux périmètres, à ne jamais confondre :
+*Renversé le 8 août 2026. Ce paragraphe promettait une application Table Ronde
+fonctionnant sur tout, iPhone compris. Diego l'a écartée — voir
+[`02-ARCHITECTURE.md §5`](02-ARCHITECTURE.md).*
 
-**La Régence est universelle.** L'application Table Ronde — délibérer, voter,
-vérifier — fonctionne sur **tout** : Android ancien, iPhone, navigateur web,
-matériel d'entrée de gamme, connexion faible. **Nul n'est exclu de la gouvernance
-pour une raison de matériel.**
+La césure ne passe plus entre la Régence et le système, mais entre **voter** et
+**vérifier** :
 
-**SERF, le système, est ciblé.** Il s'installe sur une liste d'appareils où le
-démarrage vérifié est réellement possible — condition de la promesse de sécurité.
+**Voter suppose SERF.** Un appareil qu'on ne maîtrise pas peut afficher un écran
+qui mente, et la cryptographie ne rend sans confiance que ce qui suit le départ du
+bulletin. Conséquence de conception : **les neuf écrans de la Régence sont conçus
+pour SERF**, pas pour un navigateur ni pour un iPhone.
+
+**Vérifier ne suppose rien.** Recalculer un résultat, contrôler qu'un bulletin est
+au Registre, confronter une empreinte imprimée — depuis n'importe quel matériel,
+hors ligne, jusque sur papier. **Cette voie reste ouverte à tous et doit être
+conçue comme telle** : c'est désormais le seul écran que quelqu'un hors SERF verra.
+
+**Ce qui ne change pas :** au sein de SERF, l'universalité reste entière — matériel
+d'entrée de gamme, connexion faible ou absente, 200 % de taille de police, lecteur
+d'écran. L'exclusion par le matériel bas de gamme reste une faute ; ce qui est
+désormais assumé, c'est l'exigence d'avoir installé le système.
+
+> **⚠ À trancher avant l'adoption :** l'article 6 de la Charte, non révisable,
+> interdit d'écarter quiconque « en raison de son appareil ». Cette révision le
+> heurte de front.
 
 Conséquence stratégique : **la Régence recrute, l'OS convertit.** On entre par
 l'application, sur le téléphone qu'on a déjà. On migre quand on veut, ou jamais.
