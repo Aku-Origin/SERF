@@ -10,6 +10,14 @@ payée, dont les règles sont écrites ailleurs — SERF vous rend la couronne :
 contrôle du matériel, le contrôle des données, et le contrôle des règles
 elles-mêmes.
 
+> **[→ Catalogue des travaux](site/index.html)** — une page unique qui présente le
+> projet, l'état de chaque document, ce que nous refusons de promettre et ce qui
+> est cassé. Ouvrez le fichier dans un navigateur ; elle ne fait aucune requête
+> réseau.
+>
+> **Rien n'est adopté, rien n'est en production, aucune ligne de code n'existe.**
+> Le corpus est publié pour être attaqué.
+
 ---
 
 ## Les cinq renversements
@@ -22,8 +30,8 @@ elles-mêmes.
 | **Proximité** | L'échelon proche plutôt que le sommet | Fédération à attestation mutuelle : les communautés cosignent leurs registres |
 | **Mémoire** | La mémoire plutôt que l'amnésie | Le *pourquoi* inscrit avec le *quoi* — motifs, objections, et ce qui a fait changer d'avis |
 
-*Une valeur sans mécanisme n'est qu'une déclaration.* Chacune de ces trois lignes
-est adossée à un dispositif écrit dans la [Charte](CHARTE.md) ou dans
+*Une valeur sans mécanisme n'est qu'une déclaration.* Chacun de ces cinq
+renversements est adossé à un dispositif écrit dans la [Charte](CHARTE.md) ou dans
 l'[architecture](docs/02-ARCHITECTURE.md).
 
 ---

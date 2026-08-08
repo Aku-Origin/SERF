@@ -110,6 +110,57 @@ le danger était celui qui se voyait le moins.***
 > C'est l'application de la règle générale — aucune information par la seule
 > couleur — au cas où elle était le plus tentante à contourner.
 
+### Le thème clair — mesuré le 8 août 2026
+
+> **Le thème clair n'avait jamais eu ses contrastes de texte.** La correction du
+> 3 août portait sur le thème sombre seul ; le thème clair n'avait que des jetons
+> de fond. `04-DESIGN.md §1` le présente pourtant comme « un premier rôle, pas une
+> réflexion après coup » — il ne l'était pas.
+
+Valeurs calculées sur `clarte-050` `#F6F7F9` (fond de page) :
+
+| Jeton | Hex | Rôle en thème clair | Sur `clarte-050` | Sur `clarte-100` |
+|---|---|---|---|---|
+| `nuit-900` | `#0A1424` | Texte principal | **17.21:1** ✓ AAA | 15.58:1 ✓ AAA |
+| `nuit-700` | `#182C50` | Texte secondaire | **12.93:1** ✓ AAA | 11.71:1 ✓ AAA |
+| `nuit-500` | `#2F4B80` | Texte tertiaire | **8.03:1** ✓ AAA | 7.27:1 ✓ AAA |
+| `nuit-400` | `#4C6BA0` | Bordures actives — **non textuel** | 5.00:1 ✓ AA | 4.53:1 ✓ AA |
+| `regence-800` | `#7A1C1C` | **Texte accentué, liens** | **9.74:1** ✓ AAA | 8.82:1 ✓ AAA |
+| `regence-700` | `#A32222` | Texte accentué, seuil AA | 6.97:1 ✓ AA · ✗ AAA | 6.31:1 ✓ AA |
+| `regence-600` | `#C62828` | Remplissage — blanc dessus **5.62:1** | 5.24:1 | 4.75:1 |
+
+**Les trois jetons sémantiques échouent en thème clair. Aucun n'est utilisable en
+texte.**
+
+| Jeton | Hex | Sur `clarte-050` | Sur `clarte-100` | Verdict |
+|---|---|---|---|---|
+| `etat-scelle` | `#3E9E75` | **3.08:1** | **2.79:1** | ✗ échoue AA · échoue même le seuil composants sur surface |
+| `etat-alerte` | `#D4A017` | **2.22:1** | **2.01:1** | ✗ échoue tout, de très loin |
+| `etat-peril` | `#E05252` | **3.56:1** | **3.23:1** | ✗ échoue AA · composants seulement |
+
+*C'est exactement le défaut du 3 août, rejoué sur l'autre thème : les jetons
+sémantiques avaient été choisis à l'œil sur fond sombre et jamais recalculés sur
+fond clair. Et comme la première fois, **le jeton d'alerte est celui qui se voit le
+moins** — 2.22:1, soit un texte pratiquement invisible.*
+
+Substituts employés sur `site/index.html`, mesurés :
+
+| Rôle | Hex | Sur `clarte-050` | Sur `clarte-100` |
+|---|---|---|---|
+| Scellé, clair | `#1F6B4C` | **6.00:1** ✓ AA | 5.43:1 ✓ AA |
+| Alerte, clair | `#7A5C00` | **5.83:1** ✓ AA | 5.28:1 ✓ AA |
+| Péril, clair | `#A32222` | **6.97:1** ✓ AA | 6.31:1 ✓ AA |
+
+**Deux réserves à ne pas perdre.** Ces substituts passent AA, **aucun n'atteint
+AAA** — ils sont donc interdits en texte sur le chemin de vote en thème clair, où
+la cible est 7:1. Il faut soit des valeurs plus sombres pour ce chemin, soit
+n'employer la couleur sémantique qu'en accompagnement d'un pictogramme et d'un
+libellé, ce que la règle générale impose déjà.
+
+Et ces substituts vivent aujourd'hui dans une feuille de style, pas ici. **À
+promouvoir en jetons nommés** — un jeton qui n'existe que dans le CSS est un jeton
+qui dérivera.
+
 ---
 
 ## 3. Typographie

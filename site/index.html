@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SERF — Régence · catalogue des travaux</title>
+<meta name="description" content="SERF est un projet de système d'exploitation mobile souverain portant une couche de gouvernance. Catalogue public des travaux, des décisions et des défauts connus. Rien n'est adopté, rien n'est en production.">
+<style>
+/* ------------------------------------------------------------------
+   SERF — feuille de style unique, sans dépendance externe.
+   Aucune requête réseau : la page fonctionne hors ligne, depuis une
+   clé USB, depuis un dépôt cloné. C'est une exigence du projet
+   (docs/08-RESILIENCE.md), pas une économie.
+
+   Tous les contrastes sont CALCULÉS, formule WCAG 2.x, jamais estimés.
+   Valeurs mesurées le 8 août 2026 et reportées en commentaire.
+   ------------------------------------------------------------------ */
+
+:root {
+  /* Nuit — structure */
+  --nuit-950: #05090F;
+  --nuit-900: #0A1424;
+  --nuit-800: #101F3A;
+  --nuit-700: #182C50;
+  --nuit-600: #223A66;
+  --nuit-500: #2F4B80;
+  --nuit-400: #4C6BA0;
+  --nuit-350: #96AACB;
+  --nuit-300: #7A93BD;
+  --nuit-200: #B0C0D8;
+  --nuit-100: #DCE4EF;
+
+  /* Régence — le rouge, remplissage uniquement en 600 */
+  --regence-800: #7A1C1C;
+  --regence-700: #A32222;
+  --regence-600: #C62828;
+  --regence-400: #D65A5A;
+  --regence-300: #E99494;
+
+  /* Clarté */
+  --clarte-000: #FFFFFF;
+  --clarte-050: #F6F7F9;
+  --clarte-100: #E9ECF1;
+
+  /* Sémantique */
+  --etat-scelle: #3E9E75;
+  --etat-alerte: #D4A017;
+  --etat-peril:  #E05252;
+
+  --pas: 1rem;
+  --large: 46rem;
+
+  --serif: "Spectral", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+/* Thème sombre — par défaut, cf. docs/04-DESIGN.md §1 */
+:root,
+:root[data-theme="sombre"] {
+  --fond:        var(--nuit-900);
+  --fond-creux:  var(--nuit-950);
+  --surface:     var(--nuit-800);
+  --bord:        var(--nuit-700);
+  --bord-fort:   var(--nuit-600);
+  --texte:       var(--clarte-000);  /* 18.45:1 */
+  --texte-2:     var(--nuit-200);    /*  9.99:1 */
+  --texte-3:     var(--nuit-350);    /*  7.83:1 */
+  --accent-txt:  var(--regence-300); /*  8.02:1 */
+  --accent-fond: var(--regence-600); /*  3.28:1 composant · blanc dessus 5.62:1 */
+  --accent-sur:  var(--clarte-000);
+  --scelle:      var(--etat-scelle); /*  5.58:1 */
+  --alerte:      var(--etat-alerte); /*  7.77:1 */
+  --peril:       var(--etat-peril);  /*  4.83:1 */
+}
+
+/* Thème clair — contrastes mesurés le 8 août 2026, jamais publiés avant */
+:root[data-theme="clair"] {
+  --fond:        var(--clarte-050);
+  --fond-creux:  var(--clarte-100);
+  --surface:     var(--clarte-100);
+  --bord:        #C9D2E0;
+  --bord-fort:   var(--nuit-400);
+  --texte:       var(--nuit-900);    /* 17.21:1 */
+  --texte-2:     var(--nuit-700);    /* 12.93:1 */
+  --texte-3:     var(--nuit-500);    /*  8.03:1 */
+  --accent-txt:  var(--regence-800); /*  9.74:1 */
+  --accent-fond: var(--regence-600); /* blanc dessus 5.62:1 */
+  --accent-sur:  var(--clarte-000);
+  --scelle:      #1F6B4C;
+  --alerte:      #7A5C00;
+  --peril:       #A32222;            /*  6.97:1 */
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --fond:        var(--clarte-050);
+    --fond-creux:  var(--clarte-100);
+    --surface:     var(--clarte-100);
+    --bord:        #C9D2E0;
+    --bord-fort:   var(--nuit-400);
+    --texte:       var(--nuit-900);
+    --texte-2:     var(--nuit-700);
+    --texte-3:     var(--nuit-500);
+    --accent-txt:  var(--regence-800);
+    --scelle:      #1F6B4C;
+    --alerte:      #7A5C00;
+    --peril:       #A32222;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Fond nuit plutôt que remplissage rouge : blanc sur regence-600 plafonne
+   à 5.62:1 (AA), blanc sur nuit-900 donne 18.45:1. Le rouge reste, en
+   bordure — il identifie sans porter le texte. */
+.saut {
+  position: absolute; left: -9999px;
+  background: var(--nuit-900); color: var(--clarte-000);
+  border: 2px solid var(--regence-600);
+  padding: .75rem 1.25rem; z-index: 100; text-decoration: none;
+}
+.saut:focus { left: 1rem; top: 1rem; }
+
+a { color: var(--accent-txt); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible {
+  outline: 3px solid var(--accent-txt);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.enveloppe { max-width: var(--large); margin: 0 auto; padding: 0 var(--pas); }
+
+/* ---- En-tête ---- */
+
+header.tete {
+  border-bottom: 1px solid var(--bord);
+  background: var(--fond-creux);
+  padding: 3rem 0 2.5rem;
+}
+.sceau { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.75rem; }
+.sceau svg { flex: none; }
+.sceau .nom {
+  font-family: var(--serif);
+  font-size: 1.6rem; font-weight: 600; letter-spacing: .01em; line-height: 1.1;
+}
+.sceau .sous {
+  display: block; font-family: var(--sans); font-size: .72rem;
+  font-weight: 500; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--texte-3); margin-top: .3rem;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(1.75rem, 5vw, 2.6rem);
+  font-weight: 600; line-height: 1.2; margin: 0 0 1rem;
+  max-width: 22ch;
+}
+.chapeau { font-size: 1.1rem; color: var(--texte-2); max-width: 60ch; margin: 0 0 1.75rem; }
+
+.jetons { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.jeton {
+  font-family: var(--mono); font-size: .78rem;
+  border: 1px solid var(--bord-fort); border-radius: 2px;
+  padding: .28rem .6rem; color: var(--texte-3);
+}
+.jeton.vif { border-color: var(--accent-fond); color: var(--texte); }
+
+/* ---- Bandeau d'état ---- */
+
+.etat {
+  border: 1px solid var(--bord-fort);
+  border-left: 4px solid var(--accent-fond);
+  background: var(--surface);
+  padding: 1.25rem 1.4rem;
+  margin: 2.5rem 0;
+}
+/* Sur la surface élevée (nuit-800), le jeton tertiaire tombe à 6.96:1 :
+   sous AAA. La hiérarchie est déjà portée par la casse, la taille et
+   l'interlettrage — la couleur n'a pas à la porter aussi. */
+.etat h2 {
+  font-family: var(--sans); font-size: .74rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--texte-2); margin: 0 0 .7rem;
+}
+.etat p { margin: 0 0 .6rem; color: var(--texte-2); }
+.etat p:last-child { margin-bottom: 0; }
+.etat strong { color: var(--texte); }
+
+/* ---- Sections ---- */
+
+main { padding: 1rem 0 4rem; }
+section { margin: 3.5rem 0; scroll-margin-top: 1rem; }
+
+h2.section {
+  font-family: var(--serif); font-size: 1.55rem; font-weight: 600;
+  line-height: 1.25; margin: 0 0 .5rem;
+  padding-bottom: .6rem; border-bottom: 1px solid var(--bord);
+}
+.numero {
+  display: block; font-family: var(--mono); font-size: .74rem;
+  letter-spacing: .1em; color: var(--texte-3); margin-bottom: .35rem;
+}
+h3 {
+  font-size: 1.05rem; font-weight: 600; margin: 2rem 0 .5rem;
+  line-height: 1.35;
+}
+p { max-width: 68ch; }
+p, ul, ol { color: var(--texte-2); }
+li { margin-bottom: .4rem; }
+strong { color: var(--texte); font-weight: 600; }
+
+blockquote {
+  margin: 1.5rem 0; padding: .2rem 0 .2rem 1.2rem;
+  border-left: 3px solid var(--accent-fond);
+  font-family: var(--serif); font-size: 1.08rem; color: var(--texte);
+}
+blockquote p { margin: .3rem 0; color: var(--texte); }
+
+/* ---- Renversements ---- */
+
+.renversements { list-style: none; padding: 0; margin: 1.5rem 0 0; counter-reset: r; }
+.renversements > li {
+  counter-increment: r;
+  border-top: 1px solid var(--bord);
+  padding: 1.1rem 0 1.1rem 3rem; position: relative; margin: 0;
+}
+.renversements > li::before {
+  content: counter(r);
+  position: absolute; left: 0; top: 1.15rem;
+  font-family: var(--mono); font-size: .8rem;
+  width: 1.8rem; height: 1.8rem; line-height: 1.8rem; text-align: center;
+  background: var(--accent-fond); color: var(--accent-sur);
+  border-radius: 50%;
+}
+.renversements .quoi { display: block; color: var(--texte); font-weight: 600; margin-bottom: .2rem; }
+.renversements .comment { display: block; font-size: .93rem; color: var(--texte-3); }
+
+/* ---- Pile d'architecture ---- */
+
+.pile { margin: 1.5rem 0; border: 1px solid var(--bord-fort); }
+.couche {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: .5rem 1rem; align-items: baseline;
+  padding: .85rem 1rem; border-bottom: 1px solid var(--bord);
+}
+.couche:last-child { border-bottom: 0; }
+.couche .titre { font-weight: 600; color: var(--texte); }
+.couche .detail { display: block; font-size: .88rem; color: var(--texte-3); font-weight: 400; }
+.couche .part {
+  font-family: var(--mono); font-size: .72rem; white-space: nowrap;
+  color: var(--texte-3); text-align: right;
+}
+.couche.nous { background: var(--surface); border-left: 4px solid var(--accent-fond); }
+/* Même correction que pour .etat h2 : sur la surface élevée, le jeton
+   tertiaire tombe à 6.96:1. Ces deux couches sont les nôtres — elles
+   gagnent à être un peu plus claires, pas plus sourdes. */
+.couche.nous .detail, .couche.nous .part { color: var(--texte-2); }
+.couche.herite { border-left: 4px solid transparent; }
+
+/* ---- Tableaux ---- */
+
+.tableau { overflow-x: auto; margin: 1.5rem 0; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .93rem; }
+caption {
+  text-align: left; font-size: .85rem; color: var(--texte-3);
+  padding-bottom: .7rem;
+}
+th, td {
+  text-align: left; padding: .7rem .8rem;
+  border-bottom: 1px solid var(--bord); vertical-align: top;
+}
+thead th {
+  font-size: .74rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--texte-3); border-bottom: 1px solid var(--bord-fort);
+  font-weight: 600;
+}
+tbody th { font-weight: 600; color: var(--texte); }
+td { color: var(--texte-2); }
+
+/* Marqueurs d'état : jamais la couleur seule — un symbole et un mot */
+.marque { font-family: var(--mono); font-size: .8rem; white-space: nowrap; }
+.marque::before { margin-right: .35em; font-weight: 700; }
+.m-fait::before   { content: "\2713"; color: var(--scelle); }   /* ✓ */
+.m-cours::before  { content: "\25D0"; color: var(--alerte); }   /* ◐ */
+.m-ouvert::before { content: "\25CB"; color: var(--texte-3); }  /* ○ */
+.m-casse::before  { content: "\26A0"; color: var(--peril); }    /* ⚠ */
+
+/* ---- Blocs de refus ---- */
+
+.refus { border: 1px solid var(--bord-fort); margin: 1.5rem 0; }
+.refus > div { padding: 1rem 1.15rem; border-bottom: 1px solid var(--bord); }
+.refus > div:last-child { border-bottom: 0; }
+.refus dt { font-weight: 600; color: var(--texte); margin-bottom: .25rem; }
+.refus dd { margin: 0; color: var(--texte-2); font-size: .95rem; }
+
+/* ---- Pied ---- */
+
+footer {
+  border-top: 1px solid var(--bord); background: var(--fond-creux);
+  padding: 2.5rem 0 3rem; margin-top: 2rem;
+  color: var(--texte-3); font-size: .9rem;
+}
+footer p { color: var(--texte-3); }
+.signature { font-family: var(--serif); font-size: 1.05rem; color: var(--texte-2); }
+
+/* ---- Bascule de thème ---- */
+
+.bascule {
+  position: fixed; top: .75rem; right: .75rem; z-index: 50;
+  background: var(--surface); color: var(--texte-2);
+  border: 1px solid var(--bord-fort); border-radius: 2px;
+  font-family: var(--mono); font-size: .74rem;
+  padding: .45rem .7rem; cursor: pointer;
+}
+.bascule:hover { color: var(--texte); border-color: var(--accent-fond); }
+
+@media (max-width: 34rem) {
+  header.tete { padding: 2rem 0 1.75rem; }
+  .bascule { position: static; margin: 1rem 1rem 0; display: inline-block; }
+  .renversements > li { padding-left: 2.6rem; }
+}
+
+@media print {
+  .bascule, .saut { display: none; }
+  body { background: #fff; color: #000; }
+}
+</style>
+</head>
+<body>
+
+<a class="saut" href="#contenu">Aller au contenu</a>
+
+<button class="bascule" type="button" id="bascule" aria-live="polite">Thème : sombre</button>
+
+<header class="tete">
+  <div class="enveloppe">
+
+    <div class="sceau">
+      <!-- Une couronne renversée devenue table : le pouvoir descendu
+           du souverain vers les Régents. Monochrome, lisible à 24 px. -->
+      <svg width="46" height="46" viewBox="0 0 48 48" role="img" aria-label="Sceau de SERF : une couronne renversée devenue table">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+        <line x1="12" y1="20" x2="36" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"/>
+        <path d="M12 20 L15 30 L18.5 22.5 L24 32 L29.5 22.5 L33 30 L36 20"
+              fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      <span class="nom">SERF
+        <span class="sous">Régence</span>
+      </span>
+    </div>
+
+    <h1>Un système d'exploitation où les porteurs détiennent les règles.</h1>
+
+    <p class="chapeau">
+      SERF est un projet de système mobile souverain, français, surmonté d'une
+      couche de gouvernance : <strong>la Régence</strong>. L'utilisateur cesse
+      d'être le serf d'une machine dont le seigneur est ailleurs. Il devient
+      celui qui gouverne — d'abord son appareil, puis, de proche en proche, le
+      commun qu'il habite.
+    </p>
+
+    <p class="jetons">
+      <span class="jeton vif">catalogue v0.1</span>
+      <span class="jeton">8 août 2026</span>
+      <span class="jeton">Charte v0.2 — non adoptée</span>
+      <span class="jeton">aucun code écrit</span>
+    </p>
+
+  </div>
+</header>
+
+<main id="contenu">
+  <div class="enveloppe">
+
+    <div class="etat">
+      <h2>Où en est le projet, sans arrondi</h2>
+      <p>
+        <strong>Rien n'est adopté. Rien n'est en production. Aucune ligne de code
+        n'existe.</strong> Ce qui existe : un corpus de conception, une Charte
+        soumise à délibération, et un registre public des défauts connus.
+      </p>
+      <p>
+        Cette page est publiée <strong>pour être attaquée</strong>. Si vous trouvez
+        une faute de raisonnement, une promesse intenable ou une faille, elle nous
+        intéresse plus qu'un encouragement.
+      </p>
+    </div>
+
+    <!-- ============ 1 ============ -->
+    <section id="ce-que-c-est">
+      <h2 class="section"><span class="numero">01</span>Ce que c'est</h2>
+
+      <p>
+        La dégooglisation d'un téléphone est un marché déjà occupé — /e/OS, iodéOS,
+        GrapheneOS, CalyxOS le font, et le font bien. Refaire cela ne justifierait
+        pas l'existence du projet.
+      </p>
+
+      <p>
+        <strong>Ce que personne ne fait, c'est donner aux porteurs d'un système un
+        pouvoir formel sur ses propres règles.</strong> Pas un forum, pas une
+        consultation : un scrutin vérifiable, un registre non falsifiable, et un
+        organe qu'on peut réellement renvoyer. C'est le seul différenciateur, et
+        c'est donc le risque numéro un — donc ce qu'on éprouve en premier.
+      </p>
+
+      <blockquote>
+        <p>
+          La cryptographie garantit. La procédure protège les Régents d'eux-mêmes.
+          La Charte borne les deux.
+        </p>
+      </blockquote>
+
+      <p>
+        La finalité est la gouvernance d'un pays par le peuple. Le chemin n'est pas
+        la proclamation, c'est la <strong>subsidiarité montante</strong> : gouverner
+        d'abord de petites choses réelles, et bien — un dépôt d'applications, une
+        trésorerie, une feuille de route — puis des collectivités et des
+        coopératives qui s'y adossent par convention. Chaque échelon n'est franchi
+        qu'après avoir été tenu à l'échelon précédent.
+      </p>
+    </section>
+
+    <!-- ============ 2 ============ -->
+    <section id="renversements">
+      <h2 class="section"><span class="numero">02</span>Les cinq renversements</h2>
+
+      <p>
+        Ce sont les axes du projet. Chacun est porté par un mécanisme précis :
+        <strong>une valeur sans mécanisme n'est qu'une déclaration, et on n'en écrit
+        pas.</strong>
+      </p>
+
+      <ol class="renversements">
+        <li>
+          <span class="quoi">La santé plutôt que la maladie · l'élévation plutôt que l'éducation</span>
+          <span class="comment">
+            Financer l'amont, jamais l'aval. Un système qui ne rémunère que la
+            réparation produit mécaniquement ce qu'il faut réparer.
+            <em>Mécanisme : priorité à l'amont, dérogation toujours motivée et publiée (art. 23).</em>
+          </span>
+        </li>
+        <li>
+          <span class="quoi">La souveraineté du peuple plutôt qu'une gouvernance de peu</span>
+          <span class="comment">
+            Le nombre de personnes pèse, pas les montants.
+            <em>Mécanisme : pondération quadratique sur les scrutins de ressources (art. 22).</em>
+          </span>
+        </li>
+        <li>
+          <span class="quoi">La liberté plutôt que la soumission</span>
+          <span class="comment">
+            On n'interdit rien, on encercle. Toutes les applications tournent, dans
+            un cloisonnement qui contrôle ce qu'elles voient.
+            <em>Mécanisme : l'Enceinte — réponses vides et sous-ensembles plutôt que refus.</em>
+          </span>
+        </li>
+        <li>
+          <span class="quoi">L'échelon proche plutôt que le sommet</span>
+          <span class="comment">
+            La protection vient du voisinage, pas d'une autorité de contrôle.
+            <em>Mécanisme : fédération à attestation mutuelle — les communautés cosignent
+            les registres les unes des autres.</em>
+          </span>
+        </li>
+        <li>
+          <span class="quoi">La mémoire plutôt que l'amnésie</span>
+          <span class="comment">
+            Presque toutes les institutions gardent le <em>quoi</em> et perdent le
+            <em>pourquoi</em> — d'où chaque génération qui refait les mêmes débats.
+            <em>Mécanisme : le motif, les objections et ce qui a fait changer d'avis
+            sont inscrits avec la décision (art. 26 sexies).</em>
+          </span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ 3 ============ -->
+    <section id="refus">
+      <h2 class="section"><span class="numero">03</span>Ce que nous ne promettons pas</h2>
+
+      <p>
+        Un projet de souveraineté meurt de la première promesse démentie. Ces
+        limites sont donc publiques dès maintenant, et pas seulement dans nos notes
+        internes.
+      </p>
+
+      <dl class="refus">
+        <div>
+          <dt>iOS — hors périmètre, définitivement</dt>
+          <dd>
+            Le chargeur d'amorçage est verrouillé, sans voie de déblocage. Le
+            promettre coûterait toute crédibilité au premier examen technique.
+            <strong>L'application de gouvernance, elle, tournera sur iPhone</strong> —
+            c'est le système qui est ciblé, pas la Régence.
+          </dd>
+        </div>
+        <div>
+          <dt>Les votes SERF n'ont pas force de loi</dt>
+          <dd>
+            C'est faux aujourd'hui, et le laisser croire offrirait une
+            disqualification gratuite à quiconque veut abattre le projet. La force
+            viendra de la pratique accumulée et de conventions signées — plus lent,
+            et infiniment plus solide.
+          </dd>
+        </div>
+        <div>
+          <dt>Aucun noyau écrit de zéro</dt>
+          <dd>
+            Le projet part d'AOSP et emprunte partout où c'est possible : Belenios
+            pour le scrutin, Trillian pour le journal, Matrix pour la parole,
+            F-Droid pour le dépôt. Le temps d'ingénierie va à la couche que
+            personne d'autre ne construit.
+          </dd>
+        </div>
+        <div>
+          <dt>Le paradoxe du client n'a pas de solution parfaite</dt>
+          <dd>
+            Si l'éditeur écrit le logiciel de vote, il peut en théorie contrôler le
+            scrutin, et aucune cryptographie n'y remédie. On empile des défenses
+            partielles — construction reproductible, démarrage vérifié, signature
+            multipartite, attestation, vérification hors-bande — et
+            <strong>on le dit</strong>. La cryptographie rend sans confiance tout ce
+            qui suit le départ du bulletin ; jamais l'appareil lui-même.
+          </dd>
+        </div>
+        <div>
+          <dt>La coercition est irréductible en vote à distance</dt>
+          <dd>
+            L'isoloir n'a pas d'équivalent numérique. On peut revoter pendant toute
+            la fenêtre, et aucun accusé de réception opposable n'est délivré : celui
+            qui subit une pression peut voter sous contrainte puis revoter seul, et
+            il ne peut rien prouver à celui qui le contraint. Cela atténue. Cela
+            n'élimine pas.
+          </dd>
+        </div>
+        <div>
+          <dt>Un mouchard soudé ne se retire pas par du code</dt>
+          <dd>
+            On ne désactive pas un modem par logiciel. On isole, on rend visible, on
+            réclame des interrupteurs physiques — le levier qui manque est
+            réglementaire, et prétendre l'avoir résolu par du logiciel serait se
+            raconter une histoire.
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ============ 4 ============ -->
+    <section id="architecture">
+      <h2 class="section"><span class="numero">04</span>L'architecture, et où porte l'effort</h2>
+
+      <p>
+        SERF est un fork d'AOSP surmonté de deux couches originales. La souveraineté
+        ne se joue pas sur la réécriture d'un pilote graphique : elle se joue sur la
+        couche où se prennent les décisions.
+      </p>
+
+      <div class="pile">
+        <div class="couche nous">
+          <span class="titre">La Régence
+            <span class="detail">Table Ronde · Registre · Scrutin</span>
+          </span>
+          <span class="part">original — le produit</span>
+        </div>
+        <div class="couche nous">
+          <span class="titre">Services souverains
+            <span class="detail">Identité · synchronisation · cartes · notifications</span>
+          </span>
+          <span class="part">à construire</span>
+        </div>
+        <div class="couche">
+          <span class="titre">Applications système
+            <span class="detail">Lanceur · contacts · messages</span>
+          </span>
+          <span class="part">à habiller</span>
+        </div>
+        <div class="couche herite">
+          <span class="titre">Cadre Android
+            <span class="detail">API, ART, gestionnaire de paquets</span>
+          </span>
+          <span class="part">AOSP, durci</span>
+        </div>
+        <div class="couche herite">
+          <span class="titre">Couche matérielle et pilotes
+            <span class="detail">binaires propriétaires du fondeur</span>
+          </span>
+          <span class="part">hérité, non modifiable</span>
+        </div>
+        <div class="couche herite">
+          <span class="titre">Noyau Linux
+            <span class="detail">GPLv2 — nos modifications sont publiables</span>
+          </span>
+          <span class="part">hérité, durci</span>
+        </div>
+      </div>
+
+      <p>
+        Sur environ trente-cinq surfaces que compte un système, <strong>neuf sont
+        écrites, dix adaptées, seize adoptées</strong> — et adopter n'est pas
+        maquiller : les défauts, les permissions, les parcours, le ton et
+        l'accessibilité restent nôtres sur chacune. Une application qui échoue au
+        niveau AA n'est pas adoptable.
+      </p>
+    </section>
+
+    <!-- ============ 5 ============ -->
+    <section id="gouvernance">
+      <h2 class="section"><span class="numero">05</span>Comment on décide</h2>
+
+      <h3>Deux ensembles, pas deux chambres</h3>
+
+      <p>
+        <strong>Les Régents</strong> sont l'ensemble des personnes admises au corps
+        électoral — toujours au pluriel, jamais une entité. Ils ne forment ni
+        chambre ni corps constitué : rien ne se réunit, on vote chacun depuis son
+        appareil. <strong>La Table Ronde</strong> est un organe de treize personnes
+        qui instruit, décide et exécute — et qui rend compte.
+      </p>
+
+      <p>
+        Les avis des Régents sont <strong>consultatifs</strong>, sauf deux scrutins
+        qui s'imposent : la révision de la Charte, et la dissolution de la Table
+        Ronde. Le peuple ne cogère pas le détail ; il détient le seul pouvoir qui ne
+        se contourne pas, celui de renvoyer.
+      </p>
+
+      <h3>Quatre expressions</h3>
+
+      <div class="tableau">
+        <table>
+          <caption>L'abstention n'y figure pas : elle est le silence, et le silence ne se compte pas.</caption>
+          <thead>
+            <tr><th scope="col">Expression</th><th scope="col">Ce qu'elle dit</th><th scope="col">Effet</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Oui</th>
+              <td>J'adhère au texte tel qu'il est.</td>
+              <td>Compte pour l'adoption.</td>
+            </tr>
+            <tr>
+              <th scope="row">Non</th>
+              <td>Je le refuse.</td>
+              <td>Compte contre.</td>
+            </tr>
+            <tr>
+              <th scope="row">À nuancer</th>
+              <td>J'adhère, avec les réserves déjà au dossier.</td>
+              <td>Compte du côté de l'adhésion, et crée une <strong>dette d'explication</strong> : ne pas répondre coûte un point de défiance.</td>
+            </tr>
+            <tr>
+              <th scope="row">Ignorer</th>
+              <td>Je récuse la question : mal posée, hors sujet, ou vous n'aviez pas à la poser.</td>
+              <td>À la majorité absolue, la proposition est <strong>nulle</strong> et son auteur prend un point de défiance.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Le cycle, et les deux paroles</h3>
+
+      <p>
+        Une proposition passe par quatre étapes : dépôt, parrainage (30 jours),
+        <strong>délibération (7 jours minimum, non abrégeables même à
+        l'unanimité)</strong>, puis scrutin de 72 heures.
+      </p>
+
+      <p>
+        Les deux régimes de parole ne se mélangent jamais : <strong>on argumente en
+        délibération — signé, public, opposable ; on vote au scrutin — secret, et
+        sans un mot.</strong> Aucun texte n'est joint à un bulletin. La raison est
+        arithmétique avant d'être morale : trois textes signés en face de trois
+        bulletins révèlent trois votes, et le style suffit à défaire un anonymat
+        qu'on aurait promis.
+      </p>
+
+      <h3>Le Registre</h3>
+
+      <p>
+        Un journal en ajout seul à arbre de Merkle —
+        <strong>pas une chaîne de blocs</strong>. Une chaîne de blocs résout l'ordre
+        entre inconnus sans identité ; nous avons déjà une identité, et notre
+        problème est de détecter la <em>réécriture</em>. De plus, la preuve d'enjeu
+        pondère par la fortune : ce serait écrire l'inverse de notre article 22 dans
+        l'infrastructure.
+      </p>
+
+      <p>
+        <strong>Chaque appareil portant SERF est témoin du Registre.</strong> Il
+        garde le dernier état signé qu'il a vu, exige la preuve de permanence avant
+        d'accepter le suivant, et confronte cet état à celui des appareils qu'il
+        croise. Il en découle que <strong>la falsification produit elle-même sa
+        preuve</strong> : deux états incohérents, tous deux signés, démontrent la
+        fraude sans qu'aucune autorité n'ait à en juger.
+      </p>
+
+      <p>
+        Et chaque trimestre, l'état du Registre — soixante-quatre caractères — est
+        imprimé et déposé aux archives, au dépôt légal, chez un officier public et
+        dans la presse. Une seule copie survivante suffit alors à tout revérifier,
+        sans serveur, sans réseau, sans autorité, et sans qu'aucun témoin d'origine
+        soit encore en vie.
+      </p>
+    </section>
+
+    <!-- ============ 6 ============ -->
+    <section id="catalogue">
+      <h2 class="section"><span class="numero">06</span>Le catalogue des travaux</h2>
+
+      <p>
+        Tout est public, versionné, et lisible sans nous. Le corpus fait aujourd'hui
+        quatorze documents et une Charte de <strong>79 articles répartis en dix
+        titres</strong>.
+      </p>
+
+      <div class="tableau">
+        <table>
+          <caption>État au 8 août 2026. <span class="marque m-fait">rédigé</span> · <span class="marque m-cours">en cours</span> · <span class="marque m-ouvert">à venir</span></caption>
+          <thead>
+            <tr><th scope="col">Document</th><th scope="col">Ce qu'il contient</th><th scope="col">État</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/CHARTE.md">CHARTE.md</a></th>
+              <td>Le texte fondateur. Titre I non révisable ; Titre IX fait expirer l'Amorçage.</td>
+              <td><span class="marque m-cours">v0.2, relecture</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/12-FAILLES-OUVERTES.md">12 — Failles ouvertes</a></th>
+              <td>Les défauts connus et non corrigés, par gravité. À lire avant tout le reste.</td>
+              <td><span class="marque m-cours">15 ouvertes</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/01-VISION.md">01 — Vision</a></th>
+              <td>Les cinq renversements, les cibles, le modèle économique.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/02-ARCHITECTURE.md">02 — Architecture</a></th>
+              <td>Le socle AOSP, l'Enceinte, les risques structurants.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/03-REGENCE.md">03 — Régence</a></th>
+              <td>Gouvernance, scrutin, modèle de menace, résilience. Le cœur intellectuel.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/04-DESIGN.md">04 — Design</a></th>
+              <td>Jetons de couleur, typographie, accessibilité. Tous contrastes calculés.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/05-PUBLICATION.md">05 — Publication</a></th>
+              <td>Les quatre cercles, les clés, la continuité, le cloisonnement des identités.</td>
+              <td><span class="marque m-cours">miroirs à poser</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/06-REGISTRE.md">06 — Registre</a></th>
+              <td>Transparence non falsifiable, témoignage citoyen, ancrage papier.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/07-SUBSIDIARITE.md">07 — Subsidiarité</a></th>
+              <td>Les communautés fédérées, les trois paliers d'échelle.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/08-RESILIENCE.md">08 — Résilience</a></th>
+              <td>Gouverner sans réseau : maillage, LoRa, papier, impulsion électromagnétique.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/09-BRIEF-DESIGN.md">09 — Brief design</a></th>
+              <td>Brief autoportant : écrans, accessibilité, règles à ne pas enfreindre.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/10-SURFACES.md">10 — Surfaces</a></th>
+              <td>Les ~35 surfaces d'un système : écrire / adapter / adopter.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/docs/11-ETAT-DE-LART.md">11 — État de l'art</a></th>
+              <td>Recherche sourcée : vote vérifiable, gouvernance, droit, socle.</td>
+              <td><span class="marque m-cours">à réétayer</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/JOURNAL.md">JOURNAL.md</a></th>
+              <td>La chronologie : ce qui a été décidé, pourquoi, et ce qu'on a changé d'avis. Les erreurs y sont écrites.</td>
+              <td><span class="marque m-cours">tenu</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://github.com/Aku-Origin/SERF/blob/main/ROADMAP.md">ROADMAP.md</a></th>
+              <td>Les jalons et les arbitrages encore ouverts.</td>
+              <td><span class="marque m-fait">rédigé</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ 7 ============ -->
+    <section id="failles">
+      <h2 class="section"><span class="numero">07</span>Ce qui est cassé</h2>
+
+      <p>
+        Le projet s'interdit d'annoncer une vérification non faite. Il tient donc un
+        <a href="https://github.com/Aku-Origin/SERF/blob/main/docs/12-FAILLES-OUVERTES.md">registre
+        public de ses propres défauts</a> — <strong>quinze ouverts, deux
+        corrigés</strong>. En voici quatre, pour donner le ton.
+      </p>
+
+      <div class="tableau">
+        <table>
+          <thead>
+            <tr><th scope="col">Défaut</th><th scope="col">Ce qui ne va pas</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span class="marque m-casse">F0</span> L'arithmétique contredit les seuils</th>
+              <td>
+                Les règles d'entrée et les seuils de fin de l'Amorçage ont été écrits
+                séparément et jamais multipliés l'un par l'autre. À trente-six mois —
+                le terme absolu, non prorogeable — il y aurait <strong>treize Régents
+                pour treize sièges</strong>. Trouvé par simulation, pas par relecture :
+                un texte de gouvernance doit être exécuté, pas seulement relu.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="marque m-casse">F4</span> Le tirage au sort n'est pas vérifiable</th>
+              <td>
+                Un engagement-révélation à un seul engageant ne protège de rien :
+                l'attaque n'est pas de changer la graine après coup, c'est d'en
+                essayer des milliers hors ligne et d'engager celle qui donne le bon
+                gagnant. <strong>Sept sièges sur treize en dépendent.</strong>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="marque m-casse">F5</span> Le compteur de défiance se retourne</th>
+              <td>
+                Sous le quorum de 20 %, un scrutin de dissolution ne peut jamais
+                aboutir — et un échec remet le compteur à zéro.
+                <strong>Essayer coûte donc plus cher que ne rien faire</strong>, et la
+                stratégie optimale d'un organe qui veut durer devient : maintenir la
+                participation basse.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="marque m-casse">F6</span> La fédération atteste moins qu'annoncé</th>
+              <td>
+                Une cosignature prouve qu'une chaîne est en ajout seul. Elle ne dit
+                rien de la réalité de ce qui y est inscrit. La fédération protège de
+                la <strong>réécriture</strong>, jamais du <strong>mensonge
+                d'origine</strong> — et nous l'avions surestimée.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        S'y ajoute une section « affirmations à étayer », où figurent nos propres
+        raccourcis : une décision de socle appuyée sur des sources secondaires, un
+        prétendu théorème qui n'en est pas un, et un arbitrage juridique déclaré
+        résolu sur de la vulgarisation.
+      </p>
+    </section>
+
+    <!-- ============ 8 ============ -->
+    <section id="route">
+      <h2 class="section"><span class="numero">08</span>La feuille de route</h2>
+
+      <p>
+        Principe directeur : <strong>construire d'abord ce qui n'existe nulle
+        part</strong>, et tenir un jalon à la fois.
+      </p>
+
+      <div class="tableau">
+        <table>
+          <thead>
+            <tr><th scope="col">Jalon</th><th scope="col">Objet</th><th scope="col">État</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">0 — Fondations</th>
+              <td>Écrire ce qui engage des années en aval : vision, architecture, gouvernance, Charte, plan de publication.</td>
+              <td><span class="marque m-cours">en cours</span></td>
+            </tr>
+            <tr>
+              <th scope="row">0 bis — Publier</th>
+              <td>Miroirs Codeberg, Software Heritage, Radicle. Clés de signature. Ordre de reprise. <em>Tant que ce n'est pas fait, tout tient sur une machine.</em></td>
+              <td><span class="marque m-ouvert">priorité</span></td>
+            </tr>
+            <tr>
+              <th scope="row">1 — La Régence hors du système</th>
+              <td>Prouver le scrutin d'abord : registre, preuve hors ligne, transport, identité, forum, fédération. <strong>Audit cryptographique externe</strong>, puis premier scrutin réel avec une association pilote.</td>
+              <td><span class="marque m-ouvert">à venir</span></td>
+            </tr>
+            <tr>
+              <th scope="row">2 — La ROM</th>
+              <td>Socle, construction reproductible à l'octet près, l'Enceinte, mises à jour à signature multipartite.</td>
+              <td><span class="marque m-ouvert">à venir</span></td>
+            </tr>
+            <tr>
+              <th scope="row">3 — L'intégration</th>
+              <td>Ce qui n'est possible qu'en tenant la pile entière : le canal de notification qu'aucun tiers ne peut enterrer.</td>
+              <td><span class="marque m-ouvert">à venir</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        L'ordre est délibérément l'inverse de l'intuition. Le scrutin est le risque
+        numéro un : un risque s'éprouve tôt. Et il ne dépend d'aucun matériel,
+        d'aucun fork, d'aucune certification.
+      </p>
+    </section>
+
+    <!-- ============ 9 ============ -->
+    <section id="objecter">
+      <h2 class="section"><span class="numero">09</span>Objecter, critiquer, reprendre</h2>
+
+      <p>
+        Le dépôt est public. La manière la plus utile de contribuer, aujourd'hui,
+        n'est pas d'écrire du code — il n'y en a pas encore — mais de
+        <strong>casser un raisonnement</strong>.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Une faille dans la Charte</strong> — une règle qui se retourne
+          contre ceux qu'elle protège, une contradiction entre deux articles, un
+          seuil dont l'arithmétique ne tient pas. Les plus graves de nos défauts ont
+          été trouvés comme ça.
+        </li>
+        <li>
+          <strong>Une affirmation non étayée</strong> — nous nous interdisons
+          d'annoncer une vérification non faite. Si nous l'avons fait, c'est une
+          faute, et nous la corrigerons en le disant.
+        </li>
+        <li>
+          <strong>Une promesse intenable</strong> — surtout en cryptographie, en
+          droit, et sur ce qu'un système d'exploitation peut réellement garantir.
+        </li>
+      </ul>
+
+      <p>
+        Tout passe par le dépôt :
+        <a href="https://github.com/Aku-Origin/SERF">github.com/Aku-Origin/SERF</a>.
+        Les miroirs Codeberg, Software Heritage et Radicle ne sont pas encore en
+        place — c'est la prochaine tâche, et elle est prioritaire.
+      </p>
+
+      <blockquote>
+        <p>
+          Nous ne garantissons pas d'avoir raison. Nous garantissons qu'avoir tort ne
+          coûtera rien à ceux qui le constateront.
+        </p>
+      </blockquote>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="enveloppe">
+    <p>
+      <strong>SERF — Régence.</strong> Catalogue v0.1, 8 août 2026. Cette page ne
+      fait aucune requête réseau : elle fonctionne hors ligne, depuis une clé USB
+      ou un dépôt cloné.
+    </p>
+    <p>
+      Tous les contrastes sont <strong>calculés</strong> selon la formule WCAG 2.x,
+      jamais estimés — c'est une règle du projet, apprise à ses dépens. Mesure du
+      8 août sur chaque élément de texte de la page :
+      <strong>7.83:1 au minimum en thème sombre, 7.27:1 en thème clair</strong>.
+      Les deux dépassent le seuil AAA de 7:1.
+    </p>
+    <p class="signature">Le Sans-Ciel</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var bouton = document.getElementById('bascule');
+  var racine = document.documentElement;
+
+  function nom(t) { return t === 'clair' ? 'clair' : 'sombre'; }
+
+  function actuel() {
+    if (racine.hasAttribute('data-theme')) return racine.getAttribute('data-theme');
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'clair' : 'sombre';
+  }
+
+  function poser(t) {
+    racine.setAttribute('data-theme', t);
+    bouton.textContent = 'Thème : ' + nom(t);
+    try { localStorage.setItem('serf-theme', t); } catch (e) {}
+  }
+
+  try {
+    var garde = localStorage.getItem('serf-theme');
+    if (garde === 'clair' || garde === 'sombre') racine.setAttribute('data-theme', garde);
+  } catch (e) {}
+
+  bouton.textContent = 'Thème : ' + nom(actuel());
+  bouton.addEventListener('click', function () {
+    poser(actuel() === 'clair' ? 'sombre' : 'clair');
+  });
+})();
+</script>
+
+</body>
+</html>

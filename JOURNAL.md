@@ -13,6 +13,63 @@
 
 ---
 
+## 2026-08-08, 11h — Un catalogue public, et deux défauts trouvés en le mesurant
+
+Diego veut pouvoir montrer le projet : deux personnes le rejoignent peut-être, et
+il lui faut quelque chose à leur envoyer. D'où `site/index.html` — une page unique
+qui présente SERF, l'état de chaque document, la feuille de route, et ce qui est
+cassé.
+
+**Elle vit dans le dépôt, pas ailleurs.** C'était le choix à faire consciemment :
+publier la vitrine sur un service tiers aurait contredit tout le reste — un dépôt
+confidentiel disparaît sans que personne s'en aperçoive, et une page hébergée
+ailleurs ne se miroite ni ne s'archive. Elle est autonome, sans une seule requête
+réseau : elle s'ouvre depuis une clé USB ou un dépôt cloné.
+
+### Ce qu'on met en avant, et ce qu'on ne cache pas
+
+La section la plus importante est **« Ce que nous ne promettons pas »** : iOS hors
+périmètre, les votes sans force de loi, aucun noyau écrit de zéro, le paradoxe du
+client sans solution parfaite, la coercition irréductible, le mouchard soudé qu'on
+ne retire pas par du code. Suivie de **« Ce qui est cassé »**, qui expose quatre
+des quinze failles ouvertes.
+
+C'est un pari assumé : sur un projet de souveraineté, la crédibilité vient de ce
+qu'on refuse de promettre, pas de ce qu'on annonce. Un projet qui cacherait ses
+défauts n'aurait aucun titre à en réclamer la transparence à d'autres.
+
+### Deux défauts trouvés parce qu'on a mesuré
+
+**Le thème clair n'avait jamais eu ses contrastes.** `04-DESIGN.md` publie les
+valeurs du thème sombre, calculées le 3 août après l'incident des quatre
+contrastes faux. Le thème clair, lui, n'avait que des jetons de fond — aucune
+valeur de texte, aucune mesure. Calculées ce matin : `etat-scelle` `#3E9E75`
+**échoue** en thème clair (3.08:1 sur le fond, 2.79:1 sur les surfaces). Le jeton
+qui signale « chiffré, vérifié » est illisible en clair. Corrigé sur la page,
+**reste à corriger dans `04-DESIGN.md`.**
+
+**Un bug invisible à l'œil, trouvé au calcul.** J'avais oublié de déclarer
+`--nuit-500` dans la racine CSS. Conséquence : en thème clair, `--texte-3` était
+invalide et la couleur retombait silencieusement en héritage. Rien ne se voyait —
+le texte restait lisible, simplement pas de la couleur prévue. Il a fallu mesurer
+les couleurs *calculées par le navigateur*, et non relire la feuille de style,
+pour que ça saute aux yeux.
+
+C'est la même leçon que la simulation du 5 août, transposée : **un artefact se
+mesure dans son état d'exécution, il ne se relit pas.** Deux passes de mesure ont
+ensuite remonté trois éléments sous le seuil AAA — un jeton tertiaire posé sur une
+surface élevée, et le lien d'évitement en blanc sur rouge, qui plafonne à 5.62:1.
+Corrigés. Mesure finale sur chaque élément de texte : **7.83:1 au pire en sombre,
+7.27:1 en clair.** La page entière passe AAA.
+
+### Au passage
+
+Le `README` annonçait « chacune de ces trois lignes » sous un tableau de cinq
+renversements. Dérive de compteur classique — exactement ce que la compétence
+`coherence` traque, et qui était passé entre les mailles.
+
+---
+
 ## 2026-08-06, 16h — Le mot « Assemblée » tombe, et la mémoire l'emporte sur la sortie
 
 ### Le compteur de défiance ne protégeait pas ceux qu'il devait protéger
