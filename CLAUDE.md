@@ -323,8 +323,10 @@ SERF/
 │   ├── 10-SURFACES.md         ← les ~35 surfaces d'un OS : écrire / adapter / adopter
 │   ├── 11-ETAT-DE-LART.md     ← recherche sourcée : vote, gouvernance, droit, socle
 │   └── 12-FAILLES-OUVERTES.md ← les défauts connus et non corrigés — À LIRE
-├── site/
-│   └── index.html             ← catalogue public, autonome, zéro requête réseau
+├── index.html                 ← catalogue public, autonome, zéro requête réseau
+│                                 racine du site : aku-origin.github.io/SERF/
+├── .nojekyll                  ← sans lui, Pages rend le README à la racine
+├── site/index.html            ← redirection, pour ne pas briser les liens partagés
 └── .claude/skills/
     ├── heure/                 ← relever l'heure, sans l'annoncer
     └── coherence/             ← renvois, compteurs, vocabulaire, avant chaque commit

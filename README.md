@@ -12,10 +12,11 @@ un scrutin vérifiable et un registre que personne ne peut réécrire.
 > Ce dépôt contient un corpus de conception, une Charte soumise à délibération, et
 > un **registre public de ses propres défauts**. Il est publié pour être attaqué.
 >
-> **[→ Catalogue des travaux](site/index.html)** — la présentation complète du
-> projet en une page : ce qu'il est, ce que nous refusons de promettre, ce qui est
-> cassé, et où en est chaque document. Téléchargez le fichier et ouvrez-le dans un
-> navigateur ; il ne fait aucune requête réseau.
+> **[→ Catalogue des travaux](https://aku-origin.github.io/SERF/)** — la
+> présentation complète du projet en une page : ce qu'il est, ce que nous refusons
+> de promettre, ce qui est cassé, et où en est chaque document. La page ne fait
+> **aucune requête réseau** : le fichier [`index.html`](index.html) s'ouvre aussi
+> depuis une clé USB ou un dépôt cloné.
 
 ---
 
